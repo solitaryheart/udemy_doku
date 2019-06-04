@@ -309,11 +309,25 @@ e.) Deleting folder containing files and subfolders without using git rm command
 14.) git log --follow -- level1/level2/level2.txt (path to file) -> follows all renaming operations of a file
 
 --------------------------------------------------------------------------
+*************ALIAS*****************************************
+******************************************************************
 
+Alias -> represents a shorter version of a long git commans -> stored in user global config file for ALL projects (.gitconfig)
+ - to open this file: npp ~/.gitconfig
 
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects/starter-web -> wechsel in project directory
+4.) git status
 
+5.) git log --all --graph --decorate --oneline -> this command should get the name "hist"
+6.) git hist -> hist is not yet a git command
+7.) git config --global alias.hist "log --all --graph --decorate --oneline" (wichtig -> für Kommando in Anführungszeichen -> ohne git)
+8.) git hist -> no this command is available (important alias.hist -> created a section alias and entry hist)
+9.) clear
+10.) npp ~/.gitconfig (~ = user directory)
 
-
+ git hist clear mate ~/.gitconfig git hist mate ~/.gitconfig git hist clear
 
 
 
