@@ -1,0 +1,81 @@
+****************** TEST-API**********************************
+*************************************************************
+*************************************************************
+
+ Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr
+
+-------------------------------------------
+*********Request_Chaining ******
+ - response of request will be used as input for further request
+
+
+
+1.) Response of 1 request will be used as an input of coming request
+
+2.) Add Customer by making a post request
+
+3.) Fetch Customer ID
+
+4.) Delete Customer using the ID we got from previous step
+
+5.) Make a get request an verify customer is deleted
+
+----------------------------------------------------------
+
+Groovy JSONSlurper Class is need to fetch the id
+
+------------------------------------------------------------
+***1+2 - Add Customer***
+a) Create Testcase -> TC_013_Request_Chaining -> pass data from testcase
+b) Print Response to check if customer was created successfully
+
+***3 - Fetch CustomerID -> Stored here in Variable "Res_Post_Customer"**
+
+a) import JSON Slurper class -> "import groovy.json.JsonSlurper"
+b) create object-variable for JSONSlurperClass -> "def jsonS = new JSONSlurper"
+c) create json response variable to store parsed text in json format -> "def jsonResponse"
+d) assignet parsed json response to json response variable -> "def jsonResponse = jsonS.parseText(Res_Post_Customer.getResponseText())"
+e) print content of json response variable for testing purposes -> "println jsonResponse"
+f) add json path to json response variable to get the customer.id -> jsonResponse.customerID
+g) println to check if id was parsed successfully -> println jsonResponse.customerID
+i) Create a testcase variable to store the fetched id -> "fetched_CID"
+j) store fetched customerID in test case variable -> fetched_CID = jsonResponse.customerID
+
+
+***4 Delete Customer using the ID we got from previous step"**
+
+a) Add Keyword "Send Request" and add Object "DeleteCustomerID" -> stored Output: Res_Delete_Customer
+b) Use stored fetched Customer ID from testcase as default value in Object "DeleteCustomerID"
+- Variable
+Name:customerID, Type:Variable, DefaultValue:fetched_CID
+
+c) Validate ResponseCode -> 204 Stored in Variable Res_Delete_Customer
+
+***Make a get request an verify customer is deleted"**
+a) Response should look like
+
+{
+  "errorCode":404,
+  "errorMessage":"Data Not Found",
+  "systemError":"Try with valid customer ID"
+
+
+b) Add Keyword ""Send Request" and add Object "GetCustomerDynamicID" -> stored Output: Res_Get_Customer_Error
+c)Use stored fetched Customer ID from testcase as default value in Object "GetCustomerDynamicID"
+- Variable
+Name:customerID, Type:Variable, DefaultValue:fetched_CID
+
+
+
+
+
+
+
+
+
+
