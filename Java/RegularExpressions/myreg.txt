@@ -1,0 +1,81 @@
+Reguläre Ausdrücke
+-----------------------
+
+- dienen als Vergleichsmuster für Zeichenketten
+- definieren Eigenschaften eines Suchttextes
+- gesamte Ausdruck, verpackt in eine Skiptsprache gibt dann "true" or "false" zurück
+- reguläre Ausdrücke erkennen Zeichenfolgen in Texten anhand eines Musters
+- Beim Suchen wird der reguläre Ausdruck genutzt, um eine Übereinstimmung festzustellen
+
+-------------------------------
+Sonderzeichen und ihre Bedeutung
+
+^	- legt Suchbegriff auf Anfang des Muster - bei "^x" - wird x nur am Anfang der Zeichenkette gefunden
+$	- steht für Platzierung am Ende des Suchbegriffs
+*	- kein oder eine beliebige Anzahl von Zeichen - es geht immer um das Zeichen davor
+.	- steht genau für ein beliebiges Zeichen
++	- mindestens ein oder beliebig viele Zeichen
+?	- kein oder genau ein Zeichen
+[a-z]	- definiert EIN Zeichen aus einer Zeichengruppe - im Beispiel nur Kleinbuchstaben erlaubt - kann mit ^ negiert werden [^a-z]
+()	- gruppiert Zeichen oder Zeichenfolgen - Mengenoperatoren wie "*" oder "+" können angewendet werden
+{}	- markieren freie Wiederholungsdefinitionen
+\	- maskiert Sonderzeichen z.B \$ -> sucht Metazeichen $
+
+\b	- steht für eine Wortgrenze (Leerzeichen, Komma, Punkt) /\bAuto/ erkennt Auto in (Das ist unser Auto, irgendwo im Text)
+
+----------------------------------------------------------------
+Liste der Metazeichen
+
+\t	- Tabulatorzeichen
+\n	- Newline (neue Zeile)
+\r	- Return (Wagenrücklauf)
+\f	- Formfeed (Seitenvorschub)
+\v	- vertikaler Tabulator
+\s	- White-Space - eines der im Druck nicht sichtbaren Zeichen (\t, \n etc)
+S	- Negation von \s
+\w	- Wortzeichen - konkret [_a-zA-Z0-9]
+W	- Negation von \w
+\d	- Ziffer (digit) - konkret [0-9]
+D	- Negation von \d
+B	- Negation von \b
+
+--------------------------------------------------
+
+Beispiele für Zeichenklassen
+
+[0-9+-,]		- Dezimalzahlen mit Komma und Vorzeichen
+[0-9.]			- Datum
+[0-9:amp]		- englische Zeitangaben mit "am" oder "pm"
+[gG]rün, [rR]ot		- auf Groß und Kleinschreibung reagieren
+
+---------------------------------------------------
+
+Wiederholungsoperatoren
+
+?		- 0-1		Kein oder ein Zeichen,  entspricht {0,1}  - {min,max}
+*		- 0-undendlich	kein oder beliebig viele Zeichen, entspricht {,}
++		- 1-unendlich	mindestens ein oder beliebig viele Zeichen, enspricht {1,}
+{zahl}		- Zahl		Genau zahl Zeichen
+{min,}		- min-unendlich	Mindestens min Zeichen
+{,max}		- 0-Max		Kein oder maximal max Zeichen
+{min,max}	- Min-Max	Minimal min bis maximal max Zeichen
+
+
+Beispiele für Wiederholungsoperatoren
+
+/^[0-9]{5}$/ 	- nur 5 stellige PLZ erlaubt
+
+----------------------------------------------------------
+
+Gruppierungen
+
+- kann dazu benutzt werden. um Wiederholungsoperatoren auf mehrere zusammenhängende Zeichen anzuwenden
+- die Referenz ist ein Nebeneffekt, auf den man Bezug nehmen kann oder nicht
+
+(ab)		- findet Treffer in "abc", abcabc", aber nicht "aacbb" (Reihenfolge wichtig)
+
+
+
+
+
+

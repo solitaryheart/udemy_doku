@@ -1,0 +1,28 @@
+File i/o - operations
+
+- creating file
+- writing file
+- reading file
+- modify file
+- delete file
+
+
+-----------------------------------------
+
+reading data from text file (read)
+1.) File-Class -> repräsentiert die einzulesende Datei
+2.) FileReader-Class -> reads data from text-file character by character
+3.) BufferedReader-Class -> memory which contains content of FileReader
+
+
+
+-----------------------------------------------
+
+appending data to text file (write)
+
+1.) File-Class
+2.) FileWriter-Class
+3.) BufferWriter-Class
+
+Beat Saber
+Racket Fury: Table Tennis

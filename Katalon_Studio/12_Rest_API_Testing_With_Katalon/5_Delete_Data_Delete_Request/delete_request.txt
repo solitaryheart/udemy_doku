@@ -1,0 +1,142 @@
+****************** TEST-API**********************************
+*************************************************************
+*************************************************************
+
+ Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr
+
+-------------------------------------------
+
+API - http://localhost:8899/mysql/customers/{customerID}
+
+SAMPLE REQUEST ->  http://localhost:8899/mysql/customers/{cust8982771}
+
+Status code -> 204 ! No Content
+
+ready to delete:
+
+cust6224291
+cust4462870
+cust6563100
+cust6203451
+cust5876217fd
+
+
+
+ObjectRepository -> DeleteCustomerID
+
+
+
+
+
+
+VERY HELFUL -> JSON PATH FINDER !
+
+
+sampleID
+
+cust2108056
+cust2600484
+cust8982771
+
+-------------------------------------------
+
+Scenario
+
+1.) Make a DELETE Request -
+
+2.) Pass values from Testcase
+
+3.) Validate Status Code
+
+4.) Validate Header by Script and setting up a custome testcase result
+
+--------------------------------------------
+
+
+-needed websites
+a) JSON Formatter
+b) JSON FORMAT
+
+------------------------------------------------
+
+
+a) Create ObjectReposity Request -> DeleteCustomerID
+b) Create Variabes -> customerID and assign default value, 
+c) Add variable to URL -> http://localhost:8899/mysql/customers/${customerID}
+
+b) Create Testcase
+c) Keyword -> "Send Request" -> Object "DeleteCustomerID" -> Output: "Res" (save complete reponse)
+d) Create Variable on Testcase-Level -> "CID"
+e) Use variable in Request-Obeject - Object "DeleteCustomerID" 
+
+ Name= customerID, Type= Variable, DefaultValue=CID(Variable Name)
+
+
+ 
+-----------------------------------------------------
+
+------------------------------------------------------
+
+header information:
+
+HTTP/1.1 204 No Content
+Server: Jetty(9.2.z-SNAPSHOT)
+cust2108056: : Deleted
+Date: Tue, 28 May 2019 08:46:51 GMT
+Via: 1.1 browsermobproxy
+
+
+--------------------------------------------------------------------
+Validate Header by Script and setting up a custome testcase result
+
+ -> Testcase successful if header contains customer_id as Key
+------------------------------------------------------------
+1.) import com.kms.katalon.core.util.KeywordUtil:
+
+to use later: KeyworldUtil.markPassed
+to use later: KeyworldUtil.markFailed
+
+2.) get all Header Keys and Values and print it to console:
+
+def header = Res.getHeaderFields()
+header.each{
+	println(it)
+}
+
+
+3.) check if customer is stored in testcase variable CID is contained as key in header:
+
+def isvalueContained
+isvalueContained = header.containsKey(CID)
+
+
+4.) If is contained set test result:
+
+
+if(isvalueContained){
+	println("The customer key " + CID + " is contained in header")
+	KeywordUtil.markPassed("Test Passed cause customer key is contained")
+}else{
+	println("The customer key  is not contained in header")
+	KeywordUtil.markFailed("Test Failed cause customer key is NOT contained")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

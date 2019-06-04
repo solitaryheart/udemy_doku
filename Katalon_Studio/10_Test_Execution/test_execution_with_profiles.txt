@@ -1,0 +1,20 @@
+************** PROFILE ****************************
+
+ - enables executing testcases on different environments (DEV, STG etc)
+  contaisn environment specific information (url. etc)
+
+- for each environment one profile
+
+1.) create profile vor each environment
+2.) create variable and assign values (URL, USERNAME etc)
+3.) user same variable-names for each profiles
+4.) for singe smoketest -> select profile befor execution
+
+-> usage in test case -> value type = global variable
+-> test suite collection -> profile can be assigned !
+
+------------------------------------------------------------
+In Script
+
+WebUI.openBrowser(GlobalVariable.URL)
+

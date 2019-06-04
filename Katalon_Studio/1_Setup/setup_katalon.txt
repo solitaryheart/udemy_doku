@@ -1,0 +1,28 @@
+1.) Install JAVA JDK
+
+2.) Download Katalon Studio - ZIP
+
+3.) Register at Katalon (User-Account)
+
+user:matthias.meier@kps.con
+pw: Fr... ;-)
+
+4.) Unzip
+
+5.) Start Katalon.exe
+
+6.) Active use same credentials
+
+------------------------------------------
+
+DEMO APPLICATION:
+
+www.theTestingWorld.com/testings
+
+
+Register:
+
+username: matthias.meier@kps.com
+
+-------------------------------------------
+

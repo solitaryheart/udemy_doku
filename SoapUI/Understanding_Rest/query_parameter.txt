@@ -1,0 +1,94 @@
+Wirken auf GET Method - Notepad JSON plugin
+
+oder Online variante
+
+httP://localhost:8899/mysql/customers?fname=matthias
+
+alles hinter dem Fragezeichen - hier "?fname=matthias"
+
+URI = //localhost:8899/mysql/customers?fname=matthias
+
+
+JSONViewer Notepad++ plugin installieren
+
+-------------------------------------------------------
+
+Query Parameter für 
+
+GET customer
+
+firstName,
+lastName,
+phone,
+email,
+city,
+zipcode,
+country,
+state
+
+---------------------------------------------------------
+wichtig SOAP-UI
+
+Level auf dem ein Query-Parameter wirkt, es gibt zwei Möglichkeiten
+
+1.) Level -> RESOURCE -> wirkt auf mehrere Methoden für gesamte Resourcen
+2.) Level -> METHOD   -> wirkt nur auf spezische Methoden, hier GET
+
+
+-----------------------------------------------------------
+
+Wenn mehrere Items in Response zurückgegeben werden:
+
+[
+      {
+      "customerID": "cust2108056",
+      "firstName": "karl",
+      "lastName": "kaefer",
+      "phone": 1235,
+      "email": "mm2@kps.com",
+      "address": "Badway",
+      "city": "Dortmund",
+      "state": "NRW",
+      "zipcode": 44369,
+      "country": "England",
+      "creationDate": "Mai 6, 2019"
+   },
+      {
+      "customerID": "cust2600484",
+      "firstName": "karl",
+      "lastName": "kaefer",
+      "phone": 1234,
+      "email": "mm@kps.com",
+      "address": "Badway",
+      "city": "Dortmund",
+      "state": "NRW",
+      "zipcode": 44369,
+      "country": "England",
+      "creationDate": "Mai 3, 2019"
+   },
+      {
+      "customerID": "cust8982771",
+      "firstName": "karl",
+      "lastName": "kaefer",
+      "phone": 1236,
+      "email": "mm3@kps.com",
+      "address": "Badway",
+      "city": "Dortmund",
+      "state": "NRW",
+      "zipcode": 44369,
+      "country": "England",
+      "creationDate": "Mai 6, 2019"
+   }
+]
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+/customers/{customerID}
+
+-> hier ist customerID ein path_parameter
+-> sollte in SOAPUI immer vom Typ (Style) TEMPLATE sein, Level RESOURCE, sofern für mehrere Operationen gültig
+-> path-paramer immer am "/" zeichen erkennbar, query-Paramter am "?"
+
+-> liefer in ersten Linie ein einzelnes item aus einer Collection zurück
+
+-------------------------
+
+SOAP-UI
+
+Adding a Ressourcen-
+
+a) Rechts-Klick auf Interface - "New Resource!

@@ -1,0 +1,49 @@
+1.) Rest Projekt erstellen mit URI /customers (laut Dokumentation)
+2.) Endpoint definieren und assignnen
+3.) Post-Request im JSON-Format erstellen (Format laut Spezifikation)
+
+- Spezifikation
+
+{
+    "firstName":string,
+    "lastName":string,
+    "phone": integer,
+    "email": string,
+    "address":string,
+    "city": string,
+    "state": string,
+    "zipcode":integer,
+    "country": string
+  }
+
+- Sample Real Data
+
+{
+    "firstName":"matthias",
+    "lastName":"meier",
+    "phone": 0231673015,
+    "email": "mm@kps.com",
+    "address":"Emil-Figge Str. 80",
+    "city": "Dortmund",
+    "state": "NRW",
+    "zipcode":44369,
+    "country": "Germany
+  }
+
+
+{
+    "firstName":"karl",
+    "lastName":"kaefer",
+    "phone": 1234,
+    "email": "mm@kps.com",
+    "address":"Badway",
+    "city": "Dortmund",
+    "state": "NRW",
+    "zipcode":44369,
+    "country": "England"
+  }
+
+
+
+
+

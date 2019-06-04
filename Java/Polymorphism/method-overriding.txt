@@ -1,0 +1,44 @@
+
+Overriding -> implementinf a method in a subclass which is already
+implemented in a parent class !
+
+Overloading -> 
+
+
+package pack;
+
+public class LivingBeing {
+
+	public String eyes = "twoEyes";
+	 String legs = "running";
+	
+	 public void seeing() {
+		System.out.println("Eyes is used to see, ");
+	}
+	
+	 public void run() {
+		System.out.println("Legs are used to run, parent class method");
+	}
+}
+
+
+========
+package pack;
+
+public class HumanBeing extends LivingBeing {
+		
+
+	 public void run() { 
+		 // over-ridden class
+			System.out.println("I use 2 legs only, Overriding method");
+			
+		}
+	
+			public static void main(String[] args) {
+			
+		HumanBeing hb = new HumanBeing();
+		hb.run();
+	}
+	
+
+}

@@ -1,0 +1,320 @@
+*********************** BASIC COMMANDS********************************
+***********************************************************************
+
+
+*************FIRST COMMIT*****************************************
+******************************************************************
+
+
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects -> wechsel in project directory
+4.) cd starter-web
+5.) ls
+6.) git status
+7.) touch hipster.txt -> Create a sample file
+8.) ls
+9.) git status -> Repository status abfragen
+10.) git add hipster.txt -> in Staging schieben
+11.) git status
+12.) git commit -m "My First Commit"
+13.) git status
+14.) git pull origin master-> ÄNDERUNGGEN VON ANDEREN VOR PUSH der eigenen Änderungen kopieren
+15.) clear
+16.) git push origin master
+
+-> Check changes in GitHub
+
+*************EXPRESS COMMIT*****************************************
+******************************************************************
+
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects -> wechsel in project directory
+4.) cd starter-web
+5.) ls
+6.) git status
+7.) touch hipster.txt -> Create a sample file and make changes
+8.) git commit -am "Adding more text" -> add and commit in one step
+9.) git ls-files (displays all tracked files by git -> no "new" files" -> tracked = contained in git repo)
+10.) git status
+
+-----------------------------------------------------------------------------
+*************EDITING FILES*****************************************
+******************************************************************
+
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects -> wechsel in project directory
+4.) cd starter-web
+5.) ls
+6.) git status
+7.) npp hipster.txt -> open file and make changes
+8.) git status -> file be displayed as modified
+9.) git add hipster.txt -> edited files need also to be added to staging !
+10.) git commit -m "more ipsum for hipsters"
+11.) git status
+
+------------------------------------------------------------------------
+*************RECURSIVE ADDD*****************************************
+******************************************************************
+
+-> adding files in nested folders !! -> git add .
+
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects -> wechsel in project directory
+4.) cd starter-web
+5.) mkdir -p level1/level2/level3/
+6.) ls
+7.) cd level1
+8.) touch level1-file.txt (create file and add some text !)
+9.) ls
+10.) cd level2
+11.) touch level2-file.txt (create file and add some text !)
+12.) ls
+13.) cd level3
+14.) touch level3-file.txt (create file and add some text !)
+15.) ls
+16.) cd ../../../ (going back to root directory)
+17.) git status -> shows only new directory on level 1 ! no nested folders
+18.) git add . -m "New documents"
+19.) git status (shows all new files on all levels 
+20.) git commit -m "Adding nested files by using recursive add"
+
+---------------------------------------------------------
+
+*************BACKING OUT CHANGES*****************************************
+***********************************************************************
+
+a) moving  changes before commit out of staging - back to working directory
+b) checkout an earlier version of a file to working directory -> undo last changes
+
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects -> wechsel in project directory
+4.) cd starter-web
+5.) git status -> clean working direcory
+6.) cd level1
+7.) ls
+8.) npp level1-file.txt -> open document add somme text e.g. a new paragraph
+9.) git status -> document modified - changes not staged !
+10.) git add level1-file.txt
+11.) git status -> changes are staged !
+12.) npp level1-file.txt -> check document content -> contains new paragraph
+13.) clear
+14.) git status
+15.) git reset HEAD level1-file.txt -> removed staged file back to working directorx
+16.) npp level1-file.txt -> check document content -> contains new paragraph again
+17.) clear
+18.) git status -> shows not staged changes againgeckec
+19.) git checkout -- level1-file.txt (restoring last version to working directorybefore adding new paragraph)
+20.) git status
+21.) npp level1-file.txt (displays document before adding the new paragraph)
+
+-------------------------------------------------------------------------------------------------------------------
+*************RENAMING Files*****************************************
+***********************************************************************
+
+Szenarien:
+a) renaming by using git commands -> git mv level3-file.txt level3.txt
+b) renaming without using git commands an using windows cmd
+c) moving file to different folder using git command / using windows cmd
+d) renaming without using git and using windows explorer
+
+----------------------------------------------------------------------
+a) renaming by using git command
+
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects -> wechsel in project directory
+4.) cd starter-web
+5.) git status -> clean working direcory
+6.) cd level1/level2/level3  -> change to level 3 directory
+7.) clear
+8.) ls -> file: level3-file.txt displayed
+9.) git status -> clean working directory
+10.) git mv level3-file.txt level3.txt -> renaming by using git command
+11.) ls -> file renamed to level3.txt
+12.) git status -> no add necessary - git shows "renamed: level3-file.txt -> level3.txt
+13.) git commit -m "renaming level3 file" 
+14.) cd .. -> move to level2 directory for next scenario
+15.) pwd
+16.) clear
+-----------------------------------------------------------------------
+
+b) renaming without using git commands an using windows cmd
+
+1.) ls -> level2-file.txt displayed
+2.) mv level2-file.txt level2.txt ->  renaming by windows bash command
+3.) ls -> file rename to level2.txt
+4.) git status -> git shows not staged changes- need to be added
+ -> "deleted": level2-file.txt
+ -> "untracked file": level2.txt
+5.) git add -A -> to stage renaming
+6.) git status -> git shows "renamed: level2-file.txt -> level2.txt
+7.) git commit -m "renaming level2 file without git"
+8.) clear
+9.) ls -> renamed and commited file level2.txt displayed
+
+- renaming by using git mv command and go back to old name -> result: clean working directory
+
+1.) git mv level2.txt 2.txt -> renamig to new file name by using git comamnd
+2.) ls
+3.) git status -> no staging necessary, changes needs only be commited
+4.) git mv 2.txt level2.txt
+5.) ls -> "old" name displayed
+6.) git status -> clean working directory, no changes necessary
+7.) clear
+-------------------------------------------------------------------------
+
+c1) moving file to different folder using git command
+
+
+1.) ls -> level2 = currenty dirctory, file: level2.txt displayed
+2.) git mv level2.txt level3 -> move level2.txt to level3 direcory
+3.) ls -> level2 direcory is empty
+4.) git status -> no adding necessary, only commit "rename: level2.txt -> level3/level2.txt
+5.) cd level3 -> 
+6.) ls -> file level2.txt and level3.txt displayed
+7.) git status
+8.) git commit -m "file moving to different directory using git command"
+9.) git status -> clean working direcory
+
+c2) moving file to different folder using windows cmd command
+
+1.) cd level3 -> 
+2.) ls -> files level2.txt and level3.txt displayed
+3.) mv level2.txt .. -> moving file level2.txt by using windows cmd command  one directory above (level2)
+4.) ls -> directory contains only file level3.txt
+5.) cd .. -> change one directory above to level2 directory
+6.) pwd -> directory level2
+7.) ls -> file level2.txt displayed
+8.) git status -> git shows not staged changes- need to be added
+ -> "deleted": level3/level2.txt
+ -> "untracked file": level2.txt
+9.) git add -A
+10.) git status -> only commit necessary
+11.) git commit -m "File removed without git command"
+12.) clear
+13.) cd .. -> change to level1 directory
+
+------------------------------------------------------------
+
+d) renaming without using git and using windows explorer
+
+1.) change to level1 directory
+2.) rename file "level1-file.txt" to "level1.txt"
+3.) git status -> -> git shows not staged changes- need to be added
+-> "deleted": level1-file.txt
+ -> "untracked file": level1.txt
+
+4.) git add level1.txt -> move untracked file to staging
+5.) git add -u -> to get rid of not need file
+6.) git commit -m "Renaming by using explorer"
+
+-----------------------------------------------------------------------------------------
+*************DELETING FILES Files*****************************************
+***********************************************************************
+
+1.) Deleting new file not tracked by git -> delete without git-command possible
+2.) Deleting file already tracked by git -> delete by using git rm command necessary
+3.) Undo a deleting of a file already tracked by git -> commt has not taken place !
+4.) Deleting a file altready trackey by get without using git rm command (windows rm)
+5.) Deleting folder containing files and subfolders without using git rm command - rekursive delete
+---------------------------------------------------------------------
+a) deleting file not tracked by git -> windows rm is necessary !
+
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects -> wechsel in project directory
+4.) cd starter-web
+5.) git status -> clean working direcory
+6.) clear
+7.) touch doomed.txt -> create a new file
+8.) ls
+9.) git status -> file not tracked by git
+10.) git rm doomed.txt -> deleting not possible cause file not tracked
+11.) rm doomed.txt
+12.) ls -> file deleted
+13.) git status -> clean working directory
+
+-----------------------------------------------------------------------
+b) deleting existing file already tracked by git -> git rm is necessary !
+
+1.) git ls-files -> alreaddy tracked file "newfile.txt displayed
+2.) git rm newfile.txt
+3.) git status -> file deleted in staging -> "deleted: newfile.txt"
+4.) git commit -m "Deleting new file"
+5.) git status -> clean working directory
+6.) clear
+
+---------------------------------------------------------------------------
+c) Undo a deleting of a file already tracked by git
+
+1.) git status -> clean working directory
+2.) git ls-files -> already tracked files displayed -> here: hipster.txt
+3.) git rm hipster.txt
+4.) ls
+5.) git status-> file deleted in staging 
+6.) git reset HEAD hipster.txt ->deleting in staging will removed
+7.) git status -> 
+8.) git checkout -- hipster.txt -> deleted file will restored in working directory
+9.) ls
+10.) git status -> clean working directory
+11.) clear
+
+------------------------------------------------------------------------------------
+d.) Deleting a file altready trackey by get without using git commands 
+
+1.) ls -> file hipster.txt displayed
+2.) rm hipster.txt -> deleting without using git command
+3.) ls -> filed deleted in working directory
+4.) git status -> file not deleted in staging (delete is displayed in red color !!)
+5.) git add -A ->
+6.) git status -> file removed out auf staging -> only commit is missing
+7.) git commit -m "hipster file deleted"
+8.) git status -> clean working directory
+9.) clear 
+
+---------------------------------------------------------------------------------
+e.) Deleting folder containing files and subfolders without using git rm command
+
+1.) ls -> level1 directory displayed
+2.) rm -rf level1 -> level1 directory deleted without using git rm command
+3.) git status -> files/folders not deleted in staging (delete is displayed in red color !!)
+4.) git add -A 
+5.) git status -> file/folders  removed out auf staging -> only commit is missing
+6.) git commit -m "deleting level1 and all children" 
+7.) git status -> clean working directoryls
+
+------------------------------------------------------------------------------------
+*************HISTORY*****************************************
+******************************************************************
+
+
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects/starter-web -> wechsel in project directory
+4.) git status
+5.) git help log ->shows all options to command in online-help
+6.) git log -> shows all commits, newest first !
+7.) git log --abbrev-commit -> shows commit-id's in a shorter-version
+8.) git log --oneline --graph --decorate -> shows all commits with messages
+9.) git log 53e7963...ac67545 -> shows range of commit-id's
+10.)  git log --since="3 days ago" -> shows commits of the last three days
+11.) clear
+12.) ls git log -- hipster.txt - shows log of a specific file
+13.) git show 916b0612e6c2408f215a61a9cec1b7f7562c2b4a -> shows author, date and commit message of a specific commi-id
+14.) git log --follow -- level1/level2/level2.txt (path to file) -> follows all renaming operations of a file
+
+--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+Client: SoapUI
+Server: jar-File auf JRE-System
+DB:
+
+1.) MySQL - db name: "myzone"
+2.) CouchDB
+
+
+-----------------------------------------
+
+Running REST API WEBService
+
+- Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr

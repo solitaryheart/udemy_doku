@@ -1,0 +1,57 @@
+--------------------------------------------------
+CSS
+--------------------------------------------------
+tab_register				label[for='tab1']
+tab_login				label[for='tab2']				
+edit_field_username			input[name='fld_username']
+edit_field_email			input[name='fld_email']
+edit_field_password			input[name='fld_password']
+edit_field_confirm_password		input[name='fld_cpassword']
+edit_field_date_of_birth		input[name='dob']
+edit_field_phone			input[name='phone']
+edit_field_address			input[name='address']
+
+
+
+
+--------------------------------------------------
+XPATH
+--------------------------------------------------
+
+radion_button_addresstype_home		//input[@type='radio' and @value='home']
+radion_button_addresstype_office	//input[@type='radio' and @value='office']
+dropdownlist_gender			//select[@name='sex']
+dropdownlist_country			//select[@name='country' and @id='countryId']
+dropdownlist_state			//select[@name='state' and @class='states']
+dropdownlist_city			//select[@name='city' and @class='last cities']
+
+edit_field_zip				//span[@class='tabaddon'][8]/input[@name='zip']
+checkbox_terms				//input[@type='checkbox' and@name='terms']
+checkbox_terms				//span[@class='tabaddon'][8]//following-sibling::div/input[@name='terms']
+
+link_terms_details			//a[contains(text(),'Read')]			
+
+button_sign_up				//input[@type='submit' and @value='Sign up']
+button_view_more			//a[contains(text(),'View More')]
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+HOMEPAGE - http://www.theTestingWorld.com
+
+
+training_menu				//a[@title='TRAINING']	
+ - menu_item				//a[@title='ONLINE TRAINING']
+ - menu-item				//a[@title='API Testing Package' and @class='mega last ']
+	
+videos_menu				//a[@title='VIDEOS ']
+
+
+link_login				//a[contains(text(),'Login')]
+
+edit_field_username			//input[@name='username' and @id='username']
+edit_field_password			//input[@name='password' and @id='password']
+button_login				//button[@type='submit' and @class='button']
+
+//a[@title='ONLINE TRAINING']/a[@title='API Testing Package' and @class='mega last ']

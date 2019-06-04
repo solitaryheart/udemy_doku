@@ -1,0 +1,6 @@
+Diese Datei enthält
+viele sinnlose Daten,
+die mit Java
+eingelesen werden.
+I am updating the file
+I am updating the file

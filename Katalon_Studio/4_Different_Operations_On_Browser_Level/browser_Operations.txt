@@ -1,0 +1,28 @@
+Work on Browser Keywords 
+
+- Open Browser
+- Maximize -> Maximize Window
+- Close Browser
+
+
+- Navigate to URL
+- Back Button, Forward Button -> Back, Forward
+- Refresh Button -> Refresh
+
+----------
+
+- Get Page URL -> Get URl
+- Get Page Title -> Get Window Title
+
+
+Flow
+---------------------------
+
+Open Browser
+Maximize Window
+Navigate to URL
+Back
+Refresh
+Forward
+
+---------------------------

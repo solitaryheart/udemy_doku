@@ -1,0 +1,10 @@
+- is the concept to validate data in data files
+- we can maintain current snapshots of data in data files
+
+- everytime when we execute our testcae, it validate data of datafiles
+
+datafiles: excel, csv, database
+
+
+1.) create check point
+2.) use keyword -> verify checkpoint

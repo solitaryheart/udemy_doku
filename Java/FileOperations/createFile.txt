@@ -1,0 +1,27 @@
+import java.io.IOException;
+
+public class NewFile {
+
+	public static void main(String[] args) {
+		//int num = "ididid";
+		File file = new File("G:\\java\\files\\sample.txt");
+		try {
+			
+			boolean isCreated = file.createNewFile();
+			
+			if(isCreated) {
+				System.out.println("File created");
+			}else {
+				System.out.println("File not created");
+			}
+			
+		} catch (IOException e) {
+			System.out.println("Error in File creation");
+			e.printStackTrace();
+			
+		}
+		
+
+	}
+
+}

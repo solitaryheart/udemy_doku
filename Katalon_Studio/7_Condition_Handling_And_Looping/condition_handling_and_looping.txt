@@ -1,0 +1,13 @@
+*****************************************************************
+*********Condition Handling And Looping *************************
+*****************************************************************
+
+1.) If Only -(true: click login link, enter username)
+2.) If and Else (true: click login linkm enter user name, false: enterpass word)
+
+3.) if Else-If-Else-Condition
+
+if var = 10 - login link, enter username only
+if var = 20 - login link, enter username and password both
+
+if no condition satisfied - just enter password

@@ -1,0 +1,20 @@
+4 types of data-files
+
+------------------
+excel -xlsx
+csv
+internal
+database -> unter project setting ablegen als globale Einstellung
+-------------
+
+1.) Create Data-File
+2.) Create Data-File-Reference in Katalon-Studio
+
+
+examples- 5 sample data
+
+Username
+Password
+DOB
+
+12/12/1984

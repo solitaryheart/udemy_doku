@@ -1,0 +1,17 @@
+*********install notepad++ ******************
+
+1.) add notepade++to system-path
+2.) start git bash end enter "notepad++" -> notepad should start
+
+**********configure notepad++ with git ***************
+
+1.)notepad++ .bash_profile
+2.)notepad++ .bashrc  # see contents of .bashrc file below 
+3.)bashshrc File - alias npp='notepad++.exe -multiInst -nosession'
+4.)test alias in git bash: "npp"
+5.)list existing gitconfig -> cat ~/.gitconfig (cat~ -> user home directory)
+4.) git config --global core.editor "notepad++.exe -multiInst -nosession" 
+5.) checkk new git config -> git config --global --list
+6) git config --global -e -> will start git config file in edit mode
+5.) npp .gitconfig  # open Git config file, should contain snip below
+

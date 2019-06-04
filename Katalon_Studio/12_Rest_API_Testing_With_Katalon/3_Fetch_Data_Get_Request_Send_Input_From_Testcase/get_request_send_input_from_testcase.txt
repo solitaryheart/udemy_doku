@@ -1,0 +1,64 @@
+****************** TEST-API**********************************
+*************************************************************
+*************************************************************
+
+ Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr
+
+-------------------------------------------
+
+API - http://localhost:8899/mysql/customers/{customerId}
+
+SAMPLE REQUEST ->  http://localhost:8899/mysql/customers/cust8982771  
+
+
+ObjectRepository -> GETCustomerDynamicID
+
+
+VERY HELFUL -> JSON PATH FINDER !
+
+
+sampleID
+
+cust2108056
+cust2600484
+cust8982771
+
+-------------------------------------------
+
+Scenario
+
+1.) Make a GET Request -
+
+2.) Pass Customer ID from Testcase
+
+3.) Validate Status Code
+
+4.) Validate Response Content and Status Code
+
+
+-needed websites
+a) JSON Formatter
+b) JSON FORMAT
+
+------------------------------------------------
+
+
+a) Create ObjectReposity Request
+b) Create Variabe -> customerID and assign default value
+c) User Variable in GET-URL -> http://localhost:8899/mysql/customers/${customerID}
+b) Create Testcase
+c) Keyword -> "Send Request" -> Object "GetCustomerDynamicID" -> Output: Response (save complete reponse)
+d) Create Variable on Testcase-Level -> cuID
+e) Use variable in Request-Obeject - Object "GetCustomerDynamicID" 
+-----------------------------------------------------
+
+------------------------------------------------------
+
+
+
+

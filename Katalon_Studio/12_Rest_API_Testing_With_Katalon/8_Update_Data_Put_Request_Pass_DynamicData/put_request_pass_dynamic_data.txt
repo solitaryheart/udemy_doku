@@ -1,0 +1,102 @@
+****************** TEST-API**********************************
+*************************************************************
+*************************************************************
+
+ Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr
+
+-------------------------------------------
+
+API - http://localhost:8899/mysql/customers/
+
+SAMPLE REQUEST ->  http://localhost:8899/mysql/customers/{customerID}
+
+Status code -> 204 !
+Updated
+
+cust2508875
+
+
+ObjectRepository -> UpdateCustomerDynamic
+
+Data
+
+{
+    "firstName":"klaus",
+    "lastName":"mueller",
+    "phone": 8896,
+    "email": "k25@ais.com",
+    "address":"karlsweg3",
+    "city": "luenen",
+    "state": "NRW",
+    "zipcode":44369,
+    "country": "Germany"
+  }
+
+
+
+
+
+
+VERY HELFUL -> JSON PATH FINDER !
+
+
+sampleID
+
+cust2108056
+cust2600484
+cust8982771
+
+-------------------------------------------
+
+Scenario
+
+1.) Make a POST Request -fixed data
+2.) Pass dynamic data from testcase variable
+3.) Validate Response Content & Status Code (dynamic validation)
+
+
+--------------------------------------------
+
+
+-needed websites
+a) JSON Formatter
+b) JSON FORMAT
+
+------------------------------------------------
+
+
+a) Create ObjectReposity Request -> AddCustomerDynamic
+b) Add jsonpost http-body data to request
+c) Create Variables in Object Repository Request Object
+d) Substitute hard-code data in http-body data with variables -> eg "${firstName}
+e) Create Testcase
+f) Keyword -> "Send Request" -> Object "AddCustomerDynamic" -> 
+g) Create testcase variables
+h) In "Send Request" Object -> here "AddCustomerDynmaic) replace DefaultValues with matching testcase variable
+i) Verify Response Content e.g. Response contains same firstName as sendet in request
+
+-> add Verify Element Property Value
+-> configure the followig
+
+response: ValueType = Variable, Value =NameOfResponseVariable
+locator: Value: jsonlocator
+value: ValueType:Variable, Value: NameOfTCVariable
+
+
+
+
+
+
+
+
+
+
+
+
+
+

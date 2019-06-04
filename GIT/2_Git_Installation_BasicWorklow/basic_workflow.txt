@@ -1,0 +1,63 @@
+
+
+create Git-HUB repository
+
+name: github-demo
+-> public
+
+local-system:
+
+a) git-bash- starten -> pwd -> zeigt user directory an
+b) mkdir projects
+c) cd projects/
+
+---------------------------------------------
+
+Basic Workflow
+
+git version		-> installierte Version ermitteln
+
+git config --global user.name "solitaryheart"			-> Git Hub Username setzten
+git config --global user.email "matthes.meier@unitybox.de"	-> Git Gub email setzen
+
+git config -- global --list					-> Global Werte abfragen
+
+
+-------------------------------------------------
+
+GitHub Project auf lokale Platte "clonen"
+
+1.) Aus Git Hub clone URL ins Clipboard kopieren 		-> https://github.com/solitaryheart/github-demo.git
+2.) Im Verzeichnis wo Project angelegt werden soll		-> git clone https://github.com/solitaryheart/github-demo.git
+3.) Projektanlage prüfen					-> ls
+4.) Ins Projectverzeichnis wechseln				-> cd github-demo
+5.) Inhalt anzeigen						-> ls
+6.) Status des Repository abfragen				-> git status
+
+
+your branch is up to date with 'origin/master'.			-> 'origin' name der reference zum GitHub repository
+
+"origin" -> name der reference
+"master" -> name des branch
+
+-----------------------------------------------
+
+Dateien im Projectverzeichnis erstellen
+
+1.) Adding a new file						-> echo "Test Git Quick Start demo" >> start.txt
+2.) New File im Working directors anzeigen			-> ls
+3.) Inhalt der Datei anzeigen					-> cat start.txt
+4.) Neueen Status des Repository abfragen			-> git status
+
+"Untracked files:
+(use "git add <file>..." to include in what will be committed)
+start.txt"
+
+5.) Neues File von Working nach Staging schieben		-> git add start.txt (all at once: git add .)
+6.) Status erneut abfragen
+7.) Änderung commiten von Staging nach Lokal Repository	!	-> git commit -m "Adding start txt file"
+8.) Status erneut abfragen
+
+WICHTIG -> NEUE DATEI IST NOCH NICHT IM REMOTE REPOSITORY
+
+9.) Änderung nach Remote origin master (branchen pushen)	-> git push origin master

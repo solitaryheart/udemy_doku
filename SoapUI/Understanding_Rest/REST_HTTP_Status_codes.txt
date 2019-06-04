@@ -1,0 +1,25 @@
+Status of Transaction
+------------------------
+
+Series 200 = Success 
+
+200	OK (GET)
+201	Created (POST)
+202	Accepted (POST Preccesing not completed)
+203	No Content (PUT -> update)
+
+Series 400 = Failure -> data issues
+
+400	Bad Request (API not able Request)
+401	Unauthorized (wrong user/pw)
+403	Forbidden (correct user/pw but user not allowed to perform operation)
+404	Not found (data not found)
+405	Method Not Allowed (wrong methode PUT/GET etc not allowed)
+409	Conflict (example - data already created)
+
+Series 500 = More than Failure (servers errors no data issues
+
+500	Internal Server Error (
+502	Bad Gateway
+503	Service Unavailable
+504	Gate timeout

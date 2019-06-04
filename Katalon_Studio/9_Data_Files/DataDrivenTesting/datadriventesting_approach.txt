@@ -1,0 +1,17 @@
+1.) Create Data files
+
+2.) Define variables, using variable in testcase
+
+- username
+- email
+- phone
+- gender
+- country
+
+3.) Create Test Suites
+
+
+4.) Pick Data from Data files
+
+
+5.) Execute test case

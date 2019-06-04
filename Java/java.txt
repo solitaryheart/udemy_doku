@@ -1,0 +1,237 @@
+public class myProgram{
+  public static void main(String[] args){
+    System.out.println("Hey, whats up");
+  }
+}//End of program
+
+Ab hier werden falsche Schriftformatierungen benutzt, die trifft zu für Abschnittbezeichnun-gen, Tabellen- und Zeilenbeschiftungen,
+auch falsche Schriftart innerhalb der Tabelle wird ver-wendet – „Segoe“ statt „Arial“ – bitte ab hier anpassen
+
+
+Abstand zwischen Tabelle entfernen
+
+Dokument hat keine Fusszeile
+
+
+Dokument enthält keine korrekte Fusszeile
+
+
+Allgemein: Bitte darauf achten: in den Referenzdokumenten ist der Text in den Tabellen,
+die fachliche Dinge beschreiben einheitlich mit Schriftart „Arial“ formatiert, das ist hier nicht der Fall.
+
+Es scheinen einige Funktions-IDs in den Prozessschritten zu fehlen, bitte mal generell überprüfen
+
+Bitte einheitlich Punkt als Aufzählungszeichen verwenden
+
+
+System einheitlich in Dokumenten als "SAP ERP" benennen
+
+
+im Dokument wird eine komplett falsche Formatierung benutzt, 
+vermutlich wird die Standvorlage nicht benutzt, z.b: wird fast durchgängih nicht mehr Schrift-art „Arial“ verwendet,
+zudem hat das Dokument keine Fusszeile
+
+
+
+Korrektive Vorfälle - enthalten in - SON_IPS071_08_02_CHA_Inventur in einem EWM verwaltetem Lager_qa.docx
+	N/A
+
+
+
+------------------------------
+
+
+Ein paar grundsätzliche Punkte:
+•	Keine großartige Verwendung von Artikeln
+•	Gesamtes Dokument in Arial geschrieben
+•	Immer Fußnote hinzufügen
+•	Immer Schnellbaustein einfügen
+
+
+Jetzt fehlt nur noch Prozessschritte (Spalte 2) 
+immer mit einem Verb aufführen (Rolle pflegen) vs.
+ Beschreibung (Spalte 5) immer mit einer Substantivierung (Pflege Rolle…)
+
+
+Prozessschritt
+
+Der Prozessschritt, nicht die Beschreibung, trägt immer ein Verb,d.h.:
+•	Spalte 3 (Prozessschritt) immer als Prozess schreiben (Daten pflegen, Prozess durchführen, …)
+•	Spalte 5 (Beschreibung) immer Substantivieren (Pflege allgemeiner Daten, Durchführung Pro-zess, …)
+
+
+
+
+
+----------------------
+
+Prozess-Beschreibung
+
+Alt:
+
+Geschäftspartner wird nach Auswahl Gruppierung angelegt.
+Gruppierung steuert die Nummernkreise und die Nummernvergabe.
+
+Neu:
+
+Anlage Geschäftspartner nach Auswahl Gruppierung.
+Steuerung Nummernkreise und Nummerkreis-vergabe über Gruppierung
+-----------------------------------
+
+Über Partnerrolle wird für bestimmte operative Funktionen eine
+Verbindung des Kunden zu anderen debitorischen Stammsätzen hinterlegt
+Für CPD-Kunden werden nur Standard Partner-rollen hinterlegt:
+
+
+Umsystem (CRM) sendet den „Goldene Record“ (Adresse und Kommunikations-daten) 
+für neuen Geschäftspartner, falls vorhanden den Ansprechpartner.
+
+Sendung "Golden Record“ durch Umsystem (CRM) (Adresse und Kommunikations
+daten) für neuen Geschäftspartner, falls vorhanden auch Ansprechpartner.
+
+Geschäftspartner wir zu einer neuer Kunden-hierarchie Kopf
+oder wird als untergeordnete Knoten in einer bestehenden Hierarchie zugeordnet.
+
+Zuordnung Geschäftspartner zu einer neuer Kunden-hierarchie Kopf oder
+als untergeordnete Knoten in einer bestehenden Hierarchie.
+
+Geschäftspartner-Daten empfangen und im System aktualisieren.
+
+Aktualisierung Geschäftspartner-Daten im System nach Empfang der Daten.
+
+Nicole Kommentare
+
+Grundsätzlich in der Tabelle immer ein Abstand von 3 Pt. Als Zeilenabstandsoption für den Abstand vor und nach auswählen
+
+Basis NE-Notizfindung auf Belegkopf in Abhängigkeit von:
+•	NE-Schlüssel
+•	Notizfindungsschlüssel
+•	Basisschlüssel
+Pflege wahlweise je:
+•	Verkaufsorganisation
+•	Kundengruppe
+•	Kunde
+
+
+
+
+Auf Basis der gewählten Art der lokalen Artikellistung werden die Artikel für die jeweils gewünschten Verkaufsorganisatio-nen, Einkaufsorganisationen oder Werke 
+über spezifische Status gesperrt bzw. ent-sperrt und für den Verkauf oder den Einkauf zugelassen. 
+
+
+
+
+
+
+
+
+Bei Sonepar wird im Vertrieb ein Preiskalkula-tionsschema für Angebote, Kontrakte, Kun-denaufträge und Fakturen verwendet.
+Ein weiteres Kalkulationsschema wird für die Abwicklung der Intercompanypreisfindung verwendet.
+
+
+Verwendung Preiskalkulationsschema bei Sonpar für Angebote, Kontrakte, Kundenaufträge und Fakturen im Vetrieb.
+
+Verwendung weiteres Kalkulationsschema wird für Abwicklung der Intercompanypreisfindung.
+
+
+Im Web-Shop und in SAP ERP soll die glei-che Preiskalkulation verwendet werden.
+
+
+Verwendung gleicher Preiskalkulation soll in Web-Shop und SAP ERP erfolgen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Falls erforderlich kann eine Datei (Excel File) 
+mit der Preisliste aus SAP zur Verwendung in externen Systemen heruntergeladen werden.
+
+
+Export-Datei (Excel) basiert auf den gepfleg-ten Preiskonditionen.
+Datei kann bei Bedarf  lokal gespeichert werden.
+
+Alternativ können die Preiskonditionen einer Preisliste bei Sonepar auch per IDOC exportiert werden.
+
+
+
+
+
+Herunterladen Datei (Excel File) mit Preisliste aus SAP falls erforderlich,
+zur Verwendung in externen Systemen.
+
+
+Grundlage für Rechnungsprü-fung für Leistungen ist abge-nommenes Leistungserfas-sungsblatt.
+
+Rechnungsprüfung für Leistungen auf Basis abgenommenes Leistungserfassungsblatt durchführen.
+
+Larissa Feierabend
+Baltzstraße 17
+44652 Herne
+
+
+
+Lokales Speichern bei Bedarf.
+
+Export-Datei (Excel) basiert auf gepflegten Preiskonditionen.
+
+
+Exportieren Preiskonditionen bei Sonepar alternativ per IDOC.
+
+
+Mittels dieser Einträge können auf Fak-turaebene abweichende NE-Metallnotizen gefunden werden.
+
+
+Pflege von Einträgen ermöglicht Finden abweichender NE-Metallnotizen auf Fakturaebene
+
+
+
+
+Aus IC-Faktura vom liefernden Buchungs-kreis wird ein IDOC zur Verbuchung des  Rechnungseingangs an den empfangenden Buchungskreis gesendet.
+
+
+Sendung IDOC zur Verbuchung Rechnungseingang an empfangenden Buchungskreis aus IC-Faktura vom liefernden Buchungskreis.
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+
+Für den Intercompany-Kunden des Wer-kes in Buchungskreis B (empfangender Buchungskreis der Rückumlagerung) 
+wird eine Faktura im Buchungskreis A (rücksendender Buchungskreis) für die Umlagerungsbestellung 
+mit Referenz zur zugehörigen Auslieferung von Buchungskreis A angelegt. 
+
+
+Anlage Faktura im Buchungskreis A (rücksendender Buchungskreis) für Umlagerungsbestellung 
+mit Referenz zur zugehörigen Auslieferung von Buchungskreis A für Intercompany-Kunde des Werkes 
+in Buchungskreis B (empfangender Buchungskreis der Rückumlagerung). 
+
+--------------------
+
+Kopfdaten der Faktura werden aus der Auslieferung zu der Rück-Umlagerungsbestellung  übernommen.
+
+
+Übernahme Kopfdaten der Faktura aus Auslieferung zur Rück-Umlagerungsbestellung.
+
+----------------------
+
+
+Positionsdaten (Artikel und Mengen) der Faktura werden aus der Auslieferung der Rück-Umlagerungsbestellung übernommen.
+
+Übernahme Positionsdaten der Faktura aus Auslieferung der Rück-Umlagerungsbestellung
+
+Auf Basis der Warenausgangsbuchung der Auslieferung wird automatisch ein Anliefe-rungsbeleg für den empfangenden Betrieb generiert.
+
+Automatische Generierung eines Anlieferungsbelegs für empfangenden Betrieb, auf Basis Warenausgangsbuchung der Auslieferung.
+
+
+https://www.hotel-rimberg.de/ 

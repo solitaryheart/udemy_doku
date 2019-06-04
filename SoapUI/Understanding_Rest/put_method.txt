@@ -1,0 +1,26 @@
+- Request-Aufbau sehr ähnlich wie POST Method
+- liefert als HTTP-Code 204 - No Content zurück
+
+---------------------------------------------------------
+
+Beispiel:
+
+PUT http://localhost:8899/mysql/customers/cust7429695 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 215
+Host: localhost:8899
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+    "firstName":"larissa",
+    "lastName":"kaefer",
+    "phone": 1237,
+    "email": "mm5@kps.com",
+    "address":"Badway",
+    "city": "Herne",
+    "state": "NRW",
+    "zipcode":44369,
+    "country": "England"
+  }

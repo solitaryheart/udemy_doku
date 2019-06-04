@@ -1,0 +1,5 @@
+- assertion kann auch als eigener test step definiert werden
+
+(und dann einen bestimmten TestStep als Source referenzieren)
+- assertion als eigener test step kann mehrere assertions enthalten
+- mehrere assertion können gruppiert werden

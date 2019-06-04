@@ -1,0 +1,25 @@
+****************** LISTENERS********************************
+
+- containing tasks we want to before each test case or test suite
+- benefit: pre- postconditions common to all test-cases does not remain on test-case-level
+
+- listeners can applied to suite level or global level (=performed for each test suite)
+
+
+
+- got to "Script" level
+-> activate methods and write code
+
+---------EXAMPLE
+
+@SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
+def setupTestCase() {
+	WebUI.openBrowser('http://www.theTestingWorld.com')
+    	WebUI.maximizeWindow()
+
+
+skipped: jeweils true or false setzen
+
+
+
+WebUI.openBrowser(GlobalVariable.URL)

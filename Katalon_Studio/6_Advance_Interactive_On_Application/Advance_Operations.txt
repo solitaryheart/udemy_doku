@@ -1,0 +1,52 @@
+********** MOUSE OPERATION - RIGHT CLICK AND DOUBLE CLICK ***************
+
+Page: http://www.theTestingWorld.com
+**************************************************************************
+
+1.) Right Click on any element -> Right Click
+2.) Double Click on element -Double Click
+
+
+********** MOUSE OPERATION - MOUSE OVER **********************************
+**************************************************************************
+
+1.) mouse over
+
+
+********** MOUSE OPERATION - SCROLLING ON THE PAGE **********************************
+*************************************************************************************
+
+scroll to element
+scroll to position
+
+
+********** JAVA SCRIPT COMMANDS **********************************
+*************************************************************************************
+
+Reference: https://www.w3schools.com/ -> Tab JavaScript
+
+execute javaScript
+
+
+********** TAKE SCREENSHOT **********************************************************
+*************************************************************************************
+
+
+take screenshot
+
+Pfadangabe im Script
+
+WebUI.takeScreenshot('C:\\udemy\\Katalon_Studio\\maximize.png')
+
+
+********** PERFORM KEYBOARD OPERATION **********************************************************
+***************************************************************************************
+
+1.) perform alpha-numeric special charcters keys -> Send Keys
+
+2.) perform other than alpha-numeric-special characters keys -> Send Keys mit ValueType = Key im manual mode
+
+3.) peform multiple keys together (z.B - CTRL-A) -> im script editieren (Keys.COMTROL,'a')
+
+
+************************************************************************************************

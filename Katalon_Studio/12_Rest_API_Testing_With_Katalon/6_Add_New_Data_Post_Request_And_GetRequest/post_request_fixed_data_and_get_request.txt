@@ -1,0 +1,126 @@
+****************** TEST-API**********************************
+*************************************************************
+*************************************************************
+
+ Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr
+
+-------------------------------------------
+
+API - http://localhost:8899/mysql/customers/
+
+SAMPLE REQUEST ->  http://localhost:8899/mysql/customers/
+
+Status code -> 201 !
+Created
+
+
+
+
+ObjectRepository -> AddCustomerID
+
+Data
+
+{
+    "firstName":"heini12",
+    "lastName":"meier",
+    "phone": 7549,
+    "email": "mm25@kps.com",
+    "address":"Badway",
+    "city": "Dortmund",
+    "state": "NRW",
+    "zipcode":58379,
+    "country": "England"
+  }
+
+
+
+
+
+
+VERY HELFUL -> JSON PATH FINDER !
+
+
+sampleID
+
+cust2108056
+cust2600484
+cust8982771
+
+-------------------------------------------
+
+Scenario
+
+1.) Make a POST Request -fixed data
+2.) Validate Response Code and Data
+3.) Parse Data (customerID) from response and store in Global Variable
+4.) Validate Response Code and Data
+5.) Make GET request by using Data (customerID) from Global Variable
+
+
+
+--------------------------------------------
+
+
+-needed websites
+a) JSON Formatter
+b) JSON FORMAT
+
+------------------------------------------------
+
+
+a) Create ObjectReposity Request -> AddCustomerID
+b) Add jsonpost data to request
+
+b) Create Testcase
+c) Keyword -> "Send Request" -> Object "AddCustomerID" -> 
+d) Add needed verifications
+e) add import statement into skipt: import groovy.json.JsonSlurper
+
+f) add following code into skript
+
+
+response1 = WS.sendRequest(findTestObject('AddCustomerID'))
+
+def slurper = new JsonSlurper()
+
+def result = slurper.parseText(response1.getResponseBodyContent())
+
+def value = result.customerID //JSON PATH -> parse customer ID
+
+//Setting the customerID as globalVariable
+GlobalVariable.customerID = value
+
+g) add get request to testcase
+
+h) add variable to testcase to tale value from GLobalVariable
+
+Name: CID
+Type:GlobalVariabel
+DefaultValue: GlobalVariable.customerID
+
+-----------------------------------------------------
+
+GET CUSTOMER REQUEST
+
+-> add variable also to refer to globalVariable
+
+Name: CID
+Type:GlobalVariabel
+DefaultValue: GlobalVariable.customerID
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="1aba5ee6-2af7-4480-a910-6791095c4574" activeEnvironment="Default" name="Groovy" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="7ae2b829-b7bf-4200-84f8-e34f76b1b2fa" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a23875a8-9c97-4a40-97a4-19cef47c7950" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="commenting_variables" id="e0cf87b8-6606-43d9-9bf6-2877d88ef8dc"><con:settings/><con:config><script>/*log.info "This is my first script
+ * 
+ */
+
+// definig variables
+
+def var = 342
+def str = "Matthias"
+
+log.info var
+log.info str</script></con:config></con:testStep><con:testStep type="groovy" name="operaors" id="7e49cba6-707b-45cf-8f1c-1427877eabb0"><con:settings/><con:config><script>/*Arithmetic operator
+def a =3
+def b= 3
+def c = a+b
+log.info c*/
+
+
+//Assignment operator
+
+/*def a = 3
+def b =a+=2 //b = a = a+2
+log.info b+*/
+
+//Incrementing
+
+def a =2
+a++
+log.info a
+</script></con:config></con:testStep><con:testStep type="groovy" name="String" id="37dfcd5b-c79b-4b18-b4f6-704a26248f8d"><con:settings/><con:config><script>def a = "this is a string"
+def b = ' this is a single quote string '
+
+//Sting concetination
+log.info a + b
+
+//Interpolation
+def name = "Matthias"
+def var = "My name is ${name}" 
+log.info var
+//in Interopolation können String-Funktionen genutzt werden
+
+def sname = "API"
+def var2 = "My name is ${sname.toLowerCase()}"
+
+log.info var2
+
+//Removing String-Content
+
+def e = "This is first string"
+def f = "first" //zu entfernendes Wort
+def g = e-f
+
+log.info g
+
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="IF_Else" id="afb5256d-6a80-4d2d-b18e-f6db795a5ba3"><con:settings/><con:config><script>//if else condition
+
+def a = 2
+def b = 3
+
+if(a==b){
+	log.info "Equal"
+} else{
+	log.info "Not equal"
+}
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Nested_If_Else" id="141ada9e-9a96-4e90-8cda-421195abc9c8"><con:settings/><con:config><script>//Nested If Else
+
+def a = 2
+def b = 3
+def c = 6
+
+if(a==b){
+	log.info "a is equal to b"
+}else if (b==c){
+	log.info "b is equal c"
+}else{
+	log.info "nothing is equal"
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Switch_Statement" id="15ecb36b-cee8-4ebf-bfaa-4d742681e896"><con:settings/><con:config><script>//switch statement
+
+def a =6
+def result
+
+switch(a){
+	case 1 : result = " a value is 1"
+		break
+	case 2 : result = "a value is 2"
+		break
+	case 3 : result = "a value is 3"
+		break
+	default: result = "No match"		
+}
+
+log.info result
+</script></con:config></con:testStep><con:testStep type="groovy" name="For_Loop" id="5f85a8ad-53b9-42e6-aa82-9e6d72d70a4b"><con:settings/><con:config><script>//For - Loop
+
+for(int i=0; i&lt;=5;i++){
+	log.info i
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="For_In_Loop_Range" id="d68e2113-680f-4ec3-977e-b2d2381285e4"><con:settings/><con:config><script>//For-In-Loop mit Range
+//Range-Definition - 0..8
+
+for(i in 5..8){
+	log.info i
+}
+
+
+//Range komplett mit keyword collect ausgebeb
+
+def x = 6..9
+log.info x.collect()
+</script></con:config></con:testStep><con:testStep type="groovy" name="While_Loop" id="71ecac78-a594-4d84-803a-5db766c05e46"><con:settings/><con:config><script>//While_loop
+
+def x =5
+
+while (x&lt;10){
+	log.info x
+	x++
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Collection_List_Defining_Sizing" id="957d185a-e60d-495c-8a46-9ab86f0738a0"><con:settings/><con:config><script>//Collect List
+
+def myList = [2,3,4,5,6]
+
+//Size ausgeben - total item count
+log.info myList.size</script></con:config></con:testStep><con:testStep type="groovy" name="Collection_List_Adding_item" id="165e24fe-f2ea-4135-808e-6134fa370fc8"><con:settings/><con:config><script>def myList = [2,5,6,8,10]
+
+//adding a item
+myList&lt;&lt; 12
+
+//neue Liste ausgeben
+log.info myList</script></con:config></con:testStep><con:testStep type="groovy" name="Collection_List_Mixed-Elementes" id="c2f8cf2e-8cea-4eae-b5e4-7e9c36ac25c2"><con:settings/><con:config><script>//Collection List - miyed with Strings and Integer-Value
+
+def myList = [8, "eight", 6, "None"]
+
+//Eleemente ausgeben - Indexbasiert
+
+log.info myList[1]
+log.info myList[3]</script></con:config></con:testStep><con:testStep type="groovy" name="Collection_List_Iterating_Standard_ForLoop" id="59eaf1e8-05d1-4abc-a291-3ade47c33d6b"><con:settings/><con:config><script>def myList = ['one', 'abc',9, "Hello", 8,36,"999"]
+
+//Size ermitteln und in Variable speichern
+def myListSize = myList.size()
+
+// index-basiert iterieren
+for(int i =0; i&lt;myListSize;i++){
+	log.info myList[i]
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Collection_List_Iterating_Each" id="9ca1d861-c135-4516-a426-3a1621da8e56"><con:settings/><con:config><script>//Collection-List - einfachste Art durch eine Liste zu iterieren
+
+def myList = ['one', 'abc',9, "Hello", 8,36,"999"]
+
+myList.each{
+	log.info it
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Collection_Map_Defining_Size" id="483f8312-1f44-4e67-830a-10de0ac45c56"><con:settings/><con:config><script>//Collection Map -> key/value pairs
+
+def myMap = [1:"James", 2:"Matthias",3:"Paul"]
+
+//Map Size ermitteln und ausgeben
+log.info myMap.size()</script></con:config></con:testStep><con:testStep type="groovy" name="Collectio_Map_Key_Value_ausgeben" id="04b2d2c4-729c-4fe2-b0aa-b77b5287ebb4"><con:settings/><con:config><script>//Collection Map
+def myMap = ['1':"James", '2':"Matthias",'3':"Paul"]
+
+//bestimmten Value ausgeben durch Angabe des Key
+log.info myMap['3']
+
+//Ausgabe mit dot-Notation
+
+log.info myMap."2"</script></con:config></con:testStep><con:testStep type="groovy" name="Collection_Map_Iterating" id="0458d086-ed7d-4c84-b538-d735ef1d4cd8"><con:settings/><con:config><script>//Collection Map
+
+def myMap = ['1':"James", '2':"Matthias",'3':"Paul"]
+
+myMap.each{
+	log.info it.key
+	log.info it.value
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Collection_Map_Iterating_StringFunction" id="70cf33d7-120c-409d-9312-225a45972330"><con:settings/><con:config><script>//Collection Map
+
+def myMap = ['1':"James", '2':"Matthias",'3':"Paul"]
+
+myMap.each{
+	log.info it.value.toUpperCase()
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Functions_Parameters_without_Return" id="63b8a40d-f32c-4845-88bc-8bbf977011ad"><con:settings/><con:config><script>//Function without returning a value
+
+//Defining the function
+def addition(def a, def b){
+	log.info a+b
+}
+
+
+//Calling the function
+addition(2,4)
+addition(3,10)
+</script></con:config></con:testStep><con:testStep type="groovy" name="Function_Parameter_Returning_Value" id="c58013ee-81be-47df-a8d0-35d42da191b5"><con:settings/><con:config><script>//Functions with retuning the valuie
+
+def addition(def a, def b){
+	return a+b
+}
+
+
+//Calling the function
+def sum = addition(2,4)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Closure_List_Collection_iterating" id="596bea6a-13e0-4a45-8d00-07c22df03aa9"><con:settings/><con:config><script>//Closure List-Collection Iterating
+
+def list = [2,5,6,7,10]
+
+list.each{i ->
+	log.info i
+	
+}
+	</script></con:config></con:testStep><con:testStep type="groovy" name="Closure_Map_Collection_Iterating" id="de9f86d2-314f-414f-bea3-26a7cca520c4"><con:settings/><con:config><script>//Closure Map Iterating
+
+def map = ["one":1,"two":2,"three":3,"four":4]
+
+//Iterpolation Synatax notwendig
+
+map.each{k,v -> 
+	log.info "key is ${k} ::: value is ${v}"
+	
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Closure_Methods_1" id="0fa5054e-4f71-449b-b8aa-d5439f497422"><con:settings/><con:config><script>//Closure Method 1 
+//Operation auf jedes list-Element ausführen und
+//in ein neus Array packen
+
+def lst = [2,3,4,5]
+def two = [] // neues noch lerres array
+
+//jeder einzele Wert im Array (it) wird mit 
+//2 multipliziert und in ein neues Array gepackt
+lst.each{
+	two&lt;&lt;it*2
+}
+
+log.info two
+
+//same function mit Methode "collect
+
+def lst2 = [4,3,6,7]
+log.info lst2.collect{it*3}
+
+
+
+
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Closure_Methods_2" id="0817a882-cfdf-4fd5-ac09-757ba769224d"><con:settings/><con:config><script>//Closure Methode fpr searching
+
+def lst = [2,4,3,5,6,7,8]
+
+//sucht genau nach erstem  item in Liste größer 2 
+log.info lst.find{it>2}
+
+//suche nach allen items in Liste größer 2
+log.info lst.findAll{it>2}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

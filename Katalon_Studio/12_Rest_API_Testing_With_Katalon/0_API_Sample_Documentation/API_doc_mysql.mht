@@ -1,0 +1,4267 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/D10E5A8C/mysql.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dwindows-125=
+2">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 15">
+<link rel=3DFile-List href=3D"mysql_files/filelist.xml">
+<style id=3D"mysql_7776_Styles"><!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.font07776
+	{color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.font57776
+	{color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.font67776
+	{color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.font77776
+	{color:red;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.xl157776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl637776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl647776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl657776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl667776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl677776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl687776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl697776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl707776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:1.5pt solid black;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#00B050;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl717776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid black;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl727776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid black;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl737776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.5pt solid black;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#00B050;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl747776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#00B050;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl757776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl767776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl777776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl787776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid black;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl797776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl807776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl817776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl827776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl837776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl847776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl857776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl867776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#00B0F0;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl877776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#00B0F0;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl887776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl897776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#00B050;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl907776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl917776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl927776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl937776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl947776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl957776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl967776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl977776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl987776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.5pt solid black;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#538DD5;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl997776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#00B0F0;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1007776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1017776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1027776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1037776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1047776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1057776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1067776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#00B050;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1077776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1087776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1097776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1107776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1117776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#FABF8F;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1127776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#FABF8F;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1137776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1147776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1157776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.5pt solid windowtext;
+	border-bottom:1.5pt solid black;
+	border-left:1.5pt solid black;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1167776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1177776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1187776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1197776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1207776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1217776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1227776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1237776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1247776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1257776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1267776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1277776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1287776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1297776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1307776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1317776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1327776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1337776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1347776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1357776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1367776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1377776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1387776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1397776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1407776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1417776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#C4BD97;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1427776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1437776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1447776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1457776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1467776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1477776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1487776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1497776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1507776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1517776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:1.5pt solid black;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1527776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1537776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1547776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DA9694;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1557776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1567776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1577776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1587776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1597776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1607776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.5pt solid black;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1617776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1627776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1637776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1647776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1657776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1667776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1677776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1687776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1697776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1707776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1717776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1727776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1737776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#CCC0DA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1747776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.5pt solid black;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1757776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl1767776
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FDE9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+--></style>
+<title>REST Webservice for learning with MySQL DB</title>
+</head>
+
+<body>
+<!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+<!--The following information was generated by Microsoft Excel's Publish as=
+ Web
+Page wizard.-->
+<!--If the same item is republished from Excel, all information between the=
+ DIV
+tags will be replaced.-->
+<!----------------------------->
+<!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+<!----------------------------->
+
+<div id=3D"mysql_7776" align=3Dcenter x:publishsource=3D"Excel">
+
+<h1 style=3D'color:black;font-family:Calibri;font-size:14.0pt;font-weight:8=
+00;
+font-style:normal'>REST Webservice for learning with MySQL DB</h1>
+
+<table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D1519 style=3D'bor=
+der-collapse:
+ collapse;table-layout:fixed;width:1139pt'>
+ <col width=3D32 style=3D'mso-width-source:userset;mso-width-alt:1170;width=
+:24pt'>
+ <col width=3D0 style=3D'display:none;mso-width-source:userset;mso-width-al=
+t:1024'>
+ <col width=3D0 style=3D'display:none;mso-width-source:userset;mso-width-al=
+t:2340'>
+ <col width=3D0 style=3D'display:none;mso-width-source:userset;mso-width-al=
+t:2048'>
+ <col class=3Dxl637776 width=3D415 style=3D'mso-width-source:userset;mso-wi=
+dth-alt:
+ 15177;width:311pt'>
+ <col class=3Dxl637776 width=3D120 style=3D'mso-width-source:userset;mso-wi=
+dth-alt:
+ 4388;width:90pt'>
+ <col class=3Dxl637776 width=3D99 style=3D'mso-width-source:userset;mso-wid=
+th-alt:
+ 3620;width:74pt'>
+ <col class=3Dxl637776 width=3D139 style=3D'mso-width-source:userset;mso-wi=
+dth-alt:
+ 5083;width:104pt'>
+ <col class=3Dxl657776 width=3D200 style=3D'mso-width-source:userset;mso-wi=
+dth-alt:
+ 7314;width:150pt'>
+ <col class=3Dxl647776 width=3D0 style=3D'display:none;mso-width-source:use=
+rset;
+ mso-width-alt:9142'>
+ <col width=3D200 style=3D'mso-width-source:userset;mso-width-alt:7314;widt=
+h:150pt'>
+ <col class=3Dxl647776 width=3D250 style=3D'mso-width-source:userset;mso-wi=
+dth-alt:
+ 9142;width:188pt'>
+ <col width=3D64 style=3D'width:48pt'>
+ <tr height=3D48 style=3D'mso-height-source:userset;height:36.0pt'>
+  <td height=3D48 class=3Dxl157776 width=3D32 style=3D'height:36.0pt;width:=
+24pt'></td>
+  <td class=3Dxl157776 width=3D0></td>
+  <td class=3Dxl157776 width=3D0></td>
+  <td class=3Dxl157776 width=3D0></td>
+  <td colspan=3D7 class=3Dxl1117776 width=3D1173 style=3D'width:879pt'><font
+  class=3D"font57776">End point:</font><font class=3D"font67776">-
+  http://localhost:8899/mysql</font></td>
+  <td class=3Dxl157776 width=3D250 style=3D'width:188pt'></td>
+  <td class=3Dxl157776 width=3D64 style=3D'width:48pt'></td>
+ </tr>
+ <tr height=3D43 style=3D'height:32.25pt'>
+  <td height=3D43 class=3Dxl157776 style=3D'height:32.25pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl997776 width=3D415 style=3D'width:311pt'>Resource</td>
+  <td class=3Dxl997776 width=3D120 style=3D'border-left:none;width:90pt'>Me=
+thod</td>
+  <td class=3Dxl867776 width=3D99 style=3D'border-left:none;width:74pt'>que=
+ry
+  parameter</td>
+  <td class=3Dxl867776 width=3D139 style=3D'border-left:none;width:104pt'>p=
+ath
+  parameter</td>
+  <td class=3Dxl877776 width=3D200 style=3D'border-left:none;width:150pt'>R=
+equest
+  Body schema</td>
+  <td class=3Dxl867776 width=3D0 style=3D'border-left:none'>Response schema=
+</td>
+  <td class=3Dxl867776 width=3D200 style=3D'border-left:none;width:150pt'>S=
+tatus Code</td>
+  <td class=3Dxl867776 width=3D250 style=3D'border-left:none;width:188pt'>R=
+esponse
+  schema</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D261 style=3D'height:195.75pt'>
+  <td height=3D261 class=3Dxl157776 style=3D'height:195.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D7 class=3Dxl1237776 width=3D415 style=3D'width:311pt'>/cust=
+omers</td>
+  <td rowspan=3D4 class=3Dxl1167776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  width:90pt'>GET</td>
+  <td rowspan=3D4 class=3Dxl1197776 width=3D99 style=3D'width:74pt'>firstNa=
+me,<br>
+    lastName,<br>
+    phone,<br>
+    email,<br>
+    city,<br>
+    zipcode,<br>
+    country,<br>
+    state<br>
+    (<font class=3D"font77776">Query parameters should not be combined</fon=
+t><font
+  class=3D"font07776">)</font></td>
+  <td rowspan=3D4 class=3Dxl1217776 width=3D139 style=3D'width:104pt'>N/A</=
+td>
+  <td rowspan=3D4 class=3Dxl1217776 width=3D200 style=3D'width:150pt'>N/A</=
+td>
+  <td class=3Dxl917776 width=3D0 style=3D'border-left:none'>[{<br>
+    <span style=3D'mso-spacerun:yes'>   
+  </span>&quot;customerID&quot;:string<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;firstName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;lastName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;phone&quot;: integer,=
+<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;email&quot;: string,<=
+br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;address&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;city&quot;: string,<b=
+r>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;state&quot;: string,<=
+br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;zipcode&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;country&quot;: string=
+<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;creationDate&quot; :
+  string<br>
+    <span style=3D'mso-spacerun:yes'>  </span>}]</td>
+  <td class=3Dxl707776 width=3D200 style=3D'border-left:none;width:150pt'>2=
+00 OK</td>
+  <td class=3Dxl917776 width=3D250 style=3D'width:188pt'>[{<br>
+    <span style=3D'mso-spacerun:yes'>   
+  </span>&quot;customerID&quot;:string<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;firstName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;lastName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;phone&quot;: integer,=
+<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;email&quot;: string,<=
+br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;address&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;city&quot;: string,<b=
+r>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;state&quot;: string,<=
+br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;zipcode&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;country&quot;: string=
+<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;creationDate&quot; :
+  string<br>
+    <span style=3D'mso-spacerun:yes'>  </span>}]</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl667776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;systemError&quot; :
+  string<br>
+    }</td>
+  <td class=3Dxl717776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl667776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;systemError&quot; :
+  string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl667776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl987776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>400 Bad Request</td>
+  <td class=3Dxl667776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D81 style=3D'height:60.75pt'>
+  <td height=3D81 class=3Dxl157776 style=3D'height:60.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl927776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string<br>
+    }</td>
+  <td class=3Dxl727776 width=3D200 style=3D'border-left:none;width:150pt'>5=
+00
+  Internal Server Error</td>
+  <td class=3Dxl927776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D261 style=3D'height:195.75pt'>
+  <td height=3D261 class=3Dxl157776 style=3D'height:195.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D3 class=3Dxl1267776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  border-top:none;width:90pt'>POST</td>
+  <td rowspan=3D3 class=3Dxl1277776 width=3D99 style=3D'border-bottom:1.5pt=
+ solid black;
+  width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1277776 width=3D139 style=3D'border-bottom:1.5p=
+t solid black;
+  width:104pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1297776 width=3D200 style=3D'border-bottom:1.5p=
+t solid black;
+  width:150pt'>{<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;firstName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;lastName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;phone&quot;: integer,=
+<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;email&quot;: string,<=
+br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;address&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;city&quot;: string,<b=
+r>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;state&quot;: string,<=
+br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;zipcode&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;country&quot;: string=
+<br>
+    <span style=3D'mso-spacerun:yes'>  </span>}</td>
+  <td class=3Dxl1037776 width=3D0 style=3D'border-left:none'>N/A</td>
+  <td class=3Dxl747776 width=3D200 style=3D'border-left:none;width:150pt'>2=
+01
+  Created<br>
+    <br>
+    (Generated customer id will be in response header)</td>
+  <td class=3Dxl777776 width=3D250 style=3D'width:188pt'>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;zipcode&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;firstName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;lastName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;country&quot;:
+  &quot;USA&quot;,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;address&quot;: string,=
+<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;phone&quot;: integer<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;city&quot;: string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;customerID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;orders&quot;: [],<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;state&quot;: string,<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;email&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl667776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl757776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>409 Conflict</td>
+  <td class=3Dxl667776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl667776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl767776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl667776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D261 style=3D'height:195.75pt'>
+  <td height=3D261 class=3Dxl157776 style=3D'height:195.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D9 class=3Dxl1137776 width=3D415 style=3D'border-bottom:1.5p=
+t solid black;
+  width:311pt'>/customers/{customerId}</td>
+  <td rowspan=3D3 class=3Dxl1317776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  border-top:none;width:90pt'>GET</td>
+  <td rowspan=3D3 class=3Dxl1347776 width=3D99 style=3D'border-top:none;wid=
+th:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1347776 width=3D139 style=3D'border-top:none;wi=
+dth:104pt'>customerId</td>
+  <td rowspan=3D3 class=3Dxl1347776 width=3D200 style=3D'border-top:none;wi=
+dth:150pt'>N/A</td>
+  <td class=3Dxl797776 width=3D0 style=3D'border-left:none'>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;zipcode&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;firstName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;lastName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;country&quot;:
+  &quot;USA&quot;,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;address&quot;: string,=
+<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;phone&quot;: integer<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;city&quot;: string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;customerID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;orders&quot;: [],<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;state&quot;: string,<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;email&quot;:string<br>
+    }</td>
+  <td class=3Dxl707776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>200 OK</td>
+  <td class=3Dxl797776 width=3D250 style=3D'width:188pt'>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;zipcode&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;firstName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;lastName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;country&quot;:
+  &quot;USA&quot;,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;address&quot;: string,=
+<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;phone&quot;: integer<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;city&quot;: string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;customerID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;orders&quot;: [],<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;state&quot;: string,<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;email&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl697776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl717776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl697776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl807776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl727776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl807776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D261 style=3D'height:195.75pt'>
+  <td height=3D261 class=3Dxl157776 style=3D'height:195.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D3 class=3Dxl1367776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  border-top:none;width:90pt'>PUT</td>
+  <td rowspan=3D3 class=3Dxl1377776 width=3D99 style=3D'border-bottom:1.5pt=
+ solid black;
+  width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1377776 width=3D139 style=3D'border-bottom:1.5p=
+t solid black;
+  width:104pt'>customerId</td>
+  <td rowspan=3D3 class=3Dxl1397776 width=3D200 style=3D'border-bottom:1.5p=
+t solid black;
+  width:150pt'>N/A</td>
+  <td class=3Dxl817776 width=3D0 style=3D'border-left:none'>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;zipcode&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;firstName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;lastName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;country&quot;:
+  &quot;USA&quot;,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;address&quot;: string,=
+<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;phone&quot;: integer<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;city&quot;: string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;customerID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;orders&quot;: [],<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;state&quot;: string,<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;email&quot;:string<br>
+    }</td>
+  <td class=3Dxl747776 width=3D200 style=3D'border-left:none;width:150pt'>2=
+04 No
+  Content</td>
+  <td class=3Dxl817776 width=3D250 style=3D'width:188pt'>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;zipcode&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;firstName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;lastName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;country&quot;:
+  &quot;USA&quot;,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;address&quot;: string,=
+<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;phone&quot;: integer<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;city&quot;: string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;customerID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;orders&quot;: [],<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;state&quot;: string,<b=
+r>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;email&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl697776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl757776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl697776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl827776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl767776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl827776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D43 style=3D'mso-height-source:userset;height:32.25pt'>
+  <td height=3D43 class=3Dxl157776 style=3D'height:32.25pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D3 class=3Dxl1317776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  border-top:none;width:90pt'>DELETE</td>
+  <td rowspan=3D3 class=3Dxl1347776 width=3D99 style=3D'border-top:none;wid=
+th:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1347776 width=3D139 style=3D'border-top:none;wi=
+dth:104pt'>customerId</td>
+  <td rowspan=3D3 class=3Dxl1347776 width=3D200 style=3D'border-top:none;wi=
+dth:150pt'>N/A</td>
+  <td class=3Dxl797776 width=3D0 style=3D'border-top:none;border-left:none'=
+>N/A</td>
+  <td class=3Dxl707776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>204 No Content</td>
+  <td class=3Dxl1057776 width=3D250 style=3D'border-top:none;width:188pt'>N=
+/A</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl697776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl717776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl697776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl807776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl727776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl807776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D141 style=3D'height:105.75pt'>
+  <td height=3D141 class=3Dxl157776 style=3D'height:105.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D6 class=3Dxl1497776 width=3D415 style=3D'border-top:none;wi=
+dth:311pt'>/customers/{customerId}/orders</td>
+  <td rowspan=3D3 class=3Dxl1447776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  border-top:none;width:90pt'>POST</td>
+  <td rowspan=3D3 class=3Dxl1427776 width=3D99 style=3D'width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1427776 width=3D139 style=3D'width:104pt'>custo=
+merId<br>
+    </td>
+  <td rowspan=3D3 class=3Dxl1427776 width=3D200 style=3D'width:150pt'>Not R=
+equired</td>
+  <td class=3Dxl1047776 width=3D0 style=3D'border-left:none'><span
+  style=3D'mso-spacerun:yes'>  </span>{<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderCreated&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderShipped&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderStatus&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;products&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>[]<br>
+    <span style=3D'mso-spacerun:yes'>  </span>}</td>
+  <td class=3Dxl707776 width=3D200 style=3D'border-left:none;width:150pt'>2=
+01
+  Created<br>
+    <br>
+    </td>
+  <td class=3Dxl1047776 width=3D250 style=3D'width:188pt'><span
+  style=3D'mso-spacerun:yes'>  </span>{<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderCreated&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderShipped&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderStatus&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;products&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>[]<br>
+    <span style=3D'mso-spacerun:yes'>  </span>}</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl677776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl717776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl677776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl837776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl727776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl837776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D215 style=3D'mso-height-source:userset;height:161.25pt'>
+  <td height=3D215 class=3Dxl157776 style=3D'height:161.25pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D3 class=3Dxl1527776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  border-top:none;width:90pt'>GET</td>
+  <td rowspan=3D3 class=3Dxl1537776 width=3D99 style=3D'border-bottom:1.5pt=
+ solid black;
+  width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1537776 width=3D139 style=3D'border-bottom:1.5p=
+t solid black;
+  width:104pt'>customerId<br>
+    </td>
+  <td rowspan=3D3 class=3Dxl1537776 width=3D200 style=3D'border-bottom:1.5p=
+t solid black;
+  width:150pt'>N/A</td>
+  <td class=3Dxl847776 width=3D0 style=3D'border-left:none'>[<br>
+    <span style=3D'mso-spacerun:yes'>  </span>{<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderCreated&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderShipped&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderStatus&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;products&quot;: <br>
+    <span style=3D'mso-spacerun:yes'>  </span>[<br>
+    <span style=3D'mso-spacerun:yes'>   </span>{<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;productID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;productName&quot=
+;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;cost&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;trackingID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>      </span>}<br>
+    <span style=3D'mso-spacerun:yes'>  </span>]<br>
+    <span style=3D'mso-spacerun:yes'>  </span>}<br>
+    ]</td>
+  <td class=3Dxl747776 width=3D200 style=3D'border-left:none;width:150pt'>2=
+00 OK</td>
+  <td class=3Dxl847776 width=3D250 style=3D'width:188pt'>[<br>
+    <span style=3D'mso-spacerun:yes'>  </span>{<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderCreated&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderShipped&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderStatus&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;products&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>[ ]<br>
+    <span style=3D'mso-spacerun:yes'>  </span>}<br>
+    ]</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl677776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl757776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl677776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl857776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl767776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl857776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D64 style=3D'mso-height-source:userset;height:48.0pt'>
+  <td height=3D64 class=3Dxl157776 style=3D'height:48.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D9 class=3Dxl1477776 width=3D415 style=3D'width:311pt'>/cust=
+omers/{customerId}/orders/{orderId}</td>
+  <td rowspan=3D3 class=3Dxl1557776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  border-top:none;width:90pt'>PUT</td>
+  <td rowspan=3D3 class=3Dxl1587776 width=3D99 style=3D'border-top:none;wid=
+th:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1587776 width=3D139 style=3D'border-top:none;wi=
+dth:104pt'>customerId<br>
+    orderId</td>
+  <td rowspan=3D3 class=3Dxl1607776 width=3D200 style=3D'border-top:none;wi=
+dth:150pt'>{<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;orderShipped&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;orderStatus&quot;:
+  string<br>
+    }</td>
+  <td class=3Dxl1007776 width=3D0 style=3D'border-top:none;border-left:none=
+'>N/A</td>
+  <td class=3Dxl707776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>204 No Content</td>
+  <td class=3Dxl1007776 width=3D250 style=3D'border-top:none;width:188pt'>N=
+/A</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl687776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl717776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl687776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl937776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl727776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl937776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D241 style=3D'height:180.75pt'>
+  <td height=3D241 class=3Dxl157776 style=3D'height:180.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D3 class=3Dxl1627776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  border-top:none;width:90pt'>GET</td>
+  <td rowspan=3D3 class=3Dxl1637776 width=3D99 style=3D'border-bottom:1.5pt=
+ solid black;
+  width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1637776 width=3D139 style=3D'border-bottom:1.5p=
+t solid black;
+  width:104pt'>customerId<br>
+    orderId</td>
+  <td rowspan=3D3 class=3Dxl1637776 width=3D200 style=3D'border-bottom:1.5p=
+t solid black;
+  width:150pt'>N/A</td>
+  <td class=3Dxl947776 width=3D0 style=3D'border-left:none'><span
+  style=3D'mso-spacerun:yes'>  </span>{<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderCreated&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderShipped&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderStatus&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;products&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>[{<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;productID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;productName&quot=
+;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;cost&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;trackingID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>      </span>}]<br>
+    <span style=3D'mso-spacerun:yes'>  </span>}</td>
+  <td class=3Dxl747776 width=3D200 style=3D'border-left:none;width:150pt'>2=
+00 OK</td>
+  <td class=3Dxl947776 width=3D250 style=3D'width:188pt'><span
+  style=3D'mso-spacerun:yes'>  </span>{<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderCreated&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderShipped&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;orderStatus&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;products&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>[{<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;productID&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;productName&quot=
+;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;cost&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;trackingID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>      </span>}]<br>
+    <span style=3D'mso-spacerun:yes'>  </span>}</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl687776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl757776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl687776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl957776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl767776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl957776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D64 style=3D'mso-height-source:userset;height:48.0pt'>
+  <td height=3D64 class=3Dxl157776 style=3D'height:48.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D3 class=3Dxl1557776 width=3D120 style=3D'border-top:none;wi=
+dth:90pt'>DELETE</td>
+  <td rowspan=3D3 class=3Dxl1587776 width=3D99 style=3D'border-top:none;wid=
+th:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1587776 width=3D139 style=3D'border-top:none;wi=
+dth:104pt'>customerId<br>
+    orderId</td>
+  <td rowspan=3D3 class=3Dxl1587776 width=3D200 style=3D'border-top:none;wi=
+dth:150pt'>N/A</td>
+  <td class=3Dxl1007776 width=3D0 style=3D'border-top:none;border-left:none=
+'>N/A</td>
+  <td class=3Dxl707776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>204 No Content</td>
+  <td class=3Dxl1007776 width=3D250 style=3D'border-top:none;width:188pt'>N=
+/A</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl687776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl717776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl687776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl937776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl727776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl937776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D140 style=3D'height:105.0pt'>
+  <td height=3D140 class=3Dxl157776 style=3D'height:105.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D6 class=3Dxl1657776 width=3D415 style=3D'border-bottom:1.0p=
+t solid black;
+  width:311pt'>/customers/{customerId}/orders/{orderId}/products</td>
+  <td rowspan=3D3 class=3Dxl1697776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  width:90pt'>POST</td>
+  <td rowspan=3D3 class=3Dxl1707776 width=3D99 style=3D'width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1707776 width=3D139 style=3D'width:104pt'>custo=
+merId<br>
+    orderId</td>
+  <td rowspan=3D3 class=3Dxl1717776 width=3D200 style=3D'width:150pt'>{<br>
+    <span style=3D'mso-spacerun:yes'> </span>&quot;productName&quot; :
+  string,<br>
+    <span style=3D'mso-spacerun:yes'> </span>&quot;cost&quot; : integer,<br>
+    <span style=3D'mso-spacerun:yes'> </span>&quot;trackingID&quot; :
+  string<br>
+    }<br>
+    </td>
+  <td class=3Dxl1017776 width=3D0 style=3D'border-left:none'>N/A</td>
+  <td class=3Dxl1067776 width=3D200 style=3D'border-left:none;width:150pt'>=
+201
+  Created</td>
+  <td class=3Dxl1107776 width=3D250 style=3D'width:188pt'>{<br>
+    <span style=3D'mso-spacerun:yes'> </span>&quot;productID&quot;:string,<=
+br>
+    <span style=3D'mso-spacerun:yes'> </span>&quot;productName&quot; :
+  string,<br>
+    <span style=3D'mso-spacerun:yes'> </span>&quot;cost&quot; : integer,<br>
+    <span style=3D'mso-spacerun:yes'> </span>&quot;trackingID&quot; :
+  string<br>
+    }<br>
+    </td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D91 style=3D'mso-height-source:userset;height:68.25pt'>
+  <td height=3D91 class=3Dxl157776 style=3D'height:68.25pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl667776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl1077776 width=3D200 style=3D'border-top:none;border-left:no=
+ne;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl1107776 width=3D250 style=3D'border-top:none;width:188pt'>{=
+<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl927776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl1087776 width=3D200 style=3D'border-top:none;border-left:no=
+ne;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl1107776 width=3D250 style=3D'border-top:none;width:188pt'>{=
+<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D161 style=3D'height:120.75pt'>
+  <td height=3D161 class=3Dxl157776 style=3D'height:120.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D3 class=3Dxl1267776 width=3D120 style=3D'border-bottom:1.0p=
+t solid black;
+  border-top:none;width:90pt'>GET</td>
+  <td rowspan=3D3 class=3Dxl1277776 width=3D99 style=3D'border-bottom:1.0pt=
+ solid black;
+  width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1277776 width=3D139 style=3D'border-bottom:1.0p=
+t solid black;
+  width:104pt'>customerId<br>
+    orderId</td>
+  <td rowspan=3D3 class=3Dxl1277776 width=3D200 style=3D'border-bottom:1.0p=
+t solid black;
+  width:150pt'>N/A</td>
+  <td class=3Dxl777776 width=3D0 style=3D'border-left:none'>[<br>
+    <span style=3D'mso-spacerun:yes'>    </span>{<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;productID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;productName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;cost&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;trackingID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>   </span>}<br>
+    ]</td>
+  <td class=3Dxl897776 width=3D200 style=3D'border-left:none;width:150pt'>2=
+00 OK</td>
+  <td class=3Dxl1097776 width=3D250 style=3D'width:188pt'>[<br>
+    <span style=3D'mso-spacerun:yes'>    </span>{<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;productID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;productName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;cost&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;trackingID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>   </span>}<br>
+    ]</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl667776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl887776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl667776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl967776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl907776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl967776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D76 style=3D'mso-height-source:userset;height:57.0pt'>
+  <td height=3D76 class=3Dxl157776 style=3D'height:57.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D9 class=3Dxl1487776 width=3D415 style=3D'border-bottom:1.0p=
+t solid black;
+  width:311pt'>/customers/{customerId}/orders/{orderId}/products/{productId=
+}</td>
+  <td rowspan=3D3 class=3Dxl1567776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  width:90pt'>PUT</td>
+  <td rowspan=3D3 class=3Dxl1597776 width=3D99 style=3D'width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1597776 width=3D139 style=3D'width:104pt'>custo=
+merId<br>
+    orderId<br>
+    productId</td>
+  <td rowspan=3D3 class=3Dxl1617776 width=3D200 style=3D'width:150pt'><span
+  style=3D'mso-spacerun:yes'> </span>{<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;productName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;cost&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;trackingID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>   </span>}</td>
+  <td class=3Dxl1027776 width=3D0 style=3D'border-left:none'>N/A</td>
+  <td class=3Dxl737776 width=3D200 style=3D'border-left:none;width:150pt'>2=
+04 No
+  Content</td>
+  <td class=3Dxl1027776 width=3D250 style=3D'width:188pt'>N/A</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D76 style=3D'mso-height-source:userset;height:57.0pt'>
+  <td height=3D76 class=3Dxl157776 style=3D'height:57.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl687776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl717776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl687776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D76 style=3D'mso-height-source:userset;height:57.0pt'>
+  <td height=3D76 class=3Dxl157776 style=3D'height:57.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl937776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl727776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl937776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D121 style=3D'height:90.75pt'>
+  <td height=3D121 class=3Dxl157776 style=3D'height:90.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D3 class=3Dxl1627776 width=3D120 style=3D'border-bottom:1.5p=
+t solid black;
+  border-top:none;width:90pt'>GET</td>
+  <td rowspan=3D3 class=3Dxl1637776 width=3D99 style=3D'border-bottom:1.5pt=
+ solid black;
+  width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1637776 width=3D139 style=3D'border-bottom:1.5p=
+t solid black;
+  width:104pt'>customerId<br>
+    orderId<br>
+    productId</td>
+  <td rowspan=3D3 class=3Dxl1637776 width=3D200 style=3D'border-bottom:1.5p=
+t solid black;
+  width:150pt'>N/A</td>
+  <td class=3Dxl947776 width=3D0 style=3D'border-left:none'><span
+  style=3D'mso-spacerun:yes'> </span>{<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;productID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;productName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;cost&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;trackingID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>   </span>}</td>
+  <td class=3Dxl747776 width=3D200 style=3D'border-left:none;width:150pt'>2=
+00 OK</td>
+  <td class=3Dxl947776 width=3D250 style=3D'width:188pt'><span
+  style=3D'mso-spacerun:yes'> </span>{<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;productID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;productName&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;cost&quot;:
+  integer,<br>
+    <span style=3D'mso-spacerun:yes'>      </span>&quot;trackingID&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>   </span>}</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl687776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;systemError&quot;:
+  string<br>
+    }</td>
+  <td class=3Dxl757776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl687776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;systemError&quot;:
+  string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl957776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl767776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl957776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D43 style=3D'mso-height-source:userset;height:32.25pt'>
+  <td height=3D43 class=3Dxl157776 style=3D'height:32.25pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td rowspan=3D3 class=3Dxl1557776 width=3D120 style=3D'border-bottom:1.0p=
+t solid black;
+  border-top:none;width:90pt'>DELETE</td>
+  <td rowspan=3D3 class=3Dxl1587776 width=3D99 style=3D'border-bottom:1.0pt=
+ solid black;
+  border-top:none;width:74pt'>N/A</td>
+  <td rowspan=3D3 class=3Dxl1587776 width=3D139 style=3D'border-bottom:1.0p=
+t solid black;
+  border-top:none;width:104pt'>customerId<br>
+    orderId<br>
+    productId</td>
+  <td rowspan=3D3 class=3Dxl1587776 width=3D200 style=3D'border-bottom:1.0p=
+t solid black;
+  border-top:none;width:150pt'>N/A</td>
+  <td class=3Dxl1007776 width=3D0 style=3D'border-top:none;border-left:none=
+'>N/A</td>
+  <td class=3Dxl707776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>204 No Content</td>
+  <td class=3Dxl1007776 width=3D250 style=3D'border-top:none;width:188pt'>N=
+/A</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl157776 style=3D'height:75.0pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl687776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl717776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>404 Not Found</td>
+  <td class=3Dxl687776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D101 style=3D'height:75.75pt'>
+  <td height=3D101 class=3Dxl157776 style=3D'height:75.75pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl977776 width=3D0 style=3D'border-top:none;border-left:none'=
+>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl787776 width=3D200 style=3D'border-top:none;border-left:non=
+e;
+  width:150pt'>500 Internal Server Error</td>
+  <td class=3Dxl977776 width=3D250 style=3D'border-top:none;width:188pt'>{<=
+br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorCode&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;errorMessage&quot;:
+  string,<br>
+    <span style=3D'mso-spacerun:yes'>  
+  </span>&quot;systemError&quot;:string<br>
+    }</td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <tr height=3D22 style=3D'mso-height-source:userset;height:16.5pt'>
+  <td height=3D22 class=3Dxl157776 style=3D'height:16.5pt'></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl637776 width=3D415 style=3D'width:311pt'></td>
+  <td class=3Dxl637776 width=3D120 style=3D'width:90pt'></td>
+  <td class=3Dxl637776 width=3D99 style=3D'width:74pt'></td>
+  <td class=3Dxl637776 width=3D139 style=3D'width:104pt'></td>
+  <td class=3Dxl657776 width=3D200 style=3D'width:150pt'></td>
+  <td class=3Dxl647776 width=3D0></td>
+  <td class=3Dxl157776></td>
+  <td class=3Dxl647776 width=3D250 style=3D'width:188pt'></td>
+  <td class=3Dxl157776></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D32 style=3D'width:24pt'></td>
+  <td width=3D0></td>
+  <td width=3D0></td>
+  <td width=3D0></td>
+  <td width=3D415 style=3D'width:311pt'></td>
+  <td width=3D120 style=3D'width:90pt'></td>
+  <td width=3D99 style=3D'width:74pt'></td>
+  <td width=3D139 style=3D'width:104pt'></td>
+  <td width=3D200 style=3D'width:150pt'></td>
+  <td width=3D0></td>
+  <td width=3D200 style=3D'width:150pt'></td>
+  <td width=3D250 style=3D'width:188pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+</body>
+
+</html>
+

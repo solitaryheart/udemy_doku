@@ -1,0 +1,23 @@
+Daten werden nicht in Tabellen gespeichert, sondern in JSON-Files
+
+
+Tables - > Bucket
+Rows/Columns -> JSON
+
+-> each JSON File has it own File-Name
+-> File-Name has to be unique inside bucket (Content can be same)
+
+
+-----------------------
+
+Bucket-Name: ecom
+PW: ecom
+
+mit "Flush" können Inhalte (JSON-Files)gelöscht werden
+
+------------------------
+
+Login-Console:
+
+user: Administrator
+pw: Fr........;-)

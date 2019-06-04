@@ -1,0 +1,24 @@
+******************** OVERVIEW **********************************
+****************************************************************
+
+
+1.) Stating a Project
+- fresh (no source coude yet)
+- existing source locally
+- GitHub project (Fork and clone)
+
+
+2.) Basic Workflow
+- add
+- commit
+- push & pull
+
+3.) Working with Files (rename, move & delete)
+
+4.) History and Aliases
+
+
+5.) Ignoring Unwanted Files
+
+
+--------------------------------------

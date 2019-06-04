@@ -1,0 +1,86 @@
+***** STARTING COMPLETY FRESH PROJECT********************
+
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects -> wechsel in project directory
+4.) git init fresh-project -> replace with name of your project
+5.) ls 
+6.) ls -al ->displays all folders - .git repository -> default master branch
+7.) cd fresh-project - change to project with name "freh-project"cd
+8.) cd .git -> change to git repository
+9.) ls -> Striktur anzeigen
+10.) cd.. -> eine Ebene höher gehen
+11.) pwd
+12.) git status -> Repository status abfragen
+13.) touch hipster.txt -> Create a sample file
+14.) git status -> Repository status abfragen
+15.) git add hipster.txt -> in staging area schieben schieben
+16.) git status -> Repository status abfragen
+17.) git commit -> endgültig ins Repository schieben
+18.) cd.. -> aus dem aktuellen Projectverzeichnis wechseln
+19.) pwd
+20.) ls
+21.) rm -rf fresh-project -> Projekt löschen
+
+----------------------------------------------------------------
+***** STARTING PROJECT WITH EXISTING CODE********************
+
+
+initializr-verekia-4.0.zip -> contains sample source code
+
+1.) pwd -> user directory
+2.) cd projects -> change to diorectory where file should be unzipped
+2.) unzip ~/Downloads/initializr-verekia-4.0.zip -> unzippen des sample codes
+3.) ls -> check if unzipped folder was created
+4.) mv initializr web-project -> change folder name to ne project folder name "web-project"
+5.) ls -> check content
+6.) cd web-project -> change to directory where git-working-directory should be created
+7.) ls
+8.) git init - create a new .git repository in existing project folder
+9.) ls -al
+10.) git status -> 
+11.) git add . -> add all uncontrolle files to git staging area
+12.) git status
+13.) git commit -m "My first commit, Inline" -> Files ins git repository schieben
+14.) git status -> clean working directory
+15.) ls -al
+16.) rm -rf .git -> only deleting .git repository
+17.) ls
+18.) pwd
+19.) cd.. -> change to projects folder
+20.) rm -rf web-project
+
+----------------------------------------------------------------------
+***** STARTING ON GIT HUB BY JOINING AN EXISTING PROJECT********************
+
+GIT-HUB-Account
+
+username: solitaryheart
+mail: matthes.meier@unitybox.de
+PW: web.de
+
+
+1.) Create new project on git-hub -> "starter-web" and upload some files
+2.) Take download URL to clipboard -> https://github.com/solitaryheart/starter-web.git
+3.) Open git bash
+4.) pwd
+5.) cd projects -> change to directory where git-hub-project should be cloned
+6.) git clone https://github.com/solitaryheart/starter-web.git # git-hub-project-url
+7.) ls
+8.) cd starter-web -> check if project directory is created
+9.) ls
+10.) ls -al -> check if .git hub repository is be created
+11.) cd .git
+12. ls
+13.) cd..
+14.) clear
+15.) git status -> clean origin/master -> "origin" = name der reference
+
+----------------------------------------------------------------------------------------
+
+
+
+
+
+
+

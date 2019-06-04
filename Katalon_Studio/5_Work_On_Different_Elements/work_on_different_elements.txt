@@ -1,0 +1,58 @@
+*****textbox*******************
+******************************
+
+a) enter data to textbox (set Text,send Keys)
+
+set text - entfernt vor Eingabe bereits vorhandene Daten
+send Keys - exakte Tastatureingabe, kein löschen
+clear text - löscht EIngabe, die zuvor mit send Text eingegeben wurden
+set encrypted text - sendet zuvor verschlüsselte Daten in Textbox
+
+
+
+
+
+
+*****checkbox and radio button*******************
+*************************************************
+
+check checkbox -> check
+uncheck checkbox -> un-check
+
+
+*****link and button*******************
+*****************************************
+
+click on link -> click
+click on button -> click
+
+
+
+*****dropdown ad list*******************
+*****************************************
+
+dropdown - kein multiselect möglich - beispiel gender
+listbox - multiselect möglich
+
+1.) select option by index -> "1" -> here numeric
+2.) select option by label -> entry which is visible in UI
+3.) select option by value -> inspect value in html, only available if developer set this value - >here string
+4.) select all options
+
+5.) deselect options -> analog zu 1-4 -> only on list !!!!!!!!!!
+
+Sample: 
+
+list "gender" - label "Male", "Female" (Index:0,1)
+list "Country" - label "Germany", (by value: 24 -> Benin -> value: 44 -china
+
+
+
+*****create and use variables*******************
+*****************************************
+Manual Mode -> Not Script Mode
+
+1.) Create Variables
+
+2.) Use variables in script
+

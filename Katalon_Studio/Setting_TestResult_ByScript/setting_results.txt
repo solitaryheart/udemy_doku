@@ -1,0 +1,25 @@
+a.) import com.kms.katalon.core.util.KeywordUtil
+
+use: KeyworldUtil.markPassed
+use: KeyworldUtil.markFailed
+
+
+
+
+
+
+
+
+Usage
+
+
+elementPresent=WebUI.waitForAlert(20)
+if (elementPresent==true) {
+ alertText = WebUI.getAlertText()
+ log.logWarning('The title of the alert is:=' + alertText)
+ if (alertText=='Successfully Created Contact'){
+ KeywordUtil.markPassed('SUCCESS: Successfully Created the Prospect')
+ WebUI.acceptAlert()
+ } else {
+ WebUI.acceptAlert()
+ KeywordUtil.markFailed('ERROR: There was an error creating the Prospect')

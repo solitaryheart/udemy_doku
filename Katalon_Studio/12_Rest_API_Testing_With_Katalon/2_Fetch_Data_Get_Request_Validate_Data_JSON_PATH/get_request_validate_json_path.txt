@@ -1,0 +1,94 @@
+****************** TEST-API**********************************
+*************************************************************
+*************************************************************
+
+ Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr
+
+-------------------------------------------
+
+API - http://localhost:8899/mysql/customers/{customerId}
+
+SAMPLE REQUEST ->  http://localhost:8899/mysql/customers/cust8982771  
+
+
+ObjectRepository -> GETCustomerByID
+
+
+VERY HELFUL -> JSON PATH FINDER !
+
+-------------------------------------------
+
+Scenario
+
+1.) Make a GET Request 
+
+2.) Print Response we are getting (complete)
+
+3.) Validate Status Code
+
+4.) Validate Response Content through JSONPath
+
+
+-needed websites
+a) JSON Formatter
+b) JSON FORMAT
+------------------------------------------------
+
+
+a) Create ObjectReposity Request
+b) Create Testcase
+c) Keyword -> "Send Request" -> Object "GetCustomerID" -> Output: Response (save complete reponse)
+d) Print Response to console -> script: Response.getResponseText()
+e) Validate Status Code 200 -> "Verify Response Status Code"
+   -> ValueType: Variable
+   -> Value: Response
+
+f) create JSON PATH - use: response data from ObjectRepository Request
+g) go to JSON Formatter-side and format correct JSON FORMAT -> https://jsonformatter.curiousconcept.com/
+h) got to JSONPATH, side and pase file 
+i) create needed jason path expression - check it and document expected data 
+-----------------------------------------------------
+Sample
+
+{
+  "customerID":"cust8982771",
+  "firstName":"karl",
+  "lastName":"kaefer",
+  "phone":1236,
+  "email":"mm3@kps.com",
+  "address":"Badway",
+  "city":"Dortmund",
+  "state":"NRW",
+  "zipcode":44369,
+  "country":"England",
+  "creationDate":"Mai 6, 2019",
+  "orders":[]
+}
+
+content
+
+$.firstName -> expected: karl ->
+$.lastName  -> kaefer
+$.email     -> mm3@kps.com
+
+
+is present
+
+.creationDate
+
+------------------------------------------------------
+
+
+
+j) Keyword 'Verify Element Property Value"
+
+-Param: response, ValueType: Variable, Value=Response
+-Param: locator, Value: firstName (ohne ersten Punkt -> hier original: $.firstName 
+
+
+

@@ -1,0 +1,9 @@
+JSON - JavaScript Object Notation
+
+- a collection of Key / Value (name/value)- Pair
+- an ordered list of values
+- lightweight data-unterchange format
+- easy for humans to read and write
+- easy for machines to parse ans generate
+
+parse: extracting required data

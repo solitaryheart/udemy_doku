@@ -1,0 +1,21 @@
+/customers/{customerId}/orders  
+
+- Orders für einen bestehenden Customer erstellen, keine body Daten erforderlich
+
+----------------------------------------------------------
+/customers/{customerId}/orders/{orderId}
+
+- spezische orderID für einen bestehenden Customer aanzeigen, updaten oder löschen
+- enthält zwei path-parameter
+------------------------------------------------------------
+
+/customers/{customerId}/orders/{orderId}/products
+
+- Produkte für einen bestehenden Customer zu einer bestehenden Order hinzufügen und anzeigen
+- enthält zwei Parameter
+
+----------------------------------------------------------------
+
+/customers/{customerId}/orders/{orderId}/products/{productId}
+
+- Produkt für einen bestehenden Customer zu einer bestehenden order updaten und anzeigen

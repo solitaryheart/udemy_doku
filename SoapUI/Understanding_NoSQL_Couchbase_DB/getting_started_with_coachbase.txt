@@ -1,0 +1,9 @@
+1.) ins coachbase Verzeichnis gehen
+2.) jar ausführen -> java -jar coachdb-0.0.6-SNAPSHOT.jar
+3.) eigene API-Doku beachten
+
+4.) Endpoint -> http://localhost:8898/couchbase
+
+------------------------------------------------------
+
+Daten in SaopUi-Anlegen - zuerst new Customer

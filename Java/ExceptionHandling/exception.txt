@@ -1,0 +1,23 @@
+Exception
+
+- when occurs blocks the normal flow of a programm -> Programm bricht an der Stelle einfach ab
+- Reasons for Exception - non existing file, Network problem
+
+--------------------------------------------------------------
+
+Checked exceptions: are checked at compile-time (I/o exception
+Uncheckef exceptions: occurs during programm executions
+
+Examples
+- NullPointerException
+- ArrayIndexOutOfBoundsexception
+- ArithmeticException
+
+-> da nicht jede spezifische Exception vorhergesagt werden kann, wird in einem Muli-Try-Block
+   am Ende eine generische "Exception" genutzt, die erst dann aufgerufen wird, wenn die anderen
+   nicht greifen (muss daher am Ende) stehen
+
+
+Finally - keyword
+
+- finally block wird immer ausgeführt, egal, ob Exception auftritt oder nicht

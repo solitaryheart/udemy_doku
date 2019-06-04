@@ -1,0 +1,25 @@
+- preparing a reguex
+
+z.B phone number enthält nur 10 digits
+---------------------------------------
+
+^\d{10}?  (um eine einzelne phonenumber als einheit zu verifizieren -> 3232323232
+
+- in JSON PATH ReGEX einfügen
+
+---------------------------------------
+Erweiterung -> Phone number enthält Country code "+" -> +3232323232
+
+^\+\d{10}? (\+ -> da plus im REgEx eine besondere Bedeutung hat)
+-----------------------------------------------------------------
+
+Erweiterung -> Phone number enthält Country code 2 digits long
+
+^\+\d{2}\d{10}? -> +493232323232
+
+-------------------------------------------------------------------
+
+
+Phonenumber entspricht folgendem Muster (814)788-2737
+
+^\(\d{3}\)\d{3}\-\d{4}?    - wichtig escape-Zeichen

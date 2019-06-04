@@ -1,0 +1,9 @@
+(für robuste Testautomatisierung)
+
+- TestStep -> RunTestCase
+- TestStep -> Delay
+- TestStep -> Manual
+- TestStep -> FileWait
+- TestStep -> PropertyWait
+
+

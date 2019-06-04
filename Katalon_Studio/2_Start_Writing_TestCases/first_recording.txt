@@ -1,0 +1,15 @@
+Date:
+
+www.theTestingWorld.com/testings
+
+TestCase -> TC_001_RecordingTestCase
+
+user: testingworld
+email: testingwordabc@gmail.com
+PW: Hello123
+Confirm: Hello123
+Birthdate: 15/12/1992
+Phonenumber:774357435743
+Gender: Mail
+AddressType: Office
+SignUp

@@ -1,0 +1,22 @@
+http:/localhost:8899:/mysql/customers
+
+Resource = /customers
+
+
+
+----------------------------------------------------
+
+GET			/customers/{customerID}
+/customers		= Collection
+{customerID}		=Path-Parameter
+
+---------------------------------------------------
+
+Übersicht alle Resourcen
+
+1.)	/customers
+2.)	/customers/{customerID}
+3.) 	/customers/{customerID}/orders
+4.) 	/customers/{customerID}/orders/{orderID}
+5.)	/customers/{customerID}/orders/{orderID}/products
+6.)	/customers/{customerID}/orders/{orderID}/products/{productsID)

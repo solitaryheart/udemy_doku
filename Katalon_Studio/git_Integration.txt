@@ -1,0 +1,8 @@
+For Rest-Testting : katalon_rest_api
+
+Remote Url: https://github.com/solitaryheart/katalon_rest_api.git
+
+
+username: solitaryheart
+mail: matthes.meier@unitybox.de
+PW: web.de

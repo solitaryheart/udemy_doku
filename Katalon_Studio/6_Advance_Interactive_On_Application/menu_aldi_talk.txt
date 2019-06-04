@@ -1,0 +1,16 @@
+rocedure user navigates to product category ((?i)^\s*user navigates to product category using)
+Description: Select a product category on startpage
+Context: main
+Parameter top1 ((?i)top1:"(?<arg0>.+?)")
+Parameter top2 ((?i)top2:"(?<arg1>.+?)")
+Parameter top3 ((?i)top3:"(?<arg2>.+?)"), optional
+
+click at "xpath: //ul[@class='nav-category__list']//a[contains(.,'<top1>') and @class='main']".
+wait 1s.
+mouse over "xpath: //a[text()='<top2>']".
+wait 1s.
+Assume, that variable "top3" is defined OR click "xpath: //a[contains(text(),'<top2>')]".
+wait 1s.
+Assume, that variable "top3" is undefined
+OR click at "xpath: //a[text()='<top3>' and contains(@data-wt-link ,'_<top2>_<top3>')]"
+OR click at "xpath: //a[contains(text(),'<top3>')]".

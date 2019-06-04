@@ -1,0 +1,22 @@
+package reg;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegExpression {
+
+	public static void main(String[] args) {
+		
+		String regex = "\\w+@gmail.com";
+		String inputString = "sdfsdflj483984_kdje@gmail.com fsdfsfwerwer +"
+				+ "lsddifjlwe@gmail.com ieujdskskjjd32323 djdujej@gmail.com ";
+
+		  
+			Pattern pat = Pattern.compile(regex);
+			Matcher matcher = pat.matcher(inputString);
+			boolean isMatch = matcher.lookingAt();
+			System.out.println(isMatch);
+		   
+	}
+
+}

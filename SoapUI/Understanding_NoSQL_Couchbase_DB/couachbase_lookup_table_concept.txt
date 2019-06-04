@@ -1,0 +1,20 @@
+Doku-ID's must be unique
+<service>::<customer_id>-> document name
+
+---------------------------------
+
+in MySQL phone_number must be unique
+
+in CouchDB it is implemented as
+
+Dok_ID: <service>::<phone>:<phonenumber>
+
+----------------------------------
+
+by creating a new customer 2 indepenedent documents are creates
+
+Dok1: <service>::<customer_id>
+Dok2: <service>::<phone>:<phonenumber>
+
+-> internalMapping by using unique identifier in BOTH documents
+-> here: customer_id

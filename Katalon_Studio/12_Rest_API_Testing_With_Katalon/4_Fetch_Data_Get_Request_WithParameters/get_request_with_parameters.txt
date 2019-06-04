@@ -1,0 +1,82 @@
+****************** TEST-API**********************************
+*************************************************************
+*************************************************************
+
+ Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr
+
+-------------------------------------------
+
+API - http://localhost:8899/mysql/customers/
+
+SAMPLE REQUEST ->  http://localhost:8899/mysql/customers/
+
+
+ObjectRepository -> GETCustomersQueryParams
+
+possible QUERY-PARAMS
+
+firstName -> karl
+lastName
+phone
+email
+city
+zipcode
+country
+state
+
+
+VERY HELFUL -> JSON PATH FINDER !
+
+
+sampleID
+
+cust2108056
+cust2600484
+cust8982771
+
+-------------------------------------------
+
+Scenario
+
+1.) Make a GET Request -
+
+2.) Pass Query Parameter from Testcase
+
+3.) Validate Status Code
+
+
+
+
+-needed websites
+a) JSON Formatter
+b) JSON FORMAT
+
+------------------------------------------------
+
+
+a) Create ObjectReposity Request -> GetCustomersQueryParams
+b) Create query paramters
+c) Create Variabes -> customerID and assign default value, 
+d) substitute values in query parameter with parameter values - e.g. ${firstName}, ${lastName}
+
+b) Create Testcase
+c) Keyword -> "Send Request" -> Object "GetCustomerQueryParams" -> Output: Response (save complete reponse)
+d) Create Variable on Testcase-Level -> firstName, LastName
+e) Use variable in Request-Obeject - Object "GetCustomerQueryParams" 
+
+ Name= firstName, Type= Variable, DefaultValue=firstName(Variable Name)
+ Name= lastName, Type= Variable, DefaultValue=lastName(Variable Name)
+
+
+-----------------------------------------------------
+
+------------------------------------------------------
+
+
+
+

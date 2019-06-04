@@ -1,0 +1,10 @@
+Element Locators
+
+1.) Id
+2.) Name
+3.) Class name
+4.) CSS
+5.) Xpath
+
+Für Chrome: CSS ans Xpath-Checker
+Für Firefox: Selenium IDE

@@ -1,0 +1,26 @@
+go to: http://git-for-windows.github.io
+
+-> verify installation git version
+
+
+---------------------------------------
+
+Register at Git-Hub
+
+username: solitaryheart
+mail: matthes.meier@unitybox.de
+PW: web.de
+
+
+--------------------
+
+create Git-HUB repository
+
+name: github-demo
+-> public
+
+local-system:
+
+a) git-bash- starten -> pwd -> zeigt user directory an
+b) mkdir projects
+c) cd projects/

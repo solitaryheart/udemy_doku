@@ -1,0 +1,114 @@
+****************** TEST-API**********************************
+*************************************************************
+*************************************************************
+
+ Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr
+
+-------------------------------------------
+
+API - http://localhost:8899/mysql/customers/
+
+SAMPLE REQUEST ->  http://localhost:8899/mysql/customers/
+
+
+ObjectRepository -> POSTDataDrivenCustomer
+
+
+VERY HELFUL -> JSON PATH FINDER !
+
+
+sampleID
+
+cust2108056
+cust2600484
+cust8982771
+
+-------------------------------------------
+
+Scenario  - TC_009_GetRequest_DataDriven_Customer
+
+1.) Make a POST Request -
+
+2.) Validate Response Content & Status Code
+
+3.) Execute with Multiple Data
+
+
+-----------------------
+
+STEPS
+
+1.) Create Object which receive value from TC  -> POSTDataDrivenCustomer
+2.) Add Data Source
+3.) Add to Test Suite with Data binding
+
+-----------------------
+Create Data Sources
+
+a) Excel-File -> TestData_Customer_Excel
+
+cust2397971
+cust3815060
+cust5393677
+cust5685508
+cust6563100
+cust7707644
+cust9554220
+------------------------------------------------
+
+
+a) Create ObjectReposity Request -> POSTDataDrivenCustomer
+b) Create Variabes -> customerID and assign default value
+c) User Variables in http-body
+
+{
+    "firstName":"${firstName}",
+    "lastName":"${lastName}",
+    "phone": ${phone},
+    "email": "${email}",
+    "address":"${address}",
+    "city": "${city}",
+    "state": "${state}",
+    "zipcode":${zipcode},
+    "country": "${country}"
+  }
+
+
+
+b) Create Testcase
+c) Keyword -> "Send Request" -> Object "POSTDataDrivenCustomer" -> Output: Response (save complete reponse)
+d) Create Variables on Testcase-Level for all input parameters
+e) Use variable in Request-Object - Object "POSTDataDrivenCustomer" 
+ -> Object in testcase
+ -> replace default value with new input paramter variables in testcase
+ -> Type: variable, Default value: name of tc input parameter
+
+f) Create Datasource ->
+
+1.)  Datafiles -> DataDriven_CreateCustomer
+
+-----------------------------------------------------
+
+------------------------------------------------------
+
+h) Create Testsuite -> DataDriven_CreateCustomer
+i) Add TestCase -> TC_011_PostRequest_DataDriven_Customer
+j) go to "show binding"
+k) in "test data section" add excel data source
+l) in variable binding section
+   -> all testcase variables are listed
+   -> replace -> Type: Data Column, TestData: Excel Source, Value: Matching excel column
+
+
+m) repeate same approach for DataDriven_DB
+
+
+
+
+
+

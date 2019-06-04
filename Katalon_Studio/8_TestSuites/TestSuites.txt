@@ -1,0 +1,16 @@
+1.) Create Test Suite
+2.) Execute Test Suite
+
+---------------------------
+
+1.) Create Test Suite Collection
+2.) Execute Test Suite Collection
+
+-> z.B Smoke-Testsuite + Regression-Testsuite
+
+
+-----------------------------------------
+
+1.) Generate Reports
+
+2.) Different types of Reports

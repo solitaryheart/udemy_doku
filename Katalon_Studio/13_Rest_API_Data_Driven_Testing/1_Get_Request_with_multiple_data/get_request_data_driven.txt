@@ -1,0 +1,99 @@
+****************** TEST-API**********************************
+*************************************************************
+*************************************************************
+
+ Wechsel in Ordner: "C:\udemy\SoapUI\Understanding_Rest\mysql_db\mysql"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+
+- durch schliessen des cmd-Prompt läuft auch der WebServer nicht mehr
+
+-------------------------------------------
+
+API - http://localhost:8899/mysql/customers/{customerId}
+
+SAMPLE REQUEST ->  http://localhost:8899/mysql/customers/cust8982771  
+
+
+ObjectRepository -> GETDataDrivenCustomer
+
+
+VERY HELFUL -> JSON PATH FINDER !
+
+
+sampleID
+
+cust2108056
+cust2600484
+cust8982771
+
+-------------------------------------------
+
+Scenario  - TC_009_GetRequest_DataDriven_Customer
+
+1.) Make a GET Request -
+
+2.) Validate Response Content & Status Code
+
+3.) Execute with Multiple Data
+
+
+-----------------------
+
+STEPS
+
+1.) Create Object which receive value from TC  -> GETDataDrivenCustomer
+2.) Add Data Source
+3.) Add to Test Suite with Data binding
+
+-----------------------
+Create Data Sources
+
+a) Excel-File -> TestData_Customer_Excel
+
+cust2397971
+cust3815060
+cust5393677
+cust5685508
+cust6563100
+cust7707644
+cust9554220
+------------------------------------------------
+
+
+a) Create ObjectReposity Request -> GETDataDrivenCustomer
+b) Create Variabe -> customerID and assign default value
+c) User Variable in GET-URL -> http://localhost:8899/mysql/customers/${customerID}
+b) Create Testcase
+c) Keyword -> "Send Request" -> Object "GetCustomerDynamicID" -> Output: Response (save complete reponse)
+d) Create Variable on Testcase-Level -> CID
+e) Use variable in Request-Object - Object "GETDataDrivenCustomer" 
+ -> Object in testcase
+ -> replace default value with new variable in testcase
+ -> Type: variable, Default value: CID
+f) Try single run
+g) Create Datasource ->
+
+1.)  Datafiles -> DataDriven_Customer_Excel
+2.)  Datasource-> DataDriven_Customer_DB -> select * from customer where lastName ='meier'
+-----------------------------------------------------
+
+------------------------------------------------------
+
+h) Create Testsuite -> DataDriven_Excel
+i) Add TestCase -> TC_009_GetRequest_DataDriven_Customer
+j) go to "show binding"
+k) in "test data section" add excel data source
+l) in variable binding section
+   -> all testcase variables are listed
+   -> replace -> Type: Data Column, TestData: Excel Source, Value: Matching excel column
+
+
+m) repeat same approach for DataDriven_DB
+
+
+
+
+
+

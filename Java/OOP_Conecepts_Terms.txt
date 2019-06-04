@@ -1,0 +1,32 @@
+Encapusulation -
+> describes the idea of binding data and methods that work on that data as one unit
+> data in a class is hidden from other classes, so it is known as data-hiding -> durch "private" Access-Modifier
+
+
+-------------------------------------------------------
+
+Abstraction
+> process of displaying only relevant das and hiding unnecessary information of the object from the user
+
+2 Varianten -> 1.) abstract class - 2.)interface
+---------------
+a) Abstract class -> abstract keyword - kann nicht in Unterklasse instanziiert werden
+can have:
+
+- abstract method - enthält keine Implementierung. wird der Subklasse überlassen - diese ist aber gezwungen diese zu implementieren
+                    (Schwäche: Unterklasse kann auf konkrete Methoden der abstrakten Oberklasse zugreifen, dies ist bei Interface nicht möglich
+- concret method
+
+
+
+
+
+b) Interface
+
+- similar to class interface has methods and variables, but the declared methods are abstract by default
+- variables declared in interfact are of type "public static final" -> by default
+- variables must be initalized
+(public static void -öffentlich zugreifbar, keine Objekterzeugung notwendig, aber nicht veränderbar)
+
+- contains only method-bodies, no implementation -> no concret methods
+- SubClass, die Interface implemtiert enthält keyword "implements"
