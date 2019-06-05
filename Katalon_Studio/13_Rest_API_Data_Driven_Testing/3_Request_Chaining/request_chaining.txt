@@ -72,10 +72,39 @@ Name:customerID, Type:Variable, DefaultValue:fetched_CID
 
 
 
+--------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+
+Complex chaining
+Create Customer:   		http://localhost:8899/mysql/customers -> parse customerID
+
+Get Customer:      		http://localhost:8899/mysql/customers/{customerId}
+
+Create Order:      		http://localhost:8899/mysql/customers/{customerId}/orders -> parse orderID
+
+Get Order: 		http://localhost:8899/mysql/customers/{customerId}/orders/{orderId}
+
+Create Product Customer Order:  http://localhost:8899/mysql//customers/{customerId}/orders/{orderId}/products -> parse product id POST
+
+Get Products Customer Order:    http://localhost:8899/mysql//customers/{customerId}/orders/{orderId}/products
+
+Delete Customer 
+
+-----------------------------------------------------------
+
+cust9464136
+
+Create Order JSON-Reponse -> 201
 
 
+{
+  "orderID":"ord1315886",
+  "orderCreated":"2019-06-04 12:13:43.836",
+  "orderShipped":"",
+  "orderStatus":"Order Created",
+  "products":[
+  ]
+}
 
-
-
-
-
+cust3760369
+ord3588323
