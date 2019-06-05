@@ -87,8 +87,8 @@
 *************BACKING OUT CHANGES*****************************************
 ***********************************************************************
 
-a) moving  changes before commit out of staging - back to working directory
-b) checkout an earlier version of a file to working directory -> undo last changes
+a) moving  changes before commit out of staging - back to working directory -git reset
+b) checkout an earlier version of a file to working directory -> undo last changes - git checkout
 
 1.) start git hub -> user directory
 2.) pwd -> user directory
@@ -309,7 +309,7 @@ e.) Deleting folder containing files and subfolders without using git rm command
 14.) git log --follow -- level1/level2/level2.txt (path to file) -> follows all renaming operations of a file
 
 --------------------------------------------------------------------------
-*************ALIAS*****************************************
+*************ALIAS************************************************
 ******************************************************************
 
 Alias -> represents a shorter version of a long git commans -> stored in user global config file for ALL projects (.gitconfig)
@@ -328,6 +328,65 @@ Alias -> represents a shorter version of a long git commans -> stored in user gl
 10.) npp ~/.gitconfig (~ = user directory)
 
  git hist clear mate ~/.gitconfig git hist mate ~/.gitconfig git hist clear
+
+----------------------------------------------------------------------------------------------------------
+
+*************IGNORING FILES AND FOLDERS************************************************
+****************************************************************************************
+
+Files an folders that SHOULD NOT be tracked by git can be listed in a specific file called ".gitignore"
+
+One expression per line !
+
+a) Specific file: myfile.ext
+b) File Pattern: *.log
+c) Folder: my-folder/
+
+--------------------------------------------------------------------
+1.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects/starter-web -> wechsel in project directory
+4.) ls
+5.) git status
+6.) ls -al -> check if an .gitignore file exists
+7.) touch .gitignore -> if not existing, create .gitignore file where .git file is contained in projects-directory
+8.) ls -al -> check if file was created successfully
+9.) git status -> cause new file, the file is untracked
+10.) git add .gitignore -> move new file to staging
+11.) git commit -m "Git Ignore File added" -> move file to local git repository
+12.) git status 
+
+a.) Specific file: access.log - that should not be tracked
+--------------------------------------------------------------
+
+1.) touch access.log -> create file
+2.) git status -> files listed as untracked
+3.) add access.log to .gitignore file and commit changes git commit -am "Excluding log file"
+4.) git status -> file not listed as untracked anymore
+
+b.) File Pattern: *.log - that should not be tracked
+------------------------
+
+1.) Create some .log files
+2.) git status -> new files displayed as untracked
+3.) add *.log extension to .gitignore file and commit changes git commit -am "Excluding log pattern"
+4.) git status -> files not listed as untracked anymore
+
+c.) Folder "log/" - that should not be tracked
+
+1.) mkdir log -> create log-folder
+2.) move files to log folder -> mv access.log log
+3.) cp access.log access.2014-11-04 --> copy file and create a new file extension
+4.) git status -> untracked log/folder
+5.) add log/ folder to .gitignore file and commit changes git commit -am "Excluding log folder"
+6.) git status -> clean working directory -> file not tracked anymore
+7.) ls -> log/ folder still listed
+8.) git ls-files -> folder not listed !!
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
