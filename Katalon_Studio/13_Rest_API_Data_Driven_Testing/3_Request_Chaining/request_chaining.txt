@@ -75,7 +75,9 @@ Name:customerID, Type:Variable, DefaultValue:fetched_CID
 --------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
 
-Complex chaining
+TC_014_Request_Chaining_Complex
+
+
 Create Customer:   		http://localhost:8899/mysql/customers -> parse customerID
 
 Get Customer:      		http://localhost:8899/mysql/customers/{customerId}
@@ -84,11 +86,13 @@ Create Order:      		http://localhost:8899/mysql/customers/{customerId}/orders -
 
 Get Order: 		http://localhost:8899/mysql/customers/{customerId}/orders/{orderId}
 
-Create Product Customer Order:  http://localhost:8899/mysql//customers/{customerId}/orders/{orderId}/products -> parse product id POST
+Create Product Customer Order:  http://localhost:8899/mysql//customers/{customerId}/orders/{orderId}/products -> 4 Products - JSON PATH -> orders[0].products
 
-Get Products Customer Order:    http://localhost:8899/mysql//customers/{customerId}/orders/{orderId}/products
+Get Order:    http://localhost:8899/mysql//customers/{customerId}/orders/{orderId}/products -> check if order contains 4 products
 
-Delete Customer 
+Delete Customer - verify status code 204 -> Ressource deleted
+                  check json "errorMessage": "Data Not Found"
+    
 
 -----------------------------------------------------------
 
