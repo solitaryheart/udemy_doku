@@ -385,6 +385,16 @@ c.) Folder "log/" - that should not be tracked
 
 -------------------------------------------------------------------------------------------------------------------------
 
+*************GIT CLEANUP -> PUSH TO ORIGIN MASTER************************************************
+*************************************************************************************************
+.) start git hub -> user directory
+2.) pwd -> user directory
+3.) cd projects/starter-web -> wechsel in project directory
+4.) ls
+5.) git status -> clean working directory
+6.) clear
+7.) git pull origin master -> check if local repository is up-to-date
+8.) git push origin master -> upload all changes to remote repository
 
 
 
