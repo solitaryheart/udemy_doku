@@ -1,0 +1,64 @@
+*******COMPARING WORKING DIRECTORY AND STAGING AREA ****************
+********************************************************************
+
+
+git diff -> shows differenced between working directory and already staged file
+git difftool -> p4merge -> visual presentation of differences between working directory and already staged file
+
+----------------------------------------------------------------------
+
+*******COMPARING WORKING DIRECTORY AND GIT LOCAL REPOSITORY (LAST COMMIT) ****************
+******************************************************************************************
+
+git diff HEAD -> shows differences between working directory and local repository on actual branch (last commit)
+git difftool HEAD -> visual presentation of differences between working directory and local repository on actual branch (last commit)
+
+HEAD -> actual branch on local git repository
+
+-----------------------------------------------------------------------
+
+
+*******COMPARING STAGING AND GIT LOCAL REPOSITORY (LAST COMMIT) **************************
+******************************************************************************************
+
+git diff --staged HEAD -> shows differences between Staging and local repository on actual branch (last commit)
+git difftool --staged HEAD -> visual presentation of differences between staging and local repository on actual branch (last commit)
+
+--------------------------------------------------------------------------
+
+******LIMITING COMPARISON TO ONE FILE ****************************************************
+******************************************************************************************
+
+git diff -- README.md
+git difftool -- README.md
+
+-------------------------------------------------------------------------------
+******COMPARING BETWEEN COMMITS **********************************************************
+******************************************************************************************
+
+git log --oneline -> lists all commits in current branch (oberste = HEAD-Commit
+git diff HEAD bb66478 -> compare HEAD commit with other commit-id
+git diff HEAD HEAD^ -> compare HEAD and commit -1
+git difftool HEAD HEAD^
+git difftool 663afd4 87b4e03
+
+--------------------------------------------------------------------------------------
+
+*******COMPARING LOCAL AND REMOTE MASTER BRANCHES ****************************************
+******************************************************************************************
+
+a) local repository: master (@ HEAD)
+b) remote repository: origin/master (GITHUB)
+
+git diff master origin/master-> shows differences between local master branch and remote master branch
+git difftool master origin/master -> visual presentation of differences between local master branch and remote master branch
+
+---------------------------------
+
+Cleanup
+
+git add . 
+git commit -m "Updating repo with changes from compare section"
+git status
+git pull
+git push

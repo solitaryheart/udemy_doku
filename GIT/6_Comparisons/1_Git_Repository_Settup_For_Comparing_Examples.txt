@@ -1,0 +1,115 @@
+1.) Readme.md file on Github - Version 1
+
+# Starter Web Project
+
+
+## Introduction
+
+## Purpose
+
+## Deployment
+
+## How to contribute
+--------------------------------------------
+2.) Readme.md file on Local Repository - Version 2
+
+
+
+# Starter Web Project
+
+This is a simple website project for
+showing how to use Git and Github together.
+
+
+## Introduction
+
+## Purpose
+
+## Deployment
+
+## How to contribute
+
+----------------------------------------------------
+
+3.) Readme.md file on Local Repository - Version 3
+
+# Starter Web Project
+
+This is a simple website project for
+showing how to use Git and Github together.
+
+
+## Introduction
+
+This is example to show different parts
+of the Git repository and various commands
+using a webproject
+
+## Purpose
+
+## Deployment
+
+## How to contribute
+
+------------------------------------------------------
+
+
+4.) Readme.md file on Staging - Version 4
+
+# Starter Web Project
+
+This is a simple website project for
+showing how to use Git and Github together.
+
+
+## Introduction
+
+This is example to show different parts
+of the Git repository and various commands
+using a webproject
+
+## Purpose
+
+As stated above, the main purpose is to
+provide simple examples for Git training
+demos
+
+## Deployment
+
+## How to contribute
+
+-------------------------------------------------------
+
+5.) Readme.md file on Working Directory - Version 5
+
+# Starter Web Project
+
+This is a simple website project for
+showing how to use Git and Github together.
+
+
+## Introduction
+
+This is example to show different parts
+of the Git repository and various commands
+using a webproject
+
+## Purpose
+
+As stated above, the main purpose is to
+provide simple examples for Git training
+demos
+
+## Deployment
+
+This is a simple web project, deployment can be on any
+web server or even local file system.
+
+
+## How to contribute
+
+---------------------------------------------------------------------
+
+
+
+
