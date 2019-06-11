@@ -1,0 +1,41 @@
+1.) go to: http://perforce.com
+2.) got to downloads
+3.) click "Helix Visual Merge Tool"
+4.) select appropriate version
+5.) select and install only "Merge and Diff Tool (PfMerge)"
+
+------------------------------------------------------------
+********SETUP COMMAND LINE INTEGRATION - P4Merge Setup *********************
+***************************************************************************
+
+1.) open git bash and type "pfmerge" -> promt displays "pfmerge command not found"
+2.) check where .exe is installed -> C:\Program Files\Perforce -> p4merge.exe
+3.) add to PATH
+4.) check pfmerge can be launched by using git bash -> p4merge
+
+-------------------------------------------------------------
+
+********SETUP PFMerge GIT Integration *************************************
+***************************************************************************
+
+1.) open git bash and paste the following commands
+
+git config --global merge.tool p4merge
+git config --global mergetool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+git config --global mergetool.prompt false
+git config --global diff.tool p4merge
+git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+git config --global difftool.prompt false
+
+
+2.) git config --global --list -> check configured values
+3.) git config --global -e -> file will be displayed in window
+
+
+
+
+
+
+
+
+
