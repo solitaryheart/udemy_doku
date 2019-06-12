@@ -1,0 +1,16 @@
+******************** BRANCHING BASICS **************************************************************
+****************************************************************************************************
+
+- Branch -> Pointer to isolote further commits (feature branches - to stablize future changes !)
+
+1.) change to starter-web-project
+2.) git status -> clean working directory ans remote git repository
+3.) git branch -a -> listes local und remote branches, current actual branch marked with "*" symbol
+4.) git branch mynewbranch -> creates a new branch with name "mynewbranch"
+5.) git branch -a -> new branch is listed but not active !
+6.) git checkout mynewbranch -> switches to new branch "mynewbranch"
+7.) git branch -a -> new branch is listed and active -> "*" symbol
+8.) git log --oneline --decorate -> alle branches listed as labels
+9.) git checkout master -> go back to master branch
+10.) git branch -m mynewbranch newbranch -> renaming a branch from old to new name
+11.) git branch -d newbranch -> deleting a no longer needed branch
