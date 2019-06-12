@@ -1,0 +1,105 @@
+*********CUSTOM KEYWORDS ***************************
+****************************************************
+
+a.) Without Argument - And Without Return Value
+
+- needed only to perform simple execution tasks
+
+1.) go to keywords
+2.) create package -> z.B. "userkeyword"
+3.) select package -> new keyword -> "Userkey" (groovy.extension)
+4.) add some code -> existing InBuild-Can be Uses
+-------------------------------------------------
+
+public class UserKey {
+	
+	@Keyword
+	def print_welcome_message(){
+		WebUI.openBrowser("https://www.facebook.com")
+		println "Hello User...No we are ready to write test case"
+	}
+
+-------------------------------------------------------
+
+5.) Add annotation @Keyword to method
+6.) Create testcase - here "TC_015_CustomKeyword
+7.) in castcase - go to "Add -> Custom Keyword"
+8.) Keyword will be added if only one exists
+9.) In manual mode -> Keyword is added by using following pattern:
+    PackageName.Classname.MethodName
+
+10.) In Skript-Mode: "CustomKeywords.'userkeyword.UserKey.print_welcome_message'()"
+
+------------------------------------------------------------------------------------------
+
+b.) With Argument - And Without Return Value
+
+1.) add another method to same class !
+
+---------------------------------------------
+@Keyword
+	def start_browser_maximize_printmessage(String url){
+		WebUI.openBrowser(url)
+		WebUI.maximizeWindow()
+		println "Hello User..This is keyword with argument"
+	}
+}
+-----------------------------------------------
+2.) add keyword to testcase
+3.) in manual mode pass parameter by using Input section
+
+---------------------------------------------------------------
+
+c.) With Argument - And Return Value
+
+
+1.) add another method to same class
+
+--------------------------------------------------------
+
+@Keyword
+	def start_browser_maximize_printmessage(String url){
+		WebUI.openBrowser(url)
+		WebUI.maximizeWindow()
+		return WebUI.getWindowTitle()
+
+----------------------------------------------------------------
+
+2.) add keyword to testcase
+3.) in manual mode pass parameter by using Input section
+4.) In script mode insure to store passed value into variable before printing it
+
+String title = CustomKeywords.'userkeyword.UserKey.start_browser_maximize_printTitle'('https://www.amazon.de')
+println(title)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
