@@ -14,3 +14,38 @@
 9.) git checkout master -> go back to master branch
 10.) git branch -m mynewbranch newbranch -> renaming a branch from old to new name
 11.) git branch -d newbranch -> deleting a no longer needed branch
+
+---------------------------------------------------------------------------------------------------
+******************** HAPPY PATH / FAST FORWARD MERGES *********************************************
+****************************************************************************************************
+
+- Fast Forward Merge: 
+
+precondition:
+a) create a new branch from the last commited master-branch
+b) don't do any changes in the master branch
+c) peform all changes in the new branch
+d) merge all changes from the new branch into the master-branch
+e) delete the not needed new branch, cause all changes are merged in the master branch
+
+1.) change to starter-web-project
+2.) git status -> clean working directory
+3.) git branch -> lists all LOCAL branches (git branch -a lists local and remote branches) -> master is active !
+4.) git checkout -b title-change (b parameter -> creates new branch "title change" before checking it out)
+5.) git status -> clean working directory -> new branch is active ! 
+6.) npp readme.md -> edit the readme.md within the new active branche, perform some changes
+7.) git status -> shows modification in file readme.md
+8.) git commit -am "Changing content in readme -file" -> perform a streamline-commit
+9.) git log --oneline -> shows latest commit at the top in new branch "title-change"
+
+-> THIS CHANGE SHOULD BE MOVED INTO MASTER !!!
+
+10.) git checkout master- > switch from new branch to master branch
+11.) git branch -> master branch is active
+13.) git diff master title-change -> review changes 1. branch 2. branch (alternativ difftool)diff
+14.) git merge title-change -> git merge sourcr-branch -> merge aus dem Source branch to active master branch (fast-forward)
+15.) q --graph --decorate -> HEAD is pointing to the latest commit of the current branch
+15.) git branch -> listing all local branches -> active branch = master
+16.) git branch -d title-change -> deleting the no needed branch "title change"
+17.) git branch -> only branch master is displayed
+----------------------------------------------------------------------------------------

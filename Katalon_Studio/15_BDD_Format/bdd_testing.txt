@@ -1,0 +1,27 @@
+**************** BDD formated testcases - Katalon Studio integration **********************
+*******************************************************************************************
+
+Add Gherkin syntax-highlighting in notepad++ (select menu: languages-> gherkin)
+before - >impert Gherkin.xml file
+
+GENERAL APPROACH
+
+a) Write Feature File - English (Gherkin)
+b) Write Step Definitions - Actual Automation code (Groovy)
+c) Execute Test Case
+
+
+1.) Feature = Test Suite | Test Scenario (.feature)
+
+- can have multiple test cases (test case = scenario)
+- each test case can have multiple tests
+- feature file is supposed to describe a single feature of the system
+- when we write a feature, we are writing a scenario which is going to have multiple tests
+
+
+-Syntax
+----------------------------------------
+Feature: Login Functionality
+		Here we will test login by admin, super admin, guest and customers
+
+------------------------------------------------------------
