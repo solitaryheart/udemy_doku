@@ -25,3 +25,205 @@ Feature: Login Functionality
 		Here we will test login by admin, super admin, guest and customers
 
 ------------------------------------------------------------
+
+2.) Scenario = Test Cases
+
+- a scenario can be defined as a single acceptance test case
+- each future can have multiple scenario
+
+
+-Syntax
+
+------------------------------------------
+Scenario: Login by customer
+		
+
+Scenario: Login by Guest User
+
+
+Scenario: Login by Super Admin
+----------------------------------------------
+
+3.) Gherkin-Given Step
+
+- steps are part of each scenario (test case)
+- step typically starts with Given, When or Then
+- we can also user And or But
+- given steps are used to describe the initial context of the system
+- normallly given is used for configuring the system
+- such as creating and configuring objects or adding data to the database
+- starting browser and enter URL
+- it's okay to have several Given Steps (just use And or But for number 2 and 
+  upwards to make it more readable
+
+
+-Syntax
+
+------------------------------------------
+Scenario: Login by customer
+		  Given User is on Login page
+		
+
+Scenario: Login by Guest User
+		   Given User open browser
+		   And Enter url
+----------------------------------------------
+
+4.) When & Then Step
+
+- When steps are used to describe an event or an action
+- Then steps are use to describe an expected outcome, or result
+
+- Syntax (When with multiple steps - Then)
+---------------------------------------------
+
+Scenario: Login by customer
+		  Given User is on Login page
+		  When user enter username
+		  And User enter password
+		  And Click on Login Button
+		  Then User should be logged in successfully
+		
+
+Scenario: Login by Guest User
+		   Given User open browser
+		   And Enter url
+		   When User click on Guest user link
+		   And User enter email id
+		   And click on Submit
+		   Then User should be logged in as a Guest user
+
+-----------------------------------------------
+
+5.) Background (Keyword)
+
+- we will face some situation when we have same repitive Given steps in all
+  of the scenarios in a feature file
+- since it is repeated in every scenario it is an indication that those
+  steps are not essential to describe the scenaios
+- we can move such Given steps to the background by grouping them under 
+  a background section before the first scenario
+
+Syntax
+
+------------------------------
+
+Feature: Login Functionality
+		Here we will test login by admin, super admin, guest and customers
+
+Background: Given User is on Login page
+		
+Scenario: Login by customer
+		  When user enter username
+		  And User enter password
+		  And Click on Login Button
+		  Then User should be logged in successfully
+
+-----------------------------------------------------------------------
+
+6.) Gherkin: Step Argument
+
+- in some cases you might want to pass a test data from feature file,
+  in this case we are going to use step argument
+- step argument are written in "data"
+
+Syntax
+
+---------------------------------------
+
+Scenario: Login by Super Admin
+          Given User is on Login page
+	  When user enter username "testing"
+	  And  user enter password "abc"
+          And click on Login Button
+          Then User logged in successfully
+
+
+------------------------------------------
+
+6.) Gherkin: Scenario outline + Examples
+
+- when we want to implement data driven scenario with multipe input
+ and in case of each input we are expectin a different output, int
+ that kind on scenario wer are using scenario outline kexword
+- Scenario has to start with "Scenario Outline" keyword
+- data-driven data shound be placed in "<>"
+- Data place in "Examples" keyword
+- a scenario outline section is always followd by one or more example section,
+  which are a container for a table
+- the table must have a header row corresponding to the variables in the scenario
+ outline steps
+- each of the rows below will creare a new scenario, filling in the variable values
+
+Syntax
+------------------------------------------
+
+Scenario Outline: Login by customer
+		  Given User is on Login page
+		  When user enter username <username>
+		  And User enter password <password>
+		  And click on signin button
+		  Then User should be logged in successfully
+		  
+		  Examples:
+			| username | password |
+			| testing | abc@123 |
+			| testing1 | abc1234 |
+			| testing2 | abc@12345 |
+
+---------------------------------------------
+
+7.) Gherkin: Comments & Tags
+
+a) comments
+# to tell cucumber that the remainer of the line is a comment
+ans shouldn't be executed
+
+b) tags
+ - tags are a way to group scenarios
+-  they are @-prefixed strings and you can place as many tags as you like above
+   feature, scenario, scenario outline an examples keywords
+
+Syntax
+-----------------------------
+
+Regression		
+Scenario Outline: Login by customer
+		  Given User is on Login page
+		  When user enter username <username>
+		  And User enter password <password>
+		  And click on signin button
+		  Then User should be logged in successfully
+		  
+		  Examples:
+			| username | password |
+			| testing | abc@123 |
+			| testing1 | abc1234 |
+			| testing2 | abc@12345 |
+
+----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
