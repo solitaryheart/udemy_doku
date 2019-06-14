@@ -1,6 +1,0 @@
-Endpoint = hostname + basepath
-
-http://localhost:8899/mysql
-
-(hostname + port: localhost:8899)
-basepath: /mysql

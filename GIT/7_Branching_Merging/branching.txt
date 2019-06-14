@@ -49,3 +49,31 @@ e) delete the not needed new branch, cause all changes are merged in the master 
 16.) git branch -d title-change -> deleting the no needed branch "title change"
 17.) git branch -> only branch master is displayed
 ----------------------------------------------------------------------------------------
+
+******************** AUTOMATIC MERGES ****************************************************************
+****************************************************************************************************
+
+New Project: starter-web-1 -> automatic merge-commit
+Performan separate changes in 2 branches and merge it automatically in master branch !
+
+1.) change to starter-web-1 project
+2.) git status -> clean working directory
+3.) git branch -> lists all LOCAL branches (git branch -a lists local and remote branches) -> master is active !
+4.) git checkout -b simple-changes (b parameter -> creates new branch "title change" before checking it out)
+5.) npp human.txt-> edit human.txt file -> adding team information
+6.) git status -> modified file (in branch "simple-changes")
+7.) git commit -am "Adding team information to human.txt"
+8.) git checkout master -> switch back to master
+
+DIFFERECE -> BEFORE MERGING CHANGES TO MASTER SOME CHANGES WILL BE DONE IN MASTER TOO !!!!!! 
+
+9.) git status -> modified file (in branch "master")
+10.) git commit -am "Adding team information to readme.hd into how to contribute"
+11.) git log --oneline --graph --decorate --all -> lists different commits in master and simple-changes branch !!
+12.) git branch ->  master is active !
+13.) git merge simple-changes -m "Merging changes from simple-changes branch"
+14.) git log --oneline --graph --decorate --all -> separate branch still exists
+15.) git branch -> to branches are listed
+16.) git branch -d simple-changes -> delete no more needed branch
+17.) git branch -> simple changes branch is not listed anymore
+18.) check changes in both files !

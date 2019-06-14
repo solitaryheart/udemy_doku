@@ -1,0 +1,9 @@
+Endpoint = hostname + basepath
+
+http://localhost:8899/mysql
+
+(hostname + port: localhost:8899)
+basepath: /mysql
+
+-> hostname + basepath - both will change based
+on environment for example STG, PROD, etc
