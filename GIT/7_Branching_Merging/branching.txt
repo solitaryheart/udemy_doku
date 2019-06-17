@@ -77,3 +77,87 @@ DIFFERECE -> BEFORE MERGING CHANGES TO MASTER SOME CHANGES WILL BE DONE IN MASTE
 16.) git branch -d simple-changes -> delete no more needed branch
 17.) git branch -> simple changes branch is not listed anymore
 18.) check changes in both files !
+
+----------------------------------------------------------------------------------------------------
+
+******************** CONFLICTING  MERGES AND RESOLUTION ****************************************************************
+****************************************************************************************************
+-> how to resolce merge conflicts
+-> here: perform different changes in same file "simple.html" on two different branches !
+
+1.) change to starter-web-1 project
+2.) git status -> clean working directory
+3.) gir branch -> only master branch available
+4.) git checkout -b realwork -> create branch realwork
+5.) perform changes in simple.html side
+a) Copyright: "Git Training 2014"
+b) Content: "Some interesting stuff goes here"
+c) Title: "A Great Website"
+
+6.) git status -> modified file
+7.) git commit -am "Making changes to simple.html"
+8.) git status - >clean working directory
+
+9.) git checkout master -> switch back to master
+10.) perform changes in same file simple.html 
+a) Copyright: "Matthias Meier 2014"
+b) Content: "I'm not sure what will got here, but I'm sure it will be nice"
+c) Title: "A Very Respecfull Website"
+
+11.) git status -> modified file
+12.) git add simple.html
+13.) git commit
+14.) "Adding conflict changes (on purpose) of Git example"
+15.) git log --oneline --graph --decorate --all -> shows different changes in two branches
+16.) git branch -> master branch is active
+17.) git diff master realwork -> show differences
+18.) git difftool master realwork -> show differences
+19.) git merge realwork -> try to merge changes to master
+---------------------------
+error
+
+Auto-merging simple.html
+CONFLICT (content): Merge conflict in simple.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+prompt (master | merging)
+-------------------------------------------------------
+
+20.) npp simple.html -> shows conflicts in simple.html
+21.) git mergetool -> a visual way to resolve merge conflicts
+
+select winners in 3 conflicts
+a) Copyright: "Git Training 2014" (winner realwork)
+b) Content: "Just some content" (winner file before changes)
+c) Title: "A Very Respecfull Website" (winner master)
+
+22.) save file -> in menu bar
+23.) quit file
+24.) git commit -m "Done resolving merge conflicts"
+
+-> important: prompt changes from "(master | merging)" to "(master)"
+-> inndicates all conflicts are solved
+
+25.) git status -> show new untracked file "simple.htm.orig"
+-> file includes all changes befor performing the merge resolution
+-> we want to ignore this file
+
+26.) clear
+27.) npp .gitignore -> display ignore file -> add *.orig files
+
+28.) git status -> shows modified .gitignore file
+29.) git add .gitignore
+30.) git commit -m "Add .orig files to ignore file"
+31.) git status -> clean working directory
+32.) git branch
+33.) git branch -d realwork -> delete don't needed changes
+
+
+
+
+
+
+
+
+
+
