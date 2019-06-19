@@ -1,0 +1,64 @@
+************** SIMPLE REBASE EXAMPLE****************************************
+****************************************************************************
+
+scenario
+
+a) existing master branch
+b) create feature branch
+c) perform changes in feature branch
+d) switch back to master branch
+e) perform changes in master branch
+f) rebase changes to feature branch
+
+
+1.) change to starter-web-1 project
+2.) git status -> clean working directory
+3.) clean working directory
+4.) git checkout -b myfeature
+5.) npp humans.txt -> edit humans.txt file:
+
+THANKS section: "All my students!" - MYFEATURE-BRANCH
+
+6.) git status -> modified humans.txt file
+7.) git commit -am "Saying thanks to all my students" -> fast commit
+
+8.) git checkout master -> switch back to master
+9.) npp README.md -> edit readme.md file
+
+STARTER WEB PRO: "Adding a line for rebase example" - MASTER-BRANCH
+
+10.) git status -> modified readme.md file
+11.) git commit -am "Adding oneliner to readme for rabase example" -> fast commit
+12.) clear
+13.) git log --oneline --decorate --all --graph -> shows history
+
+REBASING
+-> work in myfeature-branch is undone, but we want to take part of
+  changes made in master branch in myfeature-branch !!
+
+-> we want to rabase master into myfeature branch
+
+14.) git checkout myfeature -> switch back to myfeature branch
+15.) git rebase master -> actual branch: myfeature -> source branch: master
+16.) git log --oneline --decorate --all --graph -> 
+17.) npp README.md -> edit readme.md file - MYFEATURE-BRANCH
+
+-> readme.md changes displaye performed on master !
+                          
+STARTER WEB PRO: "then more changes from myfeature branch too" - MYFEATURE-BRANCH
+
+18.) git status: modified README.md file on myfeature branch
+19.) git commit -am "Adding another change after rebase" -  MYFEATURE-BRANCH
+20.) git log --oneline --decorate --all --graph
+
+ALL WORK IS DONE - MERGE CHANGES FROM MYFEATURE BRANCH TO MASTER !
+
+21.)git checkout master -> switch back to master
+22.) git diff master myfeature (
+23.) git merge myfeature
+24.) git log --oneline --decorate --all --graph -> branches synchronized !
+25.) git branch -d myfeature -> delete no more needed branch
+
+
+
+

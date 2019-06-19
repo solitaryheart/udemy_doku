@@ -1,0 +1,65 @@
+1.) can be installed as standalone application -> Search Download Postman
+
+2.) can be installed as Chrome browser plugin -> install postman in chrome
+-------------------------------------------------------------------------
+
+A.) BASIC GET REQUEST
+
+- Step1: Add URL
+- Step2: Execute
+- Analyse Request and Response
+
+
+
+B.) FIRST POST REQUEST
+
+- Step 1: Add URL
+- Step 2: Create JSOn Body
+- Step 3: Execute
+- Analye Request and Response
+
+C.) FIRST PUT REQUEST
+
+
+- Step 1: Add URL
+- Step 2: Create JSOn Body (with updated data)
+- Step 3: Execute
+- Analye Request and Response
+
+
+D.) FIRST DELETE REQUEST
+
+- Step1: Add URL
+- Step2: Execute
+- Analyse Request and Response
+
+E.) ADD BASIC VERIFACATION
+
+- Step1: Add URL, Execute
+Analyse Request and Response message
+
+- check status code
+- check data in body -> Snippset "Response body contains string"
+- check response time -> Snippset "Response time is less than"
+
+- All validations will be created in the Postman "Test section"
+- CHeck Java-Script Code-Snippsets
+
+F.) END TO END TEST CASE WITH VERIFICATION
+
+Step 1: Create a new record
+Step 2: Verfify record data
+Step 3: Update record
+Step 4: Verify updated data
+Step 5: Delete record
+Step 6: Verify record is deleted
+
+
+
+
+
+
+
+
+
+

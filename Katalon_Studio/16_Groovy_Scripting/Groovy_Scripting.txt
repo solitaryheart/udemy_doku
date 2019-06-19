@@ -1,0 +1,21 @@
+***READING FILLE using FileReader**********************************************
+*******************************************************************************
+
+package testing
+
+
+
+def f = new File("C:\\udemy\\udemy_doku\\Katalon_Studio\\16_Groovy_Scripting\\TestData.txt")
+def fr = new FileReader(f)
+def br = new java.io.BufferedReader(fr)
+
+def s = br.readLine()
+
+while(s!=null){
+    println s
+    s = br.readLine()
+
+
+
+-------------------------------------------------
+BufferedReader-> rading more than one character, reading complete line

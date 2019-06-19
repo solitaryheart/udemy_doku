@@ -1,0 +1,4 @@
+Possible from "Projects" Interface view
+Possible from "SoapUIPro" Interface view
+
+-> Parameters can only be changes in "Projects view"

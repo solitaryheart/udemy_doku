@@ -1,0 +1,130 @@
+can be managed by using Test Step "Data Source"
+
+1.) Create Data-Source Steps
+2.) Create Properties in Data Source Test Steps
+
+
+
+
+firstName":"soapuipro2",
+"lastName":"meier",
+"phone": 20001,
+"email": "soapui002@kps.com",
+"address":"Badway",
+"city": "Dortmund",
+"state": "NRW",
+"zipcode":58379,
+"country": "England"
+
+3.) Create Data in DataGrid (the inbuild SoapUI Data Source)
+
+3.) Go to data-driven request for example "post customers"
+- select outline view
+- select in outline view one parameter -> "Get Data" from Data-Source parameter (TestSuite -> Testcase -> DataSource -> Property)
+- repead this for all parameter
+
+Outline Tab should like
+
+JSON NODE: firstName         Value: ${DataSource#firstName}
+
+
+-----------------------------------
+
+Important execution order
+
+1.) DataSource
+2.) request (Rest/Soap)
+3.) Data Source Loop (contains DataSource Step and as Target step the Rest-Request
+
+
+
+-------------------------------------------------------------------------------
+
+************DATA SOURCE - GRID***************************************
+*********************************************************************
+
+1.) create parameters
+2.) create data in grid-view
+3.) click run button and select row-count to pasted into data-drive table
+4.) select in outline view one parameter -> "Get Data" from Data-Source parameter (TestSuite -> Testcase -> DataSource -> Property)
+5.) repead this for all parameter
+6.) execute test
+7.) each request/response can be value in "transaction log" tab
+
+--------------------------------------------------------------------------
+
+************DATA SOURCE - DB***************************************
+*********************************************************************
+
+1.) JDBC driver should be added to soapuipro-bin folder ->
+
+jdbc-driver:  mysql-connector-java-5.1.34.bin
+folder: C:\Program Files\SmartBear\ReadyAPI-2.7.0\bin\ext
+
+2.) restart soapui
+3.) create Data Source "Data Connection2
+3.) configure mysql connection
+4.) Build SQL query and execute query
+
+a) test-case_ delete customers
+
+
+query
+
+Select customer.*
+From customer
+Where customer.firstName Like 'name%'
+
+
+b) test-case_ postcustomers
+
+query
+
+Select customer.firstName as customer_firstName, customer.lastName as customer_lastName, customer.phone as customer_phone, customer.email as customer_email,
+  customer.address as customer_address, customer.city as customer_city, customer.state as customer_state, customer.zipcode as customer_zipcode,
+  customer.country as customer_country
+From customer
+Where customer.firstName Like 'name%'
+
+--------------------------------------------------------------------------------------
+************DATA SOURCE - EXCEL***************************************
+*********************************************************************
+
+1.) create excel file - with parameters and data and save to file system
+2.) browse file - and select sheet name
+3.) import parameter
+4.) load data and hide colum names
+
+---------------------------------------------------------------
+
+************DATA SOURCE - DATA GENERATOR***************************************
+*********************************************************************
+
+1.) create property
+2.) choose appropiate "property type
+3.) configute data generation
+
+
+firstName: Property type: name, gender: any, name kind: firstname
+lastName: Property type: name, gender: any, name kind: lastname
+phone: Property type: name, gender: any, name kind: firstname
+email: Property type: phone number
+address: Property type: street address
+city: Property type: city
+state: Property type: State
+zipcode: Property type: value from set
+country: Property type: country
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+Property Transfer -> how to transfern value from response to other teststeps !
+
+1.) got to response outline
+2.) select "transfer to"
+3.) select "add property step"
+
+configuration:
+
+target step: property test step
+target property: for example "customerID
+transfer Name: for example customerID
+
+4.) change teststep-order for example
+
+1.) DataSource
+2.) Property Transfer
+3.) Properties
+4.) DataSource
+
+-------------------------------------
+
+PropertyTransfer test step can be customizes
+
+Source: post_customers , Property: Response
+Target: Propertie test step (example_ Properties1) -> or specific request teststep, Property: customerID
+
+ -> for example -> the target step can use this value as input for further
+                   request (get customer -> use customerID as input)
+
+----------------------------------------------------------------------
+
+Example: TestCase 4 - DD_Excel_Source_PropTransfer
+
+1.) Post 10 Customers -> DataDriven
+2.) Transfer CustomerID, creationDate to Properties: CustomerID, creation Date
+
+
+- important: the add "add property step" in response
+outline view is only needed once,
+
+
+for any further transfer -> select the poperty test step and select
+"Creat New" -> a new property will be created
+
+
+
+
+
