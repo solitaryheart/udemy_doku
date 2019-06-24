@@ -59,6 +59,51 @@ ALL WORK IS DONE - MERGE CHANGES FROM MYFEATURE BRANCH TO MASTER !
 24.) git log --oneline --decorate --all --graph -> branches synchronized !
 25.) git branch -d myfeature -> delete no more needed branch
 
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+************** SETUP FOR REBASING CONFLICT****************************************
+**********************************************************************************
 
 
+1.) change to starter-web-1 project
+2.) git status -> clean working directory
+3.) npp simple.html -> edit simple.html file (MASTER BRANCH)
+add comment "Adding changes before rebasing conflicts"
 
+4.) git commit -am "mb before rebase conflicts" -> commit changes
+5.) git checkout -b bigtrouble -> create and switch to new branch BIGTROUBLE
+6.) npp simple.html -> edit conflicting changes ib simple.html file (BIGTROUBLE BRANCH)
+
+comment: "These are from the feature branch"
+title: "Lots of Trouble"
+body : "Just nothing but trouble"
+
+7.) git commit -am "fb adding some trouble to simple.html" -> commit changes
+
+8.) git checkout master -> switch back to master branch
+
+9.) npp simple.html -> edit simple.html file again (MASTER BRANCH)
+
+comment: "Some silly changes from master branch"
+title: "Silly Changes from Master"
+body: "Just stuff now, not sure if we would replace this or not"
+
+10.) git commit -am "mb conflicting changes brewing"pwd
+
+11.) git status -> clean working directory
+12.) git log --oneline --decorate --all --graph -> shows 2 commits which are not sync 
+
+--------------------------------------------------------------------------------------------
+************** ABORT A REBASE*****************************************************
+**********************************************************************************
+
+1.) change to starter-web-1 project
+2.) git checkout bigtrouble -> switch to feauture branch "BIG-TROUBLE"
+3.) clear
+4.) git difftool master bigtrouble -> display conflicts visually 
+5.) git rebase master -> cause of conflicts, doesn't work
+6.) git rebase --abort -> abort the rebase
+7.) git status -> we are still on the bigtrouble branch
+8.) git log --oneline --decorate --all --graph -> shows still branches that are deverged
+
+-----------------------------------------------------------------------------------
