@@ -107,3 +107,23 @@ body: "Just stuff now, not sure if we would replace this or not"
 8.) git log --oneline --decorate --all --graph -> shows still branches that are deverged
 
 -----------------------------------------------------------------------------------
+************** REBASE CONFLICT AND RESOLUTION*****************************************************
+**************************************************************************************************
+1.) change to starter-web-1 project -> Branch "BIG-TROUBLE" should be active
+2.) git status -> clean working directory
+3.) git log --oneline --decorate --all --graph -> shows 2 commits which are not sync 
+4.) git rebase master -> conflict -> shows conflicting state during the rebase !
+5.) git mergetool -> resolving the conflicts and save
+6.) git status -> modified simple.html file
+7.) git rebase --continue
+8.) git log --oneline --decorate --all --graph -> both branches are synched
+9.) npp simple.html -> edit simple.html file again -> On Feature Branch "BIG-TROUBLE"
+10.) git commit -am "Adding changes after rebasing conflict"
+11.) git status -> clean working directory
+12.) git log --oneline --decorate --all --graph -> shows latest commit on Branch "BIG-TROUBLE"
+
+-> INTEGRATING LATEST CHANGES FROM BIG TROUBLE INTO MASTER
+
+13.) git checkout master -> switch back to master branch
+14.) git merge bigtrouble -> merge changes to master branch
+15.) git log --oneline --decorate --all --graph -> master and feature branch point to the same commit

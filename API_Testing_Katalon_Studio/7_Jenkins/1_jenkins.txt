@@ -1,0 +1,102 @@
+How to setup Jenkins job
+How to get project from git
+How to run API tests from Jenkins
+Useful Tips
+---------------------
+java -jar jenkins.war--httpPort=xxxx (xxxx- customized port)
+
+1.) go to google "download jenkins"
+2.) download "generic java package (.war)
+3.) go to location where jenkins.war is installed -> C:\jenkins 
+4.) open cmd
+4.) java -jar jenkins.war --httpPort=9191 -> will start jenkins server
+5.) go to browser and type -> localhost:9191 -> Jenkins-URL: http://localhost:9191/
+6.) jenkins dashboard is displayed
+7.) install default plugins
+8.) create admin-account
+
+
+User: solitaryheart
+PW: Git
+Voller Name: Matthias Meier
+Email: matthias.meier@kps.com
+
+--------------------------------------
+JENKINS DASHBOARD
+
+1.) Click on new item
+2.) enter name -> "Katalon_APITesting", create as "Freestyple project"
+3.) Click on "Source-Code-Management" Tab
+4.) Select "Git" in "Source-Code-Management" section
+5.) Enter GIT-Remote-Repository URL -> https://github.com/solitaryheart/katalon-api-demo.git
+6.) Click on Save
+7.) Click on "Build now" -> to check if project will be created from github
+8.) Build will be created -> can be checked in Build-History
+9.) Check Console Output -> Check "finished sucessfully"
+10.) important -> git project will be cloned here "C:\Users\matthias.meier\.jenkins\workspace\Katalon_APITesting"
+
+REMEMBER -> the workplace folder is the important place for the Jenkins-JOB
+
+11.) Custom Workspace can be created ! -> follow these steps
+
+to do first
+
+a) go to file-system -> create folder "JenkinsWorkplaces"
+b) within "JenkinsWorkplaces" folder create new folder with project name "Katalon_API"
+c) result: C:\JenkinsWorkplaces\Katalon_API
+d) In Jenkins Dashboard go back to project -> click on "Configure" 
+e) click on "Advanced" button -> "Use custom workplace" option is available
+f) click on "Use custom workplace"
+g) privide path to new workspace - 
+i) if needed provide a display name: "Katalon_API"
+j) click on save 
+
+12.) Click on "Build now" again -> check if project will be created in customised jenkins-workspace
+13.) Check if new workplace was created here -> C:\JenkinsWorkplaces\Katalon_API
+
+
+CONFIGURE AN BUILD-TRIGGER for JENKINS
+
+14.) In Jenkins Dashboard go back to project -> click on "Configure"
+15.) Go to "Build-Trigger section an configure a build trigger
+
+here "GitHub hook trigger for SCM polling selected"
+-> new build should be created everytime changes are pushed to remote GitHub repository
+
+
+CONFIGURE TESTS WHICH SHOULD BE EXECUTE WHILE CREATING A NEW BUILD
+
+16.) In Jenkins Dashboard go back to project -> click on "Configure" 
+17.) Go to "Build" section
+18.) Add a "Add build step"
+19.) Select "Execute Windows Batch Command" -> Command section will be created
+20.) Configure the batch command
+
+a) create a initial start command "echo Starting"
+b) configure location where katalon studio is installed -> C:\Katalon_Studio\Katalon_Studio_Windows_64-6.1.3\Katalon_Studio_Windows_64-6.1.3
+    - before go to root directory
+    - change directory to location where katalon studio is installed
+    -> cd 
+
+c) specify katalon cmd command with the help of katalon studio 
+
+here: 
+
+katalon -noSplash  -runMode=console -projectPath="C:\Users\matthias.meier\Katalon Studio\API_Testing_Udemy_KatalonStudio\API_Testing_Udemy_KatalonStudio.prj" -retry=0 -testSuitePath="Test Suites/KatalonAnalytics-API" -executionProfile="default" -browserType="Web Service"
+
+edit this to correkt jenkinsworkplace location where project is cloned:
+
+katalon -noSplash  -runMode=console -projectPath="C:\JenkinsWorkplaces\Katalon_API\API_Testing_Udemy_KatalonStudio.prj" -retry=0 -testSuitePath="Test Suites/KatalonAnalytics-API" -executionProfile="default" -browserType="Web Service"
+
+d) paste this command 
+e) create a final end command "echo Completed"
+
+-------------------------------------------------------------------------------
+echo Starting
+c:
+cd C:\Katalon_Studio\Katalon_Studio_Windows_64-6.1.3\Katalon_Studio_Windows_64-6.1.3
+katalon -noSplash  -runMode=console -projectPath="C:\JenkinsWorkplaces\Katalon_API\API_Testing_Udemy_KatalonStudio.prj" -retry=0 -testSuitePath="Test Suites/KatalonAnalytics-API" -executionProfile="default" -browserType="Web Service"
+echo Completed
+-----------------------------------------------------------------------------------
+
+START A NEW BUILD BY SELECTING "BUILD NOW" AND CHECK IF TESTS WERE EXECUTED

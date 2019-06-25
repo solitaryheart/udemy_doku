@@ -1,0 +1,77 @@
+how to handle get api request
+how to handle post api request
+how to handle put api request
+how to handle delete api request
+
+--------------------------------
+
+Sample requests: https://reqres.in/
+
+a.) POST-METHOD -> https://reqres.in/api/users
+
+body
+
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+
+Object Repository: "CreateUser"
+Paste Body Content and Test -> StatusCode "201 Created"
+
+Response
+
+{
+  "name":"morpheus",
+  "job":"leader",
+  "id":"731",
+  "createdAt":"2019-06-24T08:16:49.368Z"
+}
+
+---------------------------------------------------
+
+b.) PUT-METHOD -> https://reqres.in/api/users/{id}
+
+Object Repository: "UpdateUser"
+Change id -> https://reqres.in/api/users/731
+Paste Body Content and Test - StatucCode "200"
+
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+
+Response:
+
+{
+  "name":"morpheus",
+  "job":"zion resident",
+  "updatedAt":"2019-06-24T08:28:14.932Z"
+}
+
+-----------------------------------------------------
+
+c.) DELETE-METHOD -> https://reqres.in/api/users/{id}
+
+Object Repository: "DeleteUser"
+Change id -> https://reqres.in/api/users/731
+no body content needed - test -> "204 No Content"
+
+------------------------------------------------------
+
+
+1.)Add basic status code validations in all object repository objects ->snipset !
+2.) Create TestCase TestHTTPMethods
+3.) Add all Requests into testcase
+
+- ListUsers
+- Create User
+- Update User
+- Delete User
+
+
+
+
+
+
+

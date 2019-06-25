@@ -1,0 +1,13 @@
+- how to validate response
+- how to get value from nodes
+- how to create a complete api validation test
+
+---------------------------------------------------------
+
+1.) Test-Case: ListUsers
+2.) Add Keyword "Verify Elements Count"
+3.) Verify Count od Users -> 3 in element-node "data" Use path-finder
+
+-> "WS.verifyElementsCount(response, 'data', 3)"
+
+4.) Add KeyWord "Verify Response Code in Range" -> 100-200

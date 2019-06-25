@@ -1,0 +1,32 @@
+Katalon Analytics
+Test Reports 
+HTML Reports 
+
+
+
+
+*************KATALON ANALYTICS*************************************
+********************************************************************
+
+
+how to use Katalaon Analytics
+how to upload report to Katalon Analytics
+
+-> store, view, analyse results
+
+1.) go to analytics.katalon.com and login (Katalom account
+2.) create project in Katalon Analytics -(API-Testing)
+   - login
+   - click on teams
+   - click on projects (project settings button)
+
+3.) Open Katalon Studio
+4.) Open katalon Studio - Setting
+   - enable Integration -> Katalon Analytics
+   - decide if results should be automatically uploaded
+
+5.) Run TestSuite and check reports uploaded to Katalon Analytics
+
+-> RESULTS for KATALON ANALYTICS ONLY BE CREATED ON TEST-SUITE-LEVEL
+-> TEST-SUITES CAN BE UPLOADED MANUALLY (projects-setting)
+---------------------------------------------------------------------------------

@@ -1,0 +1,21 @@
+How to share a project on Git
+How to commit, push, clone
+How to remove project from Git
+
+------------------------------------
+
+1.) Enable Git Integration -> window-> preferences
+2.) Git -> Share Project -> new git repository will be initalized
+3.) Create a remote repository on GitHub, and copy URL -> 
+
+https://github.com/solitaryheart/katalon-api-demo.git
+
+4.) Go to Git Menu and commit and push all changes to local and remote repository
+
+
+-----------------------------------------------------
+
+5.) To Remove projects
+-> Delete project on GitHub
+-> Delete hidden .git folder on katalon studio project location
+

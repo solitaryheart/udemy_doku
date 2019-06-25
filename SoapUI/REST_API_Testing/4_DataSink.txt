@@ -1,0 +1,42 @@
+DataSink
+
+ - needed to store values from response  to external file
+ - property transfer is needed as source, target is DataSink Teststep
+
+1.) create DataSink Teststep
+2.) Select format -> for example excel
+3.) configure which sheet and column should be uset to store value
+4.) Create Data-Sink Property which should be used as target to store value from poperty transfer step
+5.) Configure Property-Transfer Test Step
+
+Source: request (for example) post_customers - Property: Response
+Target: DataSink - Property: Created Property in DataSink Teststep (for example CustomerID)
+
+6.) Rearange test steps in correct order; 
+
+-> DataSource
+-> Request
+-> PropertyTransfer
+-> DataSink
+-> DataSourceLoop
+------------------------------------------------------------------------
+
+Testcase 6 - DD_Excel_Source_PropertyTransfer_ExcelSink
+
+DataSink-TestStep
+
+Properies: created_customer_id, creation_date
+
+Property-Trander Teststep
+
+a) first parameter to store in datasink
+Source: post_customers, Property: Response (+JSONPath)
+Target: DataSink, Property: created_customer_id
+
+b) second parameter to store in datasink
+
+Source: post_customers, Property: Response (+JSONPath)
+Target: DataSink, Property: creation_date
+
+---------------------------------------------------------------------------
+

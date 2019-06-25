@@ -1,0 +1,46 @@
+1.) Go to Website: https://reqres.in/ (also part of the endpoint)
+2.) For example -> GET LIST USERS -> https://reqres.in/api/users?page=2
+3.) JSON VIEWER -> https://codebeautify.org/jsonviewer
+4.) Install JSON PATH FINDER Google Plugin
+
+-----------------------------------------------------------------------
+
+API-WITHOUT-KATALON-STUDIO
+
+1.) GET LIST USERS -> Paste URL into browser
+2.) Copy Result into JSON VIEWER -> https://codebeautify.org/jsonviewer
+3.) Click Beautify
+
+API-WITH-KATALON-STUDIO
+
+1.) Object Repository Folder -> UserRestService
+2.) Service: ListUsers
+3.) URL: https://reqres.in/api/users?page=2
+4.) Service hast query parameter
+5.) Add Verification Snip Set -> Status Code 200
+6.) Run -> Test and Verify
+7.) Add Add Verification Snip Set -> Response body JSON value check
+
+-> Adds "WS.verifyElementPropertyValue(response, 'issues[0].fields.project.key', 'KTP')
+
+8.) Paste Response into JSON PATH Finder
+9.) Enter search-node: first_name: 
+10.) 3 instances found -> select expresion for "Charles" -> .data[1].first_name
+11.) Change code Snip set
+
+"WS.verifyElementPropertyValue(response, 'data[1].first_name', 'Charles')
+
+12.) Run - Test and Verify
+13.) Add to testcase "ListUsersTest"
+14.) Add Keyword "Send Request and Verify" and save response into output-variable
+
+"response = WS.sendRequestAndVerify(findTestObject('UserRestService/ListUsers'))"
+
+15.) Add keyword "Verify Element Property Value"
+
+16.) Add another response check in script-view id= 6 !
+
+"WS.verifyElementPropertyValue(response, 'data[2].id', '6')"
+
+
+
