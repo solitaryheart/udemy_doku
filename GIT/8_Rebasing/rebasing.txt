@@ -127,3 +127,49 @@ body: "Just stuff now, not sure if we would replace this or not"
 13.) git checkout master -> switch back to master branch
 14.) git merge bigtrouble -> merge changes to master branch
 15.) git log --oneline --decorate --all --graph -> master and feature branch point to the same commit
+
+-------------------------------------------------------------------------------------------------------
+
+************** PULL WITH REBASE*********************************************
+****************************************************************************
+
+scenario: files were changes on GITHUB, we want to rebase these changes
+          on top of our local master branch and don't want to lose our 
+          changes on local master branch
+
+1.) change to starter-web-1 project
+2.) git status -> clean working directory  on master branch
+
+SYNCHRONISING WITH GITHUB
+
+3.) git pull origin master - all up to date
+4.) git push origin master -> push up the changes to GITHub
+5.) git status -> up to date with origin master
+
+REBASE CHANGES FROM GITHUB TO LOCAL GIT REPOSITORY
+
+A -CHANGES ON lOCAL GIT ON MASTER BRANCH on SIMPLE-HTML-FILE
+
+6.) changes on local master branch in simple.html:
+
+copyright: "Git Training 2014, All righs reserved"
+
+7.) git commit -am "local: updating simpl.html"
+8.) git status -> clean working directory on local master branch
+
+B -CHANGES ON GITHUB ORIGINA MASTER BRANCH on INDEX-HTML-FILE
+
+9.) changes on remote origin master branch in index.html:
+
+button type: from "Sign" in to "Login"
+
+10.) commit changes on GitHub -> "remote minor changes on index.html"
+11.) git status -> "Your branch is ahead of origin master by 1 commit -> can not be the case 
+12.) git fetch origin master -> updates the refereces between remote ans local git repository
+13.) git status -> local and 'origin/master' are diverged,
+14.) git pull --rebase origin master -> Applying: local: updating simple.html
+
+-> WE HAVE REBASED CHANGES FROM GITHUB ON THE TOP OF OUR LOCAL GIT REPOSITORY
+
+15.) git log --oneline --decorate --all --graph ->
+------------------------------------------------

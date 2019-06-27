@@ -1,0 +1,175 @@
+*********************** INTRODUCTION **************************************************
+****************************************************************************************
+
+- Object Repository: CreateUser, ListUser containing verifications
+- Testcase: SampleOneTest
+
+-------------------------------------------------------------------------------------------
+
+
+*********************** API-CHAINING-PART-1 **************************************************
+**********************************************************************************************
+
+Target- Scenario:
+
+1.) Run ListUsers-API -> take any name out of response (here Tracey)
+2.) Run UpdateUser-API -> take the name from response as input -> save in global variable
+
+- create globalvariable "userName" under profiles
+- create variable userName in UpdateUsertUsers -> defaultvalue = globalvariable
+
+TestCase: APIChainingDemo
+
+Parsing-Code in ListUsers
+
+------------------------------------
+
+response1 = WS.sendRequest(findTestObject('RESTWebServices/ListUsers'))
+
+//Parsing the userName out of the response by using JSONSlurper
+
+def slurper = new groovy.json.JsonSlurper()
+def result = slurper.parseText(response1.getResponseBodyContent())
+
+//extracts user Tracey
+
+def value = result.data[2].first_name
+
+println(".. value extracted is : " +value)
+
+GlobalVariable.userName = value
+
+println("..Global variable is : " + GlobalVariable.userName)
+
+----------------------------------------------------------------------------------------------------------
+
+*********************** API-CHAINING-PART-2 **************************************************
+**********************************************************************************************
+
+Scenario: - Chaining without using global variable in a separare step
+	  - using the parsed value store in a variabe directly
+         
+
+1.) Adding "UpdateUser" to New Testcase (here: actually the global variable "userName" is used
+2.) Here the following statement is used - only visible by copy this OR-item to a testcase !
+
+-------------------------------------------------------------
+WS.sendRequest(findTestObject('RESTWebServices/UpdateUser', [('userName') : GlobalVariable.userName]))
+--------------------------------------------------------------
+
+3.) Testcase: APIChainingDemo without storing parsed value in a global variable
+4.) Testcase adjusted -> UpdateUser will use the parse value directly
+
+New Script:
+
+-----------------------------------------------------------------------------------------------------
+
+response1 = WS.sendRequest(findTestObject('RESTWebServices/ListUsers'))
+
+//Parsing the userName out of the response by using JSONSlurper
+def slurper = new groovy.json.JsonSlurper()
+
+def result = slurper.parseText(response1.getResponseBodyContent())
+
+//extracts user Tracey
+def value = result.data[2].first_name
+
+println('.. value extracted is : ' + value)
+
+/* Usage 1 - by using global variable 
+
+GlobalVariable.userName = value
+
+println('..Global variable is : ' + GlobalVariable.userName)
+
+WS.sendRequestAndVerify(findTestObject('RESTWebServices/UpdateUser'))
+*/
+
+// Usage 1- by using parsed vale stored in variable "value directly
+
+WS.sendRequest(findTestObject('RESTWebServices/UpdateUser', [('userName') : value]))
+
+------------------------------------------------------------------------------------------
+*********************** Test Suite - Test Suite Collection **************************************************
+******************************************************************************************************
+
+A) Test-Suite -> benefit: reading test reports !
+
+1.) Creating TestSuite 1
+2.) Adding Testcase "APIChainingDemo", "SampleTestOne"
+3.) Run Suite an examine results
+
+B) Test-Suite-Collection: benefit: creating profiles !
+
+1.) Creating TestSuiteCollection1
+2.) Adding Testsuite "TestSuite1"
+3.) creating a new profile "QA" by copying the existing profile
+4.) possible to add same testsuite again and running on different profiles !!
+5.) possible to run in parallel oe sequentiell
+6.) run this in parallel and examine results -> only possible for each testsuite separately
+
+-----------------------------------------------------------------------------------------------
+
+*********************** Parametrisation **************************************************************
+******************************************************************************************************
+
+Scenario: Endpoint parametrisation to reflect different environments
+
+1.) Parametrisation endpoint of API ListUsers
+2.) Endpoint without Parametrisation -> https://reqres.in/api/users?page=2
+3.) Create Endpoint variable in default profile
+4.) Create Endpoint variable in default profile
+5.) Create variable in OR-item ListUsers and refer to globalvariable
+6.) adjust GET endpoint by using endpoint variable: https://${endpoint}/api/users?page=2
+--------------------------------------------------------------------------------------------------
+
+*********************** Data Driven Testing **************************************************************
+**********************************************************************************************************
+Scenario: DataDriven CreateUser-API
+
+2.) Create Variable directlyin OR item CreateUser HTTP-body, for example ${username}, ${job}
+3.) Create reflecting variable names in "variables section
+4.) Add OR-item to new testcase: "DataDrivenDemoTest"
+5.) Create same variables on testcase level
+6.) Parmetrise sendrequest to use test case variables:
+-----------------
+before:
+
+WS.sendRequest(findTestObject('RESTWebServices/CreateUser', [('endpoint') : GlobalVariable.Endpoint, ('name') : '', ('job') : '']))
+
+after:
+
+WS.sendRequest(findTestObject('RESTWebServices/CreateUser', [('endpoint') : GlobalVariable.Endpoint, ('name') : name, ('job') : job]))
+
+------------------
+7.) Create ExcelFile with TestData -> TestData.xlsx
+8.) Create reference in Katalon in "Data Files" section -> TestData1
+9.) Create TestSuite: "DataDrivenDemo" and add testcase
+10.) Create testdata and variable binding on test suite level
+
+---------------------------------------------------------------------------------------------------------------
+
+*********************** Command Line Excecution **************************************************************
+**********************************************************************************************************
+For Suite: DataDrivenDemo
+
+katalon -noSplash  -runMode=console -projectPath="C:\Users\matthias.meier\Katalon Studio\API_Testing_Udemy_KatalonStudio\API_Testing_Udemy_KatalonStudio.prj" -retry=0 -testSuitePath="Test Suites/DataDrivenDemo" -executionProfile="default" -browserType="Web Service" -apiKey=6bf20e89-6d4e-4cac-8569-34d71686c161
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+*********************** JENKINS **************************************************************
+**********************************************************************************************************
+
+
+Project: Projekt Katalon_API
+
+
+JENKINS - command arguments
+
+-retry=0 -testSuitePath="Test Suites/DataDrivenDemo" -executionProfile="default" -browserType="Web Service" -apiKey=6bf20e89-6d4e-4cac-8569-34d71686c161
+
+
+Adjusted: PostBuild Step (updating the executed test suite !!): /Reports/DataDrivenDemo/*/*.xml
