@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2a24a3d7-eaed-4f98-96b8-f7bb34cd8858" created="2.7.0" activeEnvironment="Default environment" name="MyProject" resourceRoot="" defaultScriptLanguage="Groovy" updated="2.7.0 2019-05-30T13:25:24Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="0559df8a-891b-488a-b951-fa04799cab5c" wsaVersion="NONE" name="BLZServiceSOAP11Binding" type="wsdl" bindingName="{http://thomas-bayer.com/blz/}BLZServiceSOAP11Binding" soapVersion="1_1" anonymous="optional" definition="http://www.thomas-bayer.com/axis2/services/BLZService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.thomas-bayer.com/axis2/services/BLZService?wsdl"><con:part><con:url>http://www.thomas-bayer.com/axis2/services/BLZService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://thomas-bayer.com/blz/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://thomas-bayer.com/blz/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:documentation>BLZService</wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://thomas-bayer.com/blz/">
+      <xsd:element name="getBank" type="tns:getBankType"/>
+      <xsd:element name="getBankResponse" type="tns:getBankResponseType"/>
+      <xsd:complexType name="getBankType">
+        <xsd:sequence>
+          <xsd:element name="blz" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="getBankResponseType">
+        <xsd:sequence>
+          <xsd:element name="details" type="tns:detailsType"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="detailsType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="bezeichnung" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="bic" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ort" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="plz" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getBank">
+    <wsdl:part name="parameters" element="tns:getBank"/>
+  </wsdl:message>
+  <wsdl:message name="getBankResponse">
+    <wsdl:part name="parameters" element="tns:getBankResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="BLZServicePortType">
+    <wsdl:operation name="getBank">
+      <wsdl:input message="tns:getBank"/>
+      <wsdl:output message="tns:getBankResponse" wsaw:Action="http://thomas-bayer.com/blz/BLZService/getBankResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLZServiceSOAP11Binding" type="tns:BLZServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getBank">
+      <soap:operation style="document" soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BLZServiceSOAP12Binding" type="tns:BLZServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getBank">
+      <soap12:operation style="document" soapAction=""/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BLZServiceHttpBinding" type="tns:BLZServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getBank">
+      <http:operation location="BLZService/getBank"/>
+      <wsdl:input>
+        <mime:content part="getBank" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getBank" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BLZService">
+    <wsdl:port name="BLZServiceSOAP11port_http" binding="tns:BLZServiceSOAP11Binding">
+      <soap:address location="http://www.thomas-bayer.com/axis2/services/BLZService"/>
+    </wsdl:port>
+    <wsdl:port name="BLZServiceSOAP12port_http" binding="tns:BLZServiceSOAP12Binding">
+      <soap12:address location="http://www.thomas-bayer.com/axis2/services/BLZService"/>
+    </wsdl:port>
+    <wsdl:port name="BLZServiceHttpport" binding="tns:BLZServiceHttpBinding">
+      <http:address location="http://www.thomas-bayer.com/axis2/services/BLZService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint></con:endpoints><con:operation id="f124cb29-ddc7-47cc-8624-4d16f8118a5a" isOneWay="false" action="" name="getBank" bindingOperationName="getBank" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="662cea77-b89f-4ceb-8cad-e7caa25d8ca7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>20010020</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://thomas-bayer.com/blz/BLZServicePortType/getBankRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="8e0be924-e9eb-4a94-8314-0e6098eb641b" wsaVersion="NONE" name="BLZServiceSOAP12Binding" type="wsdl" bindingName="{http://thomas-bayer.com/blz/}BLZServiceSOAP12Binding" soapVersion="1_2" anonymous="optional" definition="http://www.thomas-bayer.com/axis2/services/BLZService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint></con:endpoints><con:operation id="bb8f487e-723a-4541-9033-a443b70f1587" isOneWay="false" action="" name="getBank" bindingOperationName="getBank" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="cd5e6e35-0dad-4e9e-aed3-5bd10a172234" wsaVersion="NONE" name="medicareSupplierServiceSoapBinding" type="wsdl" bindingName="{http://www.springframework.org/schema/beans}medicareSupplierServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/services/medicareSupplierService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/services/medicareSupplierService?wsdl"><con:part><con:url>http://localhost:8080/services/medicareSupplierService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="medicareSupplierService" targetNamespace="http://www.springframework.org/schema/beans" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.springframework.org/schema/beans" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://www.webservicex.net/">
+  <wsdl:import location="http://localhost:8080/services/medicareSupplierService?wsdl=MediCareSupplierSoap.wsdl" namespace="http://www.webservicex.net/"></wsdl:import>
+  <wsdl:binding name="medicareSupplierServiceSoapBinding" type="ns1:MediCareSupplierSoap">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetSupplierByZipCode">
+      <soap:operation soapAction="http://www.webservicex.net/GetSupplierByZipCode" style="document"/>
+      <wsdl:input name="GetSupplierByZipCode">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetSupplierByZipCodeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierByCity">
+      <soap:operation soapAction="http://www.webservicex.net/GetSupplierByCity" style="document"/>
+      <wsdl:input name="GetSupplierByCity">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetSupplierByCityResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierBySupplyType">
+      <soap:operation soapAction="http://www.webservicex.net/GetSupplierBySupplyType" style="document"/>
+      <wsdl:input name="GetSupplierBySupplyType">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetSupplierBySupplyTypeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="medicareSupplierService">
+    <wsdl:port binding="tns:medicareSupplierServiceSoapBinding" name="$Proxy88Port">
+      <soap:address location="http://localhost:8080/services/medicareSupplierService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8080/services/medicareSupplierService?wsdl=MediCareSupplierSoap.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MediCareSupplierSoap" targetNamespace="http://www.webservicex.net/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://www.webservicex.net/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://www.webservicex.net/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.webservicex.net/">
+      <xs:element name="GetSupplierByCity">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="City" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSupplierByCityResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GetSupplierByCityResult" type="xs:boolean"/>
+            <xs:element name="SupplierDataLists" type="tns:SupplierDataList"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSupplierBySupplyType">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="description" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSupplierBySupplyTypeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GetSupplierBySupplyTypeResult" type="xs:boolean"/>
+            <xs:element name="SupplierDataLists" type="tns:SupplierDataList"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSupplierByZipCode">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="zip" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetSupplierByZipCodeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GetSupplierByZipCodeResult" type="xs:boolean"/>
+            <xs:element name="SupplierDataLists" type="tns:SupplierDataList"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="SupplierDataList">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SupplierDatas" type="tns:ArrayOfSupplierData"/>
+          <xs:element name="TotalRecords" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfSupplierData">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="SupplierData" type="tns:SupplierData"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SupplierData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SupplierNumber" type="xs:string"/>
+          <xs:element minOccurs="0" name="CompanyName" type="xs:string"/>
+          <xs:element minOccurs="0" name="Address1" type="xs:string"/>
+          <xs:element minOccurs="0" name="Address2" type="xs:string"/>
+          <xs:element minOccurs="0" name="City" type="xs:string"/>
+          <xs:element minOccurs="0" name="State" type="xs:string"/>
+          <xs:element minOccurs="0" name="Zip" type="xs:string"/>
+          <xs:element minOccurs="0" name="ZipPlus4" type="xs:string"/>
+          <xs:element minOccurs="0" name="Telephone" type="xs:string"/>
+          <xs:element minOccurs="0" name="Description" type="xs:string"/>
+          <xs:element minOccurs="0" name="IsSupplierParticipating" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSupplierByZipCode">
+    <wsdl:part element="ns1:GetSupplierByZipCode" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierBySupplyType">
+    <wsdl:part element="ns1:GetSupplierBySupplyType" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierByZipCodeResponse">
+    <wsdl:part element="ns1:GetSupplierByZipCodeResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierByCity">
+    <wsdl:part element="ns1:GetSupplierByCity" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierBySupplyTypeResponse">
+    <wsdl:part element="ns1:GetSupplierBySupplyTypeResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierByCityResponse">
+    <wsdl:part element="ns1:GetSupplierByCityResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MediCareSupplierSoap">
+    <wsdl:operation name="GetSupplierByZipCode">
+      <wsdl:input message="ns1:GetSupplierByZipCode" name="GetSupplierByZipCode"></wsdl:input>
+      <wsdl:output message="ns1:GetSupplierByZipCodeResponse" name="GetSupplierByZipCodeResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierByCity">
+      <wsdl:input message="ns1:GetSupplierByCity" name="GetSupplierByCity"></wsdl:input>
+      <wsdl:output message="ns1:GetSupplierByCityResponse" name="GetSupplierByCityResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierBySupplyType">
+      <wsdl:input message="ns1:GetSupplierBySupplyType" name="GetSupplierBySupplyType"></wsdl:input>
+      <wsdl:output message="ns1:GetSupplierBySupplyTypeResponse" name="GetSupplierBySupplyTypeResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/services/medicareSupplierService</con:endpoint></con:endpoints><con:operation id="47b44b32-bf9c-4e07-871d-a1a434fd222a" isOneWay="false" action="http://www.webservicex.net/GetSupplierByCity" name="GetSupplierByCity" bindingOperationName="GetSupplierByCity" type="Request-Response" outputName="GetSupplierByCityResponse" inputName="GetSupplierByCity" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="aa91057b-cd6f-4d52-8b50-f460cf7cdb60" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/services/medicareSupplierService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetSupplierByCity>\r
+         <!--Optional:-->\r
+         <web:City>?</web:City>\r
+      </web:GetSupplierByCity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetSupplierByCity"/></con:call></con:operation><con:operation id="29cceb71-284a-4fb4-b308-be19c7e4dd6f" isOneWay="false" action="http://www.webservicex.net/GetSupplierBySupplyType" name="GetSupplierBySupplyType" bindingOperationName="GetSupplierBySupplyType" type="Request-Response" outputName="GetSupplierBySupplyTypeResponse" inputName="GetSupplierBySupplyType" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bd25170d-3c30-4141-b3f3-a698b57d950b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/services/medicareSupplierService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetSupplierBySupplyType>\r
+         <!--Optional:-->\r
+         <web:description>?</web:description>\r
+      </web:GetSupplierBySupplyType>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetSupplierBySupplyType"/></con:call></con:operation><con:operation id="998e1b35-5029-4f38-be90-a24ba5fe1967" isOneWay="false" action="http://www.webservicex.net/GetSupplierByZipCode" name="GetSupplierByZipCode" bindingOperationName="GetSupplierByZipCode" type="Request-Response" outputName="GetSupplierByZipCodeResponse" inputName="GetSupplierByZipCode" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3baa0d92-44be-4e36-ae9f-3ca6970c31ba" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/services/medicareSupplierService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetSupplierByZipCode>\r
+         <!--Optional:-->\r
+         <web:zip>?</web:zip>\r
+      </web:GetSupplierByZipCode>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetSupplierByZipCode"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="23760ac9-9af8-49da-a29f-7ed95bae13fb" name="TS01_Test suite to test bank service"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="404ca0bb-6aea-4174-b7dc-abf6a32ddd6e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC01_to test get Bank operation" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" name="get Bank - Request for BLZ code_55010111" id="faf55113-e9ff-4ce1-b1ff-1348a2e755bc"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="get Bank - Request for BLZ code_55010111" id="d33c7d14-7004-47b3-8c8c-81b31449692d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>55010111</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6e559613-3060-41a2-b2d2-4a0a6911e8f8" name="SOAP Response"/><con:assertion type="XPath Match" id="253021b2-26c4-4038-a6fe-c8605fae6483" name="XPath Match - validate bic code"><con:configuration><path>declare namespace ns1='http://thomas-bayer.com/blz/';
+//ns1:getBankResponse[1]/ns1:details[1]/ns1:bic[1]</path><content>ESSEDE5F550</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="XPath Match - validate plz" id="3ab2876e-c328-4a91-a647-bea0072c1393"><con:configuration><path>declare namespace ns1='http://thomas-bayer.com/blz/';
+//ns1:getBankResponse[1]/ns1:details[1]/ns1:plz[1]</path><content>55116</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="599f74d4-69ca-4296-ab00-4ea625b60ecc" name="XPath Match - validate bezeichnung"><con:configuration><path>declare namespace ns1='http://thomas-bayer.com/blz/';
+//ns1:getBankResponse[1]/ns1:details[1]/ns1:bezeichnung[1]</path><content>SEB</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Schema Compliance" id="3a50fe9d-fe06-47ea-a02f-940828d57f1a" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="cf6a2d10-e073-467a-9944-a35aeb1270e2" name="Not SOAP Fault"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="6740690f-0459-4cbf-97a6-b880828ab8a5" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC02_to test get Bank operation" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="17fc3be8-c864-4c79-a656-7ee45ac5c357" name="get Bank - Request for BLZ code_55010424"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="get Bank - Request for BLZ code_55010424" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="cacd12c8-9977-4167-93a9-a5785f551401"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>55010424</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c4d505b2-6558-48f1-a509-a1ac49a95516" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://thomas-bayer.com/blz/BLZServicePortType/getBankRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="1a869b93-b448-4453-8f00-bb17c0f73e37" name="TS02_Test suite to test bank service"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="71126916-6c09-4eb6-b243-279604992886" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC03_to test get Bank operation" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="7af54336-9c16-4a4a-b1b6-3384e845f8e9" name="get Bank - Request for BLZ code_55010800"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="get Bank - Request for BLZ code_55010800" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="cacd12c8-9977-4167-93a9-a5785f551401"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>55010800</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c4d505b2-6558-48f1-a509-a1ac49a95516" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://thomas-bayer.com/blz/BLZServicePortType/getBankRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="8dd6b0cf-8add-4c4e-8ef4-db659dde757a" name="TS03_Test suite to test bank service"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="a5f8135e-9487-4790-bcf1-e24b80667622" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC04_to test get Bank operation" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" name="get Bank - Request for BLZ code_55020100" id="c2615c85-d986-4c53-8953-de6969c5475d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="get Bank - Request for BLZ code_55020100" id="d33c7d14-7004-47b3-8c8c-81b31449692d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>55020100</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0234419a-4b61-45bb-a69e-ed4d39a2705d"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="099e0893-e7b4-4c4c-9315-14fece2fbf7e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC05_to test get Bank operation" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="903fd6be-9858-4b87-ad4e-783bb84ea958" name="get Bank - Request for BLZ code_55020500"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="get Bank - Request for BLZ code_55020500" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="cacd12c8-9977-4167-93a9-a5785f551401"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>55010424</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c4d505b2-6558-48f1-a509-a1ac49a95516" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://thomas-bayer.com/blz/BLZServicePortType/getBankRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="8e6b69e9-120e-4a14-ac00-8f9d08565efb" name="TS03 test suite for supplier service"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="712f2444-8925-415e-bda6-dc680ae82d3f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC 01 supplier by zip code" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="d21788c4-31ab-4ad0-b670-fb283440c170" name="TS03 test suite for supplier service"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b9f5ba67-9593-4d9b-a241-b34b7df13b91" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC01 Supplier_ByZipCode" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="45a66df4-b011-409b-b132-f37d5f44d687" name="GetSupplierByZipCode - Request"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>medicareSupplierServiceSoapBinding</con:interface><con:operation>GetSupplierByZipCode</con:operation><con:request name="GetSupplierByZipCode - Request" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="bf9f9aff-b338-4d6d-bf11-feea53c2c480"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/services/medicareSupplierService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetSupplierByZipCode>
+         <!--Optional:-->
+         <web:zip>75060</web:zip>
+      </web:GetSupplierByZipCode>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="d0956595-191f-4657-b8c6-b236c984bd02" name="SOAP Response"/><con:assertion type="XPath Match" id="36133474-eeb3-4314-8f67-f3919ac6a7ba" name="XPath Match - Count of suppliers should BE ZERO when zipcode !=75060"><con:configuration><path>declare namespace ns1='http://www.webservicex.net/';
+count(//ns1:GetSupplierByZipCodeResponse[1]/ns1:SupplierDataLists[1]/ns1:SupplierDatas[1]/ns1:SupplierData[ns1:ZipPlus4!='75060'])</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetSupplierByZipCode"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script></con:eventHandlers><con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep"><con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script></con:eventHandlers><con:authRepository/><con:tags/></con:soapui-project>

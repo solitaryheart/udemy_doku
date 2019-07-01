@@ -1,0 +1,49 @@
+************* Creating TestSuite_Testcases ***********************************
+*******************************************************************************
+
+TestSuite: TS01_Test suite to test bank service
+
+Testcases:
+
+TC01_to test get Bank operation
+TC02_to test get Bank operation
+
+
+get Bank - Request for BLZ code_55010111
+get Bank - Request for BLZ code_55020500
+
+
+
+Code:
+
+55010111
+55020500
+
+____________________________________________________________________
+
+************* Cloning TestSuite_Testcases ***********************************
+*******************************************************************************
+
+Clone Test Case-> TC02_to test get Bank operation
+
+New TestSuite: TS03_Test suite to test bank service
+
+
+TC03_to test get Bank operation
+get Bank - Request for BLZ code_55010800
+
+----------------------------------------
+
+Clone Test Suite -> TS01_Test suite to test bank service
+
+TS03_Test suite to test bank service
+
+
+Data:
+
+55010111
+55010424
+55010800
+55020100
+55020500
+

@@ -1,0 +1,32 @@
+1.) "SOAP Response" - validates if a resonse is a validate xml response (schema) checked against wsdl
+
+2.) "Schema Compliance" - response checked against schema
+
+3.) Not Soap Float -> validates if response does not indicating a error situation
+
+java -jar "C:\SoapServices\test\soap-services-1.0.0.jar"
+
+Airport Service LHR
+
+Medicare Supplier Service
+Endpoint: http://localhost:8080/services/medicareSupplierService
+WSDL: http://localhost:8080/services/medicareSupplierService?wsdl
+
+Get Suppliere by zipcode data
+
+75060
+75071
+
+Get Suppliere by zipcode
+
+IRVING, MC KINNEY, LEWISVILLE, MCKinney
+
+Acount Service
+
+Account[Account No=ACC-10010, Balance = 1000.0]
+Account[Account No=ACC-10011, Balance = 1000.0]
+Account[Account No=ACC-10012, Balance = 100.0]
+
+
+
+

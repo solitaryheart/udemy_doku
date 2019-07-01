@@ -1,0 +1,21 @@
+Test case: TC01_to test get Bank operation
+
+1.) XPATH MATCH -> select content from the target property
+
+a) name: validate bic code
+
+XPath Expression:
+
+declare namespace ns1='http://thomas-bayer.com/blz/';
+//ns1:getBankResponse[1]/ns1:details[1]/ns1:bic[1]
+
+Expexted result:
+
+ESSEDE5F550
+
+a) b: validate plz
+
+-> change xpath expresion and click "select from current"
+   to get value from actual response
+
+supplier

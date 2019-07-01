@@ -1,0 +1,14 @@
+************* Insertions to validate responses after sending a request**********************
+*******************************************************************************************
+
+-> Insert in Test-Case "TestCase4 - DD_Excel_Source_PropertyTransfer
+
+1.) Validating Status Codes
+ "Valid HTTP Status Codes" - single or multiple separated by list
+"Invalid HTTP Status Codes"
+
+2.) Validation if HTTP-Header exists -> for example customerID after performin post request
+"HTTP Header exists" -> checks only the key existence, not the value
+
+3.) Validation if Header Equals a specific value -> value assertion !
+"HTTP Header Equals Assertion" -> header: customerID, value: cust323323

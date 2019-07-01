@@ -1,0 +1,71 @@
+
+Project: 
+
+- Start: java -jar "C:\SoapServices\test\soap-services-1.0.0.jar"
+- WSDL: http://localhost:8080/services/medicareSupplierService?wsdl
+
+3 Operation:
+
+- GetSupplierByCity
+- GetSupplierBySupplyType - IRVING, MC KINNEY, LEWISVILLE, MCKinney
+- GetSupplierByZipCode - 75060, 75071
+
+------------------------------------------------------
+
+1.) Add Operation GetSupplierByZipCode to testcase
+
+- test suite - TS03 test suite for supplier service
+- test case  - TC01 Supplier_ByZipCode
+- request-input - 75060
+
+
+sample response - containing data for one supplier,
+                  response contains multiple of this SupplierData nodes
+                  each node contains the matching zipcode in node
+                  <ZipPlus4>75060</ZipPlus4>
+
+<SupplierData>
+                  <SupplierNumber>0282932056</SupplierNumber>
+                  <CompanyName>WALGREEN CO</CompanyName>
+                  <Address1>1050 W SHADY GROVE RD</Address1>
+                  <City>IRVING</City>
+                  <Zip>TX</Zip>
+                  <ZipPlus4>75060</ZipPlus4>
+                  <Telephone>5867</Telephone>
+                  <Description>(972)254-0305</Description>
+                  <IsSupplierParticipating>04</IsSupplierParticipating>
+</SupplierData>
+
+---------------------------------------------------------------------------------------
+
+
+Used assertionXPATH-MAtch
+
+XPath Expression in SOAPUIPro:
+
+declare namespace ns1='http://www.webservicex.net/';
+//ns1:GetSupplierByZipCodeResponse[1]/ns1:SupplierDataLists[1]/ns1:SupplierDatas[1]/ns1:SupplierData[1]/ns1:ZipPlus4[1]
+
+ 
+Expected Result
+75060
+--------------------------------------
+
+Adujusted XPath Expression
+
+count(//ns1:GetSupplierByZipCodeResponse[1]/ns1:SupplierDataLists[1]/ns1:SupplierDatas[1]/ns1:SupplierData[ns1:ZipPlus4='75060'])
+
+- actual: 5 elements of node SupplierData , matching to zipcode 75060
+- expected: 0 of  SupplierData nodes should be displayed , matching a zipcode NOT 75060
+
+adjusted XPATH with negation at the end (!=)
+
+count(//ns1:GetSupplierByZipCodeResponse[1]/ns1:SupplierDataLists[1]/ns1:SupplierDatas[1]/ns1:SupplierData[ns1:ZipPlus4!='75060'])
+
+--------------------------------------------------------------------------------------
+
+renaming XPATH assertion
+
+Count of suppliers should BE ZERO when zipcode !=75060
+
+

@@ -1,0 +1,28 @@
+same request must be tested on diffent environments
+
+-> DEV
+-> QA
+-> STG
+
+based on environment endpoints and custom properties like credentials
+can be set
+
+1.) Go to ReadyAPI - Soap-UI Pro view
+2.) Click on environments
+3.) Click on Add enviroments
+4.) Set environment
+5.) Choose Setup Options
+    - Empty
+    - Copy endpoints & credentials from the project
+6.) The following tabs are available:
+
+-SOAP Services
+-REST Services -> possible to create multiple services targeting different endpoint
+-Custom Properties
+-JDBC Connections
+-JMS Servers
+
+............................................................................
+
+After this before execution a test suite or test case the environment
+can be selected

@@ -1,0 +1,16 @@
+Assignment: Test "Stock Quote " web service.
+
+Task 1: Create a new project "stock project" using following WSDL.
+
+http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx?WSDL
+
+Task 2: Create Test Suite "TS_suite for GetQuote" and create Test Case "TC_test case for GetQuote"
+
+Task 3: Add the operation "GetQuote" to the above created Test Case.
+
+Task 4: Write assertions to validate the available attributes in response.
+
+Here are some example stock symbols to use:
+GOOG,INFY,AAPL
+
+-------------------------------------------------------------------------------------

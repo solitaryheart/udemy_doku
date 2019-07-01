@@ -29,6 +29,7 @@ Use: JSON PATH tester -> https://jsonpath.com/
       }
     ],
     "bicycle": {
+      "author": "Mattze",
       "color": "red",
       "price": 19.95
     }
@@ -38,7 +39,7 @@ Use: JSON PATH tester -> https://jsonpath.com/
 -----------------------------------------------------------------------------------
 
 $.store.book[*].author		the authors of all books in the store
-$..author			all authors
+$..author			all authors (rekursiv) !
 $.store.*			all things in store, which are some books and a red bicycle.
 $.store..price			he price of everything in the store.
 $..book[2]			the third book
@@ -72,5 +73,10 @@ $['store]['book][*].author
 
 -----------------------
 case-sensitive !!
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
 
 

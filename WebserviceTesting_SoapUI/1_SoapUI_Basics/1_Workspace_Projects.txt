@@ -1,0 +1,51 @@
+Calculator:
+
+http://www.dneonline.com/calculator.asmx?WSDL
+
+
+BLZ:Service
+
+http://www.thomas-bayer.com/axis2/services/BLZService?wsdl
+
+
+Starting Local-Web-Services:
+
+java -jar "C:\SoapServices\test\soap-services-1.0.0.jar"
+
+
+with data:
+
+Medicare Supplier Service
+
+Get Suppliere by zipcode data
+
+75060
+75071
+
+Get Suppliere by zipcode
+
+IRVING, MC KINNEY, LEWISVILLE, MCKinney
+
+Acount Service
+
+Account[Account No=ACC-10010, Balance = 1000.0]
+Account[Account No=ACC-10011, Balance = 1000.0]
+Account[Account No=ACC-10012, Balance = 100.0]
+
+
+----------------------------------------------------------------
+
+Workspace: SoapuiDemo
+
+
+
+
+Project: BankingProject
+
+
+
+data: 20010020
+      44050199
+
+- to find uder blz.banking.db.com
+

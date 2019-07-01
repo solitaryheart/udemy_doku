@@ -1,0 +1,15 @@
+The method os called idempotent wehen, even after calling
+same method repeatedly should NOT RESULT in changing
+the resource state
+
+
+the HTTP Status code can change -> but the resource ITSELF
+keeps in the same resource state
+
+POST -> not idempotent methods -> if no constraints are implementent new data will be created
+PUT -> no change in the data, after sending same request -> idempotent
+GET - > no change in the data, after sending same request -> idempotent
+DELETE -> no change in the data, after sending same request -> idempotent
+
+
+first invoke can change the data, but not the second or third request !

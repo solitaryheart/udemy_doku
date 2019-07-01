@@ -1,0 +1,2 @@
+- while exporting a project a zip file will be created -> banking_blz.zip
+- import existing project -> import = "Import packed project"  -> 4_Mock-Services-soapui-project

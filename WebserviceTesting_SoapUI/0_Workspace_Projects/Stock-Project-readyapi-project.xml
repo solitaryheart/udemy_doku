@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3bf24f68-5f8c-4f2a-8d5d-bb5577a3f443" created="2.7.0" activeEnvironment="Default environment" name="Stock Project" resourceRoot="" updated="2.7.0 2019-05-30T13:25:24Z" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="b31cee1c-9e16-4cc3-aa3c-3dbb6005577d" wsaVersion="NONE" name="DelayedStockQuoteSoap" type="wsdl" bindingName="{http://ws.cdyne.com/}DelayedStockQuoteSoap" soapVersion="1_1" anonymous="optional" definition="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx?WSDL"><con:part><con:url>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://ws.cdyne.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ws.cdyne.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ws.cdyne.com/">
+      <s:element name="GetQuote">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockSymbol" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuoteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetQuoteResult" type="tns:QuoteData"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="QuoteData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StockSymbol" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="LastTradeAmount" type="s:decimal"/>
+          <s:element minOccurs="1" maxOccurs="1" name="LastTradeDateTime" type="s:dateTime"/>
+          <s:element minOccurs="1" maxOccurs="1" name="StockChange" type="s:decimal"/>
+          <s:element minOccurs="1" maxOccurs="1" name="OpenAmount" type="s:decimal"/>
+          <s:element minOccurs="1" maxOccurs="1" name="DayHigh" type="s:decimal"/>
+          <s:element minOccurs="1" maxOccurs="1" name="DayLow" type="s:decimal"/>
+          <s:element minOccurs="1" maxOccurs="1" name="StockVolume" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="PrevCls" type="s:decimal"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ChangePercent" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="FiftyTwoWeekRange" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="EarnPerShare" type="s:decimal"/>
+          <s:element minOccurs="1" maxOccurs="1" name="PE" type="s:decimal"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="QuoteError" type="s:boolean"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetQuickQuote">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockSymbol" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuickQuoteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetQuickQuoteResult" type="s:decimal"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuoteDataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockSymbols" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQuoteDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQuoteDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuoteData" type="tns:QuoteData"/>
+      <s:element name="decimal" type="s:decimal"/>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema"/>
+            <s:any/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetQuoteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQuote"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQuoteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuickQuoteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQuickQuote"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuickQuoteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQuickQuoteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQuoteDataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQuoteDataSetResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteHttpGetIn">
+    <wsdl:part name="StockSymbol" type="s:string"/>
+    <wsdl:part name="LicenseKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteHttpGetOut">
+    <wsdl:part name="Body" element="tns:QuoteData"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuickQuoteHttpGetIn">
+    <wsdl:part name="StockSymbol" type="s:string"/>
+    <wsdl:part name="LicenseKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuickQuoteHttpGetOut">
+    <wsdl:part name="Body" element="tns:decimal"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteDataSetHttpGetIn">
+    <wsdl:part name="StockSymbols" type="s:string"/>
+    <wsdl:part name="LicenseKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteDataSetHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteHttpPostIn">
+    <wsdl:part name="StockSymbol" type="s:string"/>
+    <wsdl:part name="LicenseKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteHttpPostOut">
+    <wsdl:part name="Body" element="tns:QuoteData"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuickQuoteHttpPostIn">
+    <wsdl:part name="StockSymbol" type="s:string"/>
+    <wsdl:part name="LicenseKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuickQuoteHttpPostOut">
+    <wsdl:part name="Body" element="tns:decimal"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteDataSetHttpPostIn">
+    <wsdl:part name="StockSymbols" type="s:string"/>
+    <wsdl:part name="LicenseKey" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetQuoteDataSetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:portType name="DelayedStockQuoteSoap">
+    <wsdl:operation name="GetQuote">
+      <wsdl:documentation>This method retrieves a current stock quote.  Use a license key of 0 for testing.</wsdl:documentation>
+      <wsdl:input message="tns:GetQuoteSoapIn"/>
+      <wsdl:output message="tns:GetQuoteSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuickQuote">
+      <wsdl:documentation>This method retrieves just a stock price.  Use a license key of 0 for testing.</wsdl:documentation>
+      <wsdl:input message="tns:GetQuickQuoteSoapIn"/>
+      <wsdl:output message="tns:GetQuickQuoteSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuoteDataSet">
+      <wsdl:documentation>This method retrieves the stock information and returns it in a dataset.  Use a , to diplay multiple quotes.  Use a license key of 0 for testing.</wsdl:documentation>
+      <wsdl:input message="tns:GetQuoteDataSetSoapIn"/>
+      <wsdl:output message="tns:GetQuoteDataSetSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DelayedStockQuoteHttpGet">
+    <wsdl:operation name="GetQuote">
+      <wsdl:documentation>This method retrieves a current stock quote.  Use a license key of 0 for testing.</wsdl:documentation>
+      <wsdl:input message="tns:GetQuoteHttpGetIn"/>
+      <wsdl:output message="tns:GetQuoteHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuickQuote">
+      <wsdl:documentation>This method retrieves just a stock price.  Use a license key of 0 for testing.</wsdl:documentation>
+      <wsdl:input message="tns:GetQuickQuoteHttpGetIn"/>
+      <wsdl:output message="tns:GetQuickQuoteHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuoteDataSet">
+      <wsdl:documentation>This method retrieves the stock information and returns it in a dataset.  Use a , to diplay multiple quotes.  Use a license key of 0 for testing.</wsdl:documentation>
+      <wsdl:input message="tns:GetQuoteDataSetHttpGetIn"/>
+      <wsdl:output message="tns:GetQuoteDataSetHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DelayedStockQuoteHttpPost">
+    <wsdl:operation name="GetQuote">
+      <wsdl:documentation>This method retrieves a current stock quote.  Use a license key of 0 for testing.</wsdl:documentation>
+      <wsdl:input message="tns:GetQuoteHttpPostIn"/>
+      <wsdl:output message="tns:GetQuoteHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuickQuote">
+      <wsdl:documentation>This method retrieves just a stock price.  Use a license key of 0 for testing.</wsdl:documentation>
+      <wsdl:input message="tns:GetQuickQuoteHttpPostIn"/>
+      <wsdl:output message="tns:GetQuickQuoteHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuoteDataSet">
+      <wsdl:documentation>This method retrieves the stock information and returns it in a dataset.  Use a , to diplay multiple quotes.  Use a license key of 0 for testing.</wsdl:documentation>
+      <wsdl:input message="tns:GetQuoteDataSetHttpPostIn"/>
+      <wsdl:output message="tns:GetQuoteDataSetHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DelayedStockQuoteSoap" type="tns:DelayedStockQuoteSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetQuote">
+      <soap:operation soapAction="http://ws.cdyne.com/GetQuote" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuickQuote">
+      <soap:operation soapAction="http://ws.cdyne.com/GetQuickQuote" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuoteDataSet">
+      <soap:operation soapAction="http://ws.cdyne.com/GetQuoteDataSet" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DelayedStockQuoteSoap12" type="tns:DelayedStockQuoteSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetQuote">
+      <soap12:operation soapAction="http://ws.cdyne.com/GetQuote" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuickQuote">
+      <soap12:operation soapAction="http://ws.cdyne.com/GetQuickQuote" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuoteDataSet">
+      <soap12:operation soapAction="http://ws.cdyne.com/GetQuoteDataSet" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DelayedStockQuoteHttpGet" type="tns:DelayedStockQuoteHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="GetQuote">
+      <http:operation location="/GetQuote"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuickQuote">
+      <http:operation location="/GetQuickQuote"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuoteDataSet">
+      <http:operation location="/GetQuoteDataSet"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DelayedStockQuoteHttpPost" type="tns:DelayedStockQuoteHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="GetQuote">
+      <http:operation location="/GetQuote"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuickQuote">
+      <http:operation location="/GetQuickQuote"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuoteDataSet">
+      <http:operation location="/GetQuoteDataSet"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DelayedStockQuote">
+    <wsdl:port name="DelayedStockQuoteSoap" binding="tns:DelayedStockQuoteSoap">
+      <soap:address location="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="DelayedStockQuoteSoap12" binding="tns:DelayedStockQuoteSoap12">
+      <soap12:address location="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="DelayedStockQuoteHttpGet" binding="tns:DelayedStockQuoteHttpGet">
+      <http:address location="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="DelayedStockQuoteHttpPost" binding="tns:DelayedStockQuoteHttpPost">
+      <http:address location="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint></con:endpoints><con:operation id="d7f8ff90-6acf-469b-a6a4-c8b67fffcad0" isOneWay="false" action="http://ws.cdyne.com/GetQuickQuote" name="GetQuickQuote" bindingOperationName="GetQuickQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e864d0d2-f335-4233-8048-fe2bebfac6d6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:GetQuickQuote>\r
+         <!--Optional:-->\r
+         <ws:StockSymbol>?</ws:StockSymbol>\r
+         <!--Optional:-->\r
+         <ws:LicenseKey>?</ws:LicenseKey>\r
+      </ws:GetQuickQuote>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuickQuote"/></con:call></con:operation><con:operation id="f6c13812-296c-4154-ab31-d2d8c7666414" isOneWay="false" action="http://ws.cdyne.com/GetQuote" name="GetQuote" bindingOperationName="GetQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ab611059-921a-43c1-b652-7b7057603f27" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:GetQuote>\r
+         <!--Optional:-->\r
+         <ws:StockSymbol>?</ws:StockSymbol>\r
+         <!--Optional:-->\r
+         <ws:LicenseKey>?</ws:LicenseKey>\r
+      </ws:GetQuote>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuote"/></con:call></con:operation><con:operation id="3d4e2965-b467-49b7-a0ef-157702f36f6a" isOneWay="false" action="http://ws.cdyne.com/GetQuoteDataSet" name="GetQuoteDataSet" bindingOperationName="GetQuoteDataSet" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b7e3ff63-bb77-4872-ab40-4dbefac048c8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:GetQuoteDataSet>\r
+         <!--Optional:-->\r
+         <ws:StockSymbols>?</ws:StockSymbols>\r
+         <!--Optional:-->\r
+         <ws:LicenseKey>?</ws:LicenseKey>\r
+      </ws:GetQuoteDataSet>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuoteDataSet"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="0520d7f6-5f64-4f64-8c93-0341a65d8949" wsaVersion="NONE" name="DelayedStockQuoteSoap12" type="wsdl" bindingName="{http://ws.cdyne.com/}DelayedStockQuoteSoap12" soapVersion="1_2" anonymous="optional" definition="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint></con:endpoints><con:operation id="6cae1055-a293-40bc-b1db-01a50c657f8d" isOneWay="false" action="http://ws.cdyne.com/GetQuickQuote" name="GetQuickQuote" bindingOperationName="GetQuickQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5417209b-049f-411b-866f-25e2346d2c40" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://ws.cdyne.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:GetQuickQuote>\r
+         <!--Optional:-->\r
+         <ws:StockSymbol>?</ws:StockSymbol>\r
+         <!--Optional:-->\r
+         <ws:LicenseKey>?</ws:LicenseKey>\r
+      </ws:GetQuickQuote>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/DelayedStockQuoteSoap/GetQuickQuoteRequest"/></con:call></con:operation><con:operation id="2176c98b-dbf3-4c70-8234-395d77c48f1e" isOneWay="false" action="http://ws.cdyne.com/GetQuote" name="GetQuote" bindingOperationName="GetQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7f628879-459c-40ad-af46-9447989c3864" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://ws.cdyne.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:GetQuote>\r
+         <!--Optional:-->\r
+         <ws:StockSymbol>?</ws:StockSymbol>\r
+         <!--Optional:-->\r
+         <ws:LicenseKey>?</ws:LicenseKey>\r
+      </ws:GetQuote>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/DelayedStockQuoteSoap/GetQuoteRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="57077d83-5536-4ac2-8bce-e42c5e9fe34c" isOneWay="false" action="http://ws.cdyne.com/GetQuoteDataSet" name="GetQuoteDataSet" bindingOperationName="GetQuoteDataSet" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4853ad58-0bc8-4596-83fc-dd7db1c92d97" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://ws.cdyne.com/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:GetQuoteDataSet>\r
+         <!--Optional:-->\r
+         <ws:StockSymbols>?</ws:StockSymbols>\r
+         <!--Optional:-->\r
+         <ws:LicenseKey>?</ws:LicenseKey>\r
+      </ws:GetQuoteDataSet>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/DelayedStockQuoteSoap/GetQuoteDataSetRequest"/></con:call></con:operation></con:interface><con:testSuite id="85c8d889-481b-49a2-a4f1-3f1f78a6b5cd" name="TS_suite for GetQuote"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f49f64ce-e925-487b-9a4b-a2d97efc3074" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC_test case for GetQuote" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="d8b7c684-1571-41ef-b793-47f60fecb6e9" name="GetQuote - Request"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DelayedStockQuoteSoap12</con:interface><con:operation>GetQuote</con:operation><con:request name="GetQuote - Request" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="364cfd84-3bb6-42dc-a57d-a79733c593ab"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://ws.cdyne.com/">
+   <soap:Header/>
+   <soap:Body>
+      <ws:GetQuote>
+         <!--Optional:-->
+         <ws:StockSymbol>GOOG</ws:StockSymbol>
+         <!--Optional:-->
+         <ws:LicenseKey>?</ws:LicenseKey>
+      </ws:GetQuote>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="1b1d0cf3-59a4-498d-92ae-39a9054be596" name="SOAP Response"/><con:assertion type="XPath Match" id="fa002377-ad5f-49cb-84d2-7955b4ddef93" name="XPath Match - verify Stock Symbol"><con:configuration><path>declare namespace ns1='http://ws.cdyne.com/';
+//ns1:GetQuoteResponse[1]/ns1:GetQuoteResult[1]/ns1:StockSymbol[1]</path><content>GOOG</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="d1e8fa22-6c56-4d61-9f5d-f2a07e968163" name="XPath Match - verify LastTradeAmount is present"><con:configuration><path>declare namespace ns1='http://ws.cdyne.com/';
+count(//ns1:GetQuoteResponse[1]/ns1:GetQuoteResult[1]/ns1:LastTradeAmount[1])</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/DelayedStockQuoteSoap/GetQuoteRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script></con:eventHandlers><con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep"><con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script></con:eventHandlers><con:authRepository/><con:tags/></con:soapui-project>
