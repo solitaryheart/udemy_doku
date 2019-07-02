@@ -12,7 +12,7 @@ Starting Local-Web-Services:
 
 java -jar "C:\SoapServices\test\soap-services-1.0.0.jar"
 
-
+java -jar "C:\SoapServices\test\soap-services-1.0.0.jar" --port=8888
 with data:
 
 Medicare Supplier Service

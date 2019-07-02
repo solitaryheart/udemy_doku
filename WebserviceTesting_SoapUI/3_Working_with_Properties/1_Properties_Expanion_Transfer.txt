@@ -1,0 +1,126 @@
+ *********Why needed **********
+*******************************
+
+A Property is a place holder to store data at runtime during execution
+of test cases
+
+- needed to provide runtime information for testcases test steps
+on a global level -> only one source to change, for example username and
+password
+
+
+
+------------------
+
+implicite properties   - available on each level, created by SoapUI itself - "endpoint"
+custom proerties       - can be defined on project, test suite, test case level -> not test steps
+
+----------------------------------------------------
+
+Sample Project "My project"
+
+Project Level: can be used on every level (suite, test case, step)
+
+username
+password
+
+------------------------------------------------------
+
+Concept: Property expansion
+
+-> using propery values defined on project level in testcase or test steps
+-> ${#Project#<NameOfTheProperty}
+
+
+-------------------------------------------------------
+
+ *********Using Property Expansion ***********
+**********************************************
+ how to write property expansion expression
+
+${<Scope> <property name>}
+
+scope can be one of the following literal values:
+
+#Project#
+#TestSuite#
+#TestCase#
+#Global#
+
+Let us say we have property "username" at project level
+
+${#Project#username}
+
+
+-------------------------------------------------------
+
+Example: Fetching a request from test case level custom property level
+
+Testcase: TC03_to test get Bank operation
+
+Test Case Level Customer Property:
+- Name:  blzCode
+- Value: 55010800
+
+usage in get bank request:
+
+${#TestCase#blzCode}
+
+Testcase: TC01_to test get Bank operation
+
+Test Case Level Customer Property:
+- Name:  blzCode
+- Value: 55010111
+
+usage in get bank request:
+
+${#TestSuite#blzCode}
+
+-----------------------------------------------------------
+
+*********Using Property Transfer Concept ***********
+****************************************************
+
+transfering data from responses and store into new
+properties defined on test step level (or other
+subsequent request)
+
+here:
+
+Testcase: TC01_to test get Bank operation
+
+1.) Add Test Step properties
+2.) Create properties which sould store specific values
+
+- blz
+- bic
+- ort
+- plz
+
+3.) Add property transfer step, and arrange steps in correct flow
+
+a) request
+b) property transfer
+c) property
+
+4.) Configure property transfer step
+- create transfer properties (eg transfer_blz, transfern_bic)which store values at runtime before
+  storing it to target step
+
+- configure source and target
+
+5.) Execute property transfer step and check correct transfer
+
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+

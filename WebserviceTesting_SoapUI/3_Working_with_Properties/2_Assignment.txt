@@ -1,0 +1,11 @@
+Task 1: Create new TestSuite "TS_working with property concepts"
+
+Task 2: Create TestCase "TC_working with properties"
+
+Task 3: Create "Properties" test step in test case and add 3 properties (bic_code,ort_code,plz_code)
+
+Task 4: Add the "getBank" operation (from our BLZService) in test case, and transfer the response values to "Properties" step using property transfer.
+
+transfer "bic" to "bic_code"
+transfer "ort" to "ort_code"
+transfer "plz" to "plz_code"

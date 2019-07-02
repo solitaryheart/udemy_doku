@@ -14,3 +14,47 @@ Here are some example stock symbols to use:
 GOOG,INFY,AAPL
 
 -------------------------------------------------------------------------------------
+
+Assignment: Test "Account Service " web service.
+
+WSDL: http://localhost:8080/services/accountService?wsdl
+
+
+TAsk 1: Using the WSDL URL , create the project "account-service-project" 
+
+By default the following accounts are available for testing purpose.
+Account No=ACC-10010, Balance=1000.0   
+Account No=ACC-10011, Balance=200.0   
+Account No=ACC-10012, Balance=100.0   
+Account No=ACC-10013, Balance=400.0   
+Account No=ACC-10014, Balance=500.0
+
+
+TS_01 for positive test cases 
+TC_01 check balances ok
+TC_02 check deposit 
+TC_03 check withdraw 
+TC_04 check funds transfer 
+
+
+TS_02 for negative test cases 
+TC_05 check balance with invalid account  
+TC_06 check deposit with invalid account 
+TC_07 check deposit with valid account & negative or zero amount 
+TC_08 check withdraw with valid account negative or zero amount 
+TC_09 check withdraw with amount more than balance 
+TC_10 check transfer with valid source a/c & invalid destination a/c 
+TC_11 check transfer with invalid source a/c & valid destination a/c 
+TC_12 check transfer with negative or zero amount 
+
+
+
+
+
+
+
+
+
+
+
+
