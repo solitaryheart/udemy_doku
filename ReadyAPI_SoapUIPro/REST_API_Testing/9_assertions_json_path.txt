@@ -1,0 +1,49 @@
+
+
+TestSuite: TestSuite - Assertion_JSON_Path
+
+
+-------------------------------------------------
+
+- JSONPath Count (element node-count)
+
+TC_JsonPath_2
+
+ alle Customer-ID's 				$[*]['customerID']
+
+TC_JsonPath_1
+
+ node "customer" nur einmal pro customer	$['customerID']
+
+---------------------------------------------------
+
+- JSON PATH Match (parsing data) - verifying values - matches content of a particular node !
+
+TC_JsonPath_2
+
+ Vorname eines Kunden prüfen - entsprechend query parameter
+
+ first_name "larissa"			$[0]['firstName'] 
+
+ expected result can be dynamic -> click "Select Content" and select specific
+ DataSource, expected result can look like this: ${DataSource#firstName}
+
+--------------------------------------------------
+
+- JSON PATH EXistence Match (verify if node exists or not - does not evalute content)
+
+TC_JsonPath_1
+
+ - verify if every mandatory node exists ! -> returns only true or false
+
+
+
+-----------------------------------------------------------
+
+- JSON PATH RegEx Match (verify content od node with RegEx)
+
+TC_JsonPath_1
+
+- verify if particular matches to a specific pattern -> returns true or false
+
+^\d{1,5}$ -> checks if phone number contains 1-5 digists

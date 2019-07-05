@@ -1,0 +1,94 @@
+*************************** SAMPLE Project *********************
+
+Jar: smart-byte-services-1.0
+
+Start Jar file : C:\SoapServices\test
+
+
+java -jar "C:\SoapServices\test\smart-byte-services-1.0.jar" --port=9292
+
+
+-----------------------------------------------------------
+
+Contains complete documentation: http://localhost:8080/swagger-ui.html
+
+3 Services
+
+- Authentication Service: Authohorization operations
+- Person Service: Operations pertaining to Persons in Online Store
+- Product Service: Operations peretaining to products in Online Store
+
+-> All Person Service operations need Token provided vy Authentication Service
+----------------------------------------------------------------
+
+a.) Authentication Service -> /api/user/login -> URI: http://localhost:8080//api/user/login
+
+type: POST Operation
+important: add  2 headers (no path parameters) "X-Password", "Y-Password"
+
+creates authentication token, Pass X-UserName anns X-Password as header parameter
+
+
+Project: Rest_SmartByte_Services
+TestSuite: SmartByte_GetAndUseAccessToken
+Test Case: TC01_login_list_persons_logout
+
+
+1.) Add login operation to project
+2.) Create 2 Header Parameters "X-Password", "Y-Password" (Project-Tav)
+3.) Add login operation to test case -> "login"
+4.) Create three customer properties on test case level -> TC01_login_list_persons_logout
+
+auth_token: empty
+username: admin
+password: admin
+
+
+5.) Fill Header-Values with value on test case level: ${#TestCase#username}, ${#TestCase#password}
+6.) Run Test Case - eg. login operation
+7.) Check Header Tab in login operation response
+
+-----------------------------------------------------------------------
+HTTP/1.1 200 
+X-Auth-Token: b8bREDxbNIPJzLgkc+kZKpcUAoX8vfG31tZF3HM7Q7M=
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Content-Length: 0
+Date: Fri, 05 Jul 2019 08:13:45 GMT
+----------------------------------------------------------------------------
+8.) We have X-Auth-Token and save it in test case custome property "auth_token"
+9.) Add Groove Test Step -> "Transfer Token"
+
+Script:
+
+Zeile 1: String token = testRunner.testCase.testSteps['login'].testRequest.response.responseHeaders['X-Auth-Token'][0]
+Zeile 2: testRunner.testCase.setPropertyValue('auth_token', token)
+
+10.) Run Script -> Token should be saved in testcase customer property auth_token
+
+
+b.) Person Services -> GET /api/person/list -> URI: http://localhost:8080/api/person/list
+type: GET Operation
+important: needs Header-Parameter: X-Auth-Token
+
+
+1.) Add ist operation to project
+2.) Create  Header Parameter "X-Auth-Token"
+3.) Add List operation to test case -> "List all persons"
+4.) Fill Header-Values with value on test case level: ${#TestCase#auth_token}
+5.) Trigger operation and - "List all persons" should not retun "unauthorized"
+
+
+6.) Ad logout operation to Authentication Service:
+
+Authentication Service -> /api/user/logout -> URI: http://localhost:8080/api/user/logout
+
+7.) Create  Header Parameter "X-Auth-Token" (Project tab)
+8.) Add logout operation to test case -> "logout"
+9.) Fill Header-Values with value on test case level: ${#TestCase#auth_token}
+
+RUN COMPLE TEST CASE  Should PASS

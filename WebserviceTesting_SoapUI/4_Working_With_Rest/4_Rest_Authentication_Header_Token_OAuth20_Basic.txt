@@ -1,0 +1,64 @@
+********************* REST Authentication ***********************************
+******************************************************************************
+
+
+
+1.) Header Parameters (passing api/security tokens)
+ -api key in header
+ - username, password in Header (SoapUI - Header Parameter)
+
+
+2.) Basic Authorization
+- encrypted key in Header build from user/pw combination
+
+
+3.) OAuth2.0
+
+
+------------------------------
+
+Test Suite: Pet Process
+
+TC_02_Basic Authentification
+
+- click "Auth" tab
+- select Basic
+- provide user name and password - check "autheticate pre_emtively
+
+
+Request Header: -> encrypted key consists of user pw combination
+
+POST http://petstore.swagger.io/v2/pet HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Basic c3VwZXI6bWF0dHpp
+Content-Length: 216
+Host: petstore.swagger.io
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_181)
+
+------------------------------------------------------------------------
+
+
+TC_03_OAuth20
+
+- click "Auth" tab
+- select Outh2.0
+- input "profile name:" -> e.g Server12 (
+- click "get access token" and enter information from provider
+
+
+Request Header: -> contains token
+
+
+POST http://petstore.swagger.io/v2/pet HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 232323232323232323232323
+Content-Length: 216
+Host: petstore.swagger.io
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_181)
+
+
+

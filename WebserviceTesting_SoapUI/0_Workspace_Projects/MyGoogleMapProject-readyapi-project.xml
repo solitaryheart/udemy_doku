@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="df496765-c8e5-4bbb-926b-8c92704bef77" created="2.7.0" activeEnvironment="Default environment" name="REST Project for google maps api" resourceRoot="" updated="2.7.0 2019-05-30T13:25:24Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="a4d099f7-7b97-4b42-80bd-691fbf22f66d" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://maps.googleapis.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://maps.googleapis.com</con:endpoint></con:endpoints><con:resource name="Json" path="/maps/api/geocode/json" id="1a71734f-f116-4faf-bc08-eff56ab486f4"><con:settings/><con:parameters/><con:method name="Json" id="1223675f-b220-4ddb-a8d8-5f214afa15ad" method="GET"><con:settings/><con:parameters><con:parameter required="true"><con:name>address</con:name><con:value>Hyderabad</con:value><con:style>QUERY</con:style><con:default>Hyderabad</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter required="true"><con:name>key</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:json="https://maps.googleapis.com/maps/api/geocode/json">json:Response</con:element></con:representation><con:request name="Request 1" id="1daa1ba5-7c8a-42e6-8ac6-54b5aa040f2d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="address" value="Hyderabad"/>
+  <con:entry key="key" value="${#Project#key}"/>
+</con:parameters><con:parameterOrder><con:entry>address</con:entry><con:entry>key</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="e3f906c6-3450-42a9-be61-34f804f938e2" name="TS google maps api"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="953b1813-613d-406c-8a14-08962fb07b51" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC01_validate location data for Hyderabad" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="getLocationDetails" id="7e663b56-f148-42bd-abe0-1cc6171f4470"><con:settings/><con:config service="https://maps.googleapis.com" resourcePath="/maps/api/geocode/json" methodName="Json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getLocationDetails" id="1daa1ba5-7c8a-42e6-8ac6-54b5aa040f2d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:assertion type="JsonPath Match" id="74f853fc-9f70-4b66-8c17-f2044b7fc3c7" name="JSONPath Match"><con:configuration/></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="address" value="Hyderabad"/>
+  <con:entry key="key" value="${#Project#key}"/>
+</con:parameters><con:parameterOrder><con:entry>address</con:entry><con:entry>key</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:properties><con:property><con:name>key</con:name><con:value>AIzaSyAMHdmFhYt5LQtBNeVudodNxOGqnm-xs7A</con:value></con:property></con:properties><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script></con:eventHandlers><con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep"><con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script></con:eventHandlers><con:authRepository/><con:tags/></con:soapui-project>

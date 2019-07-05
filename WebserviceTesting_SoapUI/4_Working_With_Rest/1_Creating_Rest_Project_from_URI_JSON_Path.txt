@@ -1,0 +1,132 @@
+
+Creating an API-Key: https://console.cloud.google.com
+Account:
+
+Vorname: Matthias
+Nachnamr: Meier
+Address: solitaryheart@web.de
+PW: JIRA-PW
+Tel: 
+
+key=AIzaSyAMHdmFhYt5LQtBNeVudodNxOGqnm-xs7A
+
+
+key=AIzaSyAMHdmFhYt5LQtBNeVudodNxOGqnm-xs7A
+
+Place-API-Key to Project-Level
+
+
+
+--------------------------------------------------------------------------------------------
+Create Project for Google Maps-API
+
+URI-with query parameter: https://maps.googleapis.com/maps/api/geocode/json?address=Hyderabad
+
+Endpoint: https://maps.googleapis.com
+Ressource: /maps/api/geocode/json
+
+----------------------------------------------------------------------
+
+TestSuite: TS google maps api
+TestCase: TC01_validate location data for Hyderabad
+
+JSON Path Match - validate for OK status
+
+$.status -> expected result: ok
+
+JSON Path Match - verify place_id
+
+
+$.results[0].place_id
+
+JSON Path Match - verify southwest latitude
+
+$.results[0].geometry.bounds.southwest.lat
+
+JSON Path Match - verify northeast lng
+
+
+$.results[0].geometry.viewport.northeast.lng
+
+JSON Path Match - verify location type
+
+
+$.results[0].geometry.location_type
+
+
+--------------------JSON RESPONSE------------------------------------------------------
+
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Hyderabad",
+               "short_name" : "Hyderabad",
+               "types" : [
+                  "locality",
+                  "political"
+               ]
+            },
+            {
+               "long_name" : "Telangana",
+               "short_name" : "Telangana",
+               "types" : [
+                  "administrative_area_level_1",
+                  "political"
+               ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [
+                  "country",
+                  "political"
+               ]
+            }
+         ],
+         "formatted_address" : "Hyderabad, Telangana, India",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 17.6078088,
+                  "lng" : 78.6561694
+               },
+               "southwest" : {
+                  "lat" : 17.2168886,
+                  "lng" : 78.1599217
+               }
+            },
+            "location" : {
+               "lat" : 17.385044,
+               "lng" : 78.486671
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 17.6078088,
+                  "lng" : 78.6561694
+               },
+               "southwest" : {
+                  "lat" : 17.2168886,
+                  "lng" : 78.1599217
+               }
+            }
+         },
+         "place_id" : "ChIJx9Lr6tqZyzsRwvu6koO3k64",
+         "types" : [
+            "locality",
+            "political"
+         ]
+      }
+   ],
+   "status" : "OK"
+}
+
+
+
+
+
+
+
+

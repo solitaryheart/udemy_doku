@@ -1,0 +1,45 @@
+http://petstore.swagger.io
+
+URL for swagger project
+
+https://petstore.swagger.io/v2/swagger.json
+
+
+Sample Site will provide 3 services:
+
+- pet-service
+- store-service
+- user-service
+
+
+-----------------------------------------------------
+
+manual testing -> 4 operations
+
+add pet
+get pet
+update pet
+delete pet
+
+--------------------------------------------------------
+
+Test Suite: Pet Process -> ab Minute 12
+
+Test Case: TC_01 Pet creation to deletion process check
+
+addPet
+getPetById - after creation (response samm as addPet response) -> ${addPet#Response#$}
+updatePet 
+getPetById - after update (response samm as addPet response) -> ${updatePet#Response#$}
+deletePet
+getPetById - adter deletion
+
+--------------------------------------------------------
+
+Adding several assertions
+
+
+
+
+
+

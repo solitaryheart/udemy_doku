@@ -1,0 +1,52 @@
+Scenario:
+
+- Two Rest service operations providing the same result
+- Service operations have same path parameter
+- operation 1 produces same result as operation 2
+
+
+Concepts:
+
+- making path parameter dynamic by using SOAPUI TEMPLATE
+- create testdata on test case customer property level
+- using property expansion concept
+- making json assertion dynamic -> provide same expected result in operation 2 as in operation 1
+
+
+---------------------------------------------------------------------
+
+Rest-Services:  www.groupkt.com
+
+SoapUI-Project - Group KT country service
+
+Rest-Service 1: - http://restcountries.eu/rest/v2/alpha/in
+Rest-Service 1: - http://restcountries.eu/rest/v2/alpha/ind
+
+
+Service 1: test step "country_iso2_code" (request using 2-digits in path param template)
+- no assertion
+
+
+Service 2:  test step "country_iso3_code" (request using 3-digits in path param template)
+
+- make sure operation 2 gets same data as provided in operation 1 
+
+JSON assertion 1 : expression: $.alpha2Code, expected result: ${country_iso2_code#Response#$.alpha2Code}
+JSON assertion 2:  expression: $.alpha3Code, expected result: ${country_iso2_code#Response#$.alpha3Code}
+
+
+------------------------------------------------------------------
+Creating 2 custom properties on TC level -> TC_test_isocode2 and isocode3
+
+customer properties:
+
+isocode2 - us
+isocode3 - usa
+
+
+We provide this data in related test step in path-parameter template
+
+${#TestCase#isocode2}
+${#TestCase#isocode3} 
+---------------------------------------------------------------------------------------------------------------------------
+
