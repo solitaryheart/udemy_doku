@@ -1,0 +1,106 @@
+Project: MyProject
+TestSuite: TS08 Groovy Automation
+TestCase: TC01_to test get Bank operation
+
+TestStep: get Bank - Request for BLZ code_55010111
+
+
+Groovy Script: "Groovy Script - calling test step"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------
+XML-response
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/">
+         <ns1:details>
+            <ns1:bezeichnung>SEB</ns1:bezeichnung>
+            <ns1:bic>ESSEDE5F550</ns1:bic>
+            <ns1:ort>Mainz a Rhein</ns1:ort>
+            <ns1:plz>55116</ns1:plz>
+         </ns1:details>
+      </ns1:getBankResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+--------------------------------------------------------------------
+
+XPATH-expression
+
+refering to groovy xml slurper object -> "envelope"
+
+ -> def envelope = xmlSlurper.parseText(response.responseContentAsXml)
+
+bezeichnung
+bic		-> envelope.Body.getBankResponse.details.bic
+ort	        -> envelope.Body.getBankResponse.details.ort
+plz		-> envelope.Body.getBankResponse.details.plz
+
+String actual BICCode = envelope.Body.getBankResponse.details.bic
+
+----------------------------------------------------------------------
+
+
+import groovy.util.XmlSlurper
+
+
+//Calling test test step
+def testStepName = 'get Bank - Request for BLZ code_55010111'
+
+def testStep = testRunner.testCase.getTestStepByName(testStepName)
+
+
+//Running the test step
+def response = testStep.run(testRunner, context)
+
+
+// create instance of XMLSlurper
+def xmlSlurper = new XmlSlurper()
+
+//parse the response
+def envelope = xmlSlurper.parseText(response.responseContentAsXml)
+
+log.info envelope
+
+//Asserting the webserviice xml-based response
+String expectedBICCode = "ESSEDE5F551"
+// -> actual BicCode ready by using xpath-expression
+String actualBICCode = envelope.Body.getBankResponse.details.bic
+
+log.warn "expected l BIC Code is $expectedBICCode"
+log.warn "acttual BIC Code is $actualBICCode"
+
+assert expectedBICCode == actualBICCode, "BIC code not matching, expectted = $expectedBICCode, but actual is  $actualBICCode"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

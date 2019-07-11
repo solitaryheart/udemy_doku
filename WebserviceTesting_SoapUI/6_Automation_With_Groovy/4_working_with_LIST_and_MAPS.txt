@@ -1,0 +1,12 @@
+***************Working with LIST and MAPS *******************************
+***************************************************************************
+
+
+Project: MyProject
+
+TestSuite: TS07_GroovyBasics
+
+TC01_Groovy Stuff
+
+Script: Groovy Script - Working with List
+Script: Groovy Script - Working with Map

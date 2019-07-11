@@ -1,0 +1,140 @@
+***********************************************
+
+A.) Read data from Excel Sheet Using Groovy
+
+B.) Call the RestAPI Post method for all entries in Excel Sheet
+
+---------------------------------------------------------
+Impotant: jxl.jar file has to be placed
+          in SoapUI/ReadyAPI lib directory
+
+     -> Restart necessary
+
+------------------------------
+
+
+1.) Copy jxl.jar to Ready API lib directory and restart Ready-API
+-> C:\Program Files\SmartBear\ReadyAPI-2.7.0\lib
+
+2.) Create TestSuite - TestCase
+
+Project: Rest Swagger Petstore Project
+TestSuite: Reading_Excel_Data_with_Groovy
+TestCase: TC01_Adding_Pets_Groovy_Excel
+
+3.) Add "addPet" Operation from "Rest Swagger Petstore Project" to testcase
+
+4.) Create 2 Custom Properties on testcase level
+
+Pet_id
+Pet_Name
+
+5.) Create binding in JSON-Body to custom properties - 
+6.) Prepare one sample data in properties and perform one test run
+
+------------------------------------------------------------
+
+{
+   "id" : ${#TestCase#Pet_id},
+   "category" : {
+      "id" : 0,
+      "name" : "dog"
+   },
+   "name" : "${#TestCase#Pet_Name}",
+   "photoUrls" : [
+      "string"
+   ],
+   "tags" : [
+      {
+         "id" : 0,
+         "name" : "string"
+      }
+   ],
+   "status" : "available"
+}
+
+------------------------------------------------------------------
+7.) Prepare testdate in excel-file
+
+C:\\udemy\\udemy_doku\\WebserviceTesting_SoapUI\\6_Automation_With_Groovy\\3_Rest_Groovy__Excel\\pets.xls
+
+8.) Add Groovy Test test an create script to read data from excel
+------------------------------------------------------------------------------------------
+//Import the JXL libraries
+import jxl.*
+import jxl.write.*
+
+//only xls is supported by jxl
+
+//Create a file instance
+def excelFilepath = "C:\\udemy\\udemy_doku\\WebserviceTesting_SoapUI\\6_Automation_With_Groovy\\3_Rest_Groovy__Excel\\pets.xls"
+File excelFile = new File(excelFilepath)
+
+//Create workbook instance
+Workbook workbook = Workbook.getWorkbook(excelFile)
+
+//Load the sheet
+jxl.Sheet sheet = workbook.getSheet(0)
+
+//Number of rows in the excel
+int noOfRows = sheet.getRows()-1
+log.info "noOfRows = $noOfRows"
+
+//need to loop through the records and print data
+
+def petId
+def petName
+
+for(int rowIdx in 1..noOfRows) {
+	//read the content of the cell
+	
+	
+	petId = sheet.getCell(0,rowIdx).getContents()
+	petName = sheet.getCell(1,rowIdx).getContents()
+	
+	log.info ("Setting petID=$petId, petName=$petName to test case properties")
+	testRunner.testCase.setPropertyValue('Pet_id', petId)
+	testRunner.testCase.setPropertyValue('Pet_Name', petName)
+	Thread.sleep(5000)
+	//execute add pet operation dynamically using groovy
+	testRunner.testCase.getTestStepByName('addPet').run(testRunner,context)
+	
+}
+
+-----------------------------------------------------------------------------------------
+9.) Disable addPet test step - cause this will be triggered by groovy
+
+
+
+
+
+
+
+
+
+
+
+
+import jxl.*
+import jxl.write.*
+
+
+
+//Create a file instance
+
+def excelFilePath = "c:\\test\\pets.xls"
+File excelFile = new File(excelFilePath)
+
+
+//Create workbook instance
+
+Workbook workbook = Workbook.getWorkbook(excelFile)
+
+//Load the sheet
+
+jxl.Sheet sheet = workbook.getSheet(0)
+
+//I want to read the data in the sheet
+
+int noOfRows = sheet.getRows()-1
+log.info "noOfRows = $noOfRows

@@ -1,0 +1,58 @@
+http://petstore.swagger.io
+
+URL for swagger project
+
+https://petstore.swagger.io/v2/swagger.json
+
+
+-------------------------------------------------------------------------------------
+
+Service: pet
+
+Operation: 
+
+POST operation
+
+/pet/{petID}uploadImage
+
+
+expects:
+
+petID -> path
+additionalMetadata -> formData -> in SOAPUI -> Query parameter - Method Level
+file -> formdate -> for example dog.jpg -> in SOAPUI -> Query parameter - Method level
+
+
+------------------------------------------------------------------------------------
+
+Project: REST Swagger Petstore Project
+Testsuite: Pet Process
+
+TC_04_Upload_Dog_Image
+
+
+1.) Create additional Query Parameter on Project Level for uoloadImage operation
+2.) Media Type: multipart/form-data, Check box "Post query string" selected
+3.) Add Attachement
+4.) Value for query parameter additionalMetadata = image/jpeg (Content type)
+5.) Value for query parameter file = dog.jpg
+
+
+
+Response:
+
+HTTP/1.1 200 OK
+Date: Mon, 08 Jul 2019 07:07:23 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+----------------------------------------------------------------------------------------
+
+
+
+
+

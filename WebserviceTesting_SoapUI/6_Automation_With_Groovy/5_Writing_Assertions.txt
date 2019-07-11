@@ -1,0 +1,7 @@
+Project: MyProject
+
+TestSuite: TS07_GroovyBasics
+
+TC01_Groovy Stuff
+
+Script: Groovy Script - Assertions

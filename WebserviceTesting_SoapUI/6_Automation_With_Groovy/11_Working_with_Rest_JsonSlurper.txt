@@ -1,0 +1,153 @@
+Project: Rest Country Service
+
+TestSuite: TestSuite2 - Groovy_JsonSlurper
+
+TC01_Rest_JSON-Slurper
+
+Script - Groovy Script - parsing JSON response data with groovy
+
+getCountry - request
+
+--------------------------------------------------
+
+.name -> United States of America
+.capital -> Washington, D.C
+.timezones[0] -> UTC-12:00
+.borders[0] -> CAN
+.regionalBlocs[0].name -> North American Free Trade Agreement
+$.translations.nl -> Verenigde Staten
+
+
+
+-------------------JSON RESPONSE DATA -----------------------------------------------------
+
+{
+   "name" : "United States of America",
+   "topLevelDomain" : [
+      ".us"
+   ],
+   "alpha2Code" : "US",
+   "alpha3Code" : "USA",
+   "callingCodes" : [
+      "1"
+   ],
+   "capital" : "Washington, D.C.",
+   "altSpellings" : [
+      "US",
+      "USA",
+      "United States of America"
+   ],
+   "region" : "Americas",
+   "subregion" : "Northern America",
+   "population" : 323947000,
+   "latlng" : [
+      38.0,
+      -97.0
+   ],
+   "demonym" : "American",
+   "area" : 9629091.0,
+   "gini" : 48.0,
+   "timezones" : [
+      "UTC-12:00",
+      "UTC-11:00",
+      "UTC-10:00",
+      "UTC-09:00",
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00",
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC+10:00",
+      "UTC+12:00"
+   ],
+   "borders" : [
+      "CAN",
+      "MEX"
+   ],
+   "nativeName" : "United States",
+   "numericCode" : "840",
+   "currencies" : [
+      {
+         "code" : "USD",
+         "name" : "United States dollar",
+         "symbol" : "$"
+      }
+   ],
+   "languages" : [
+      {
+         "iso639_1" : "en",
+         "iso639_2" : "eng",
+         "name" : "English",
+         "nativeName" : "English"
+      }
+   ],
+   "translations" : {
+      "de" : "Vereinigte Staaten von Amerika",
+      "es" : "Estados Unidos",
+      "fr" : "États-Unis",
+      "ja" : "???????",
+      "it" : "Stati Uniti D'America",
+      "br" : "Estados Unidos",
+      "pt" : "Estados Unidos",
+      "nl" : "Verenigde Staten",
+      "hr" : "Sjedinjene Americke Države",
+      "fa" : "?????? ????? ??????"
+   },
+   "flag" : "https://restcountries.eu/data/usa.svg",
+   "regionalBlocs" : [
+      {
+         "acronym" : "NAFTA",
+         "name" : "North American Free Trade Agreement",
+         "otherAcronyms" : [ ],
+         "otherNames" : [
+            "Tratado de Libre Comercio de América del Norte",
+            "Accord de Libre-échange Nord-Américain"
+         ]
+      }
+   ],
+   "cioc" : "USA"
+}
+------------------------------------------------
+
+import groovy.json.JsonSlurper
+
+
+//Create instance of JsonSlurper
+def jsonSlurper = new JsonSlurper()
+
+
+//Read the web service response
+def response = context.expand('${getCountry#Response}')
+
+//Convert data to Json format
+def countryData =  jsonSlurper.parseText(response)
+
+
+//parse the Json response and extract data to be verified - using JSON path !
+
+String name =  countryData.name
+String capital = countryData.capital
+String timezones =  countryData.timezones[0]
+String borders =  countryData.borders[0]
+String regionalBlocNames =  countryData.regionalBlocs[0].name
+String translationNL =  countryData.translations.nl
+
+log.info " name = $name, capital=$capital, timezones=$timezones, borders=$borders, regionalBlocName=$regionalBlocNames, translationNL=$translationNL"
+
+assert name == 'United States of America'
+assert capital== 'Washington, D.C.'
+assert timezones =='UTC-12:00'
+assert borders == 'CAN'
+assert regionalBlocNames == 'North American Free Trade Agreement'
+assert translationNL == 'Verenigde Staten'
+
+
+
+
+
+
+
+
+
+
+

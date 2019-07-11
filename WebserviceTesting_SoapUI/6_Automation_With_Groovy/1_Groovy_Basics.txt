@@ -1,0 +1,19 @@
+Project: MyProject
+
+TestSuite: TS07_GroovyBasics
+
+TC01_Groovy Stuff
+
+---------------------------
+
+log.info supports 3 output types
+
+- log.info
+- log.warn
+- log.error
+
+----------------------------
+
+printing Strings wihout concatination
+
+"log.info "country name  =  $country" (use double quotes !!)

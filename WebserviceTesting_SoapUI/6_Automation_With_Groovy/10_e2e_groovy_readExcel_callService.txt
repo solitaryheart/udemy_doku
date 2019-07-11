@@ -1,0 +1,182 @@
+*******************E2E Groovy - READ TXT.File - CALL Service -> ASSERT *****************
+************************************************************************************
+
+file contains: input, and expected data -> for example blz = input parameter
+
+Scenario:
+
+A) Read bank service data from file
+
+B) Call the getBank operation with BLZ-code, that was reas from file
+
+C) Write assertions for the response with the data in file -> bic, ort,plz,bezeichnung
+
+IMPORTANT
+
+to update the getBank request xml it is important to import GroovyUtils class !
+- import com.eviware.soapui.support.GroovyUtils
+
+-----------------------------------------------
+request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>20010020</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>
+---------------------------------------------------------
+ requestXmlHolder["blz:blz"] = blz
+
+RUN THE OPERATION
+
+testRunner.testCase.getTestStepByName('getBank').run(testRunner,contex)
+
+STORING RESPONSE 
+
+responseXmlHolder = groovyUtils.getXmlHolder('getBank#Response')
+
+--------------------------------------------------------
+response:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/">
+         <ns1:details>
+            <ns1:bezeichnung>SEB</ns1:bezeichnung>
+            <ns1:bic>ESSEDE5F550</ns1:bic>
+            <ns1:ort>Mainz a Rhein</ns1:ort>
+            <ns1:plz>55116</ns1:plz>
+         </ns1:details>
+      </ns1:getBankResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+-------------------------------------------------------------
+READING  RESPONSE VALUES TO STORE in responsevariable
+
+"//ns1:bezeichnung"
+"//ns1:bic"
+"//ns1:ort"
+"//ns1:plz"
+
+
+
+---------------------------------------------------------------------------------------
+
+Project: MyProject
+TestSuite: TS08 Groovy Automation
+TestCase: TC03_Data-driven Exceö-testing using groovy_txt
+
+Script: Groovy Script-end-to-end testing -xls-file
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Import the JXL libraries
+import jxl.*
+import jxl.write.*
+
+//Import GroovyUttils
+import com.eviware.soapui.support.GroovyUtils
+def requestXmlHolder, responseXmlHolder
+
+
+//  Read bank service data from txt-file
+//def filePath = "C:\\udemy\\udemy_doku\\WebserviceTesting_SoapUI\\6_Automation_With_Groovy\\blz-service-data.txt"
+File excelFile = new File("C:\\udemy\\udemy_doku\\WebserviceTesting_SoapUI\\6_Automation_With_Groovy\\BLZService.xls")
+
+// -> /Create workbook instance
+Workbook workbook = Workbook.getWorkbook(excelFile)
+
+// -> Load the sheet
+jxl.Sheet sheet = workbook.getSheet(0)
+
+// -> Number of rows in the excel
+int noOfRows = sheet.getRows()-1
+log.info "noOfRows = $noOfRows"
+
+
+
+
+
+// Create instance of GroovyUtils class and define run context
+def groovyUtils = new GroovyUtils(context)
+
+// - variables which will store value read from file -> use String cause otherwise assert will fail !
+String blz,bezeichnung,bic,ort,plz
+
+// - variables which will store value read from response  -> use String cause otherwise assert will fail !
+String bezeichnungInResponse,bicInResponse,ortInResponse,plzInResponse
+
+
+
+//-  loop through file and read the content
+for(int rowIdx in 1..noOfRows){
+	
+
+	 blz = sheet.getCell(0,rowIdx).getContents()
+	 bezeichnung = sheet.getCell(1,rowIdx).getContents()
+	 bic = sheet.getCell(2,rowIdx).getContents()
+	 ort = sheet.getCell(3,rowIdx).getContents()
+	 plz = sheet.getCell(4,,rowIdx).getContents()
+
+	 log.info "blz=$blz,  bezeichnung=$bezeichnung , bic=$bic  , ort=$ort  , plz= $plz "
+
+	//c - call the getBank operation with BLZ code, that was read from file in the loop
+	// -> in the getbank request the blz code must be updated !
+	
+	// -> extract the xml in getBank request an store in  requestXmlHolder variable
+	 requestXmlHolder = groovyUtils.getXmlHolder("getBank#Request")
+
+	 //updating the xml getBank request content >" <blz:blz>20010020</blz:blz>"
+	 //and updating the property value 
+	 requestXmlHolder["blz:blz"] = blz
+	 requestXmlHolder.updateProperty()
+
+	 //call the getBank operation with BLZ code, that was read from file
+	testRunner.testCase.getTestStepByName("getBank").run(testRunner,context)
+
+	///storing response in responseXmlHolder
+	 responseXmlHolder = groovyUtils.getXmlHolder('getBank#Response')
+
+	 //parsing value from response using xpath and store into values
+	 bezeichnungInResponse = responseXmlHolder["//ns1:bezeichnung"]
+	 bicInResponse = responseXmlHolder["//ns1:bic"]
+	 ortInResponse = responseXmlHolder["//ns1:ort"]
+	 plzInResponse = responseXmlHolder["//ns1:plz"]
+
+	 // loggin parsed data
+	 log.warn "bezeichnungInResponse=$bezeichnungInResponse,bicInResponse=$bicInResponse, ortInResponse= $ortInResponse, plzInResponse=$plzInResponse"
+
+	  //assert response data with data in file
+	  /assert bezeichnung == bezeichnungInResponse
+	  assert bic == bicInResponse
+	  assert ort == ortInResponse
+	  assert plz == plzInResponse*/
+	 
+
+
+	 
+}
+
+
+
+
+
+
+
+
+
+

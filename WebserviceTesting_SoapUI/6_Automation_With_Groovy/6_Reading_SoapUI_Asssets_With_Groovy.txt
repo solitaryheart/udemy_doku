@@ -1,0 +1,58 @@
+Project: MyProject
+TestSuite: TS07_GroovyBasics
+TestCase: TC01_Groovy Stuff
+
+---------------------------------------------------
+
+Script: Groovy Script - Reading project artefacts
+
+---------------------------------------------------
+-> FROM THE ACTUAL POSITON IN THE HIERACHY ABOVE
+
+// Printing the releated testcase name ->  TC01_Groovy Stuff
+log.info testRunner.testCase.name
+
+// Printing the releated testsuite name ->  TS07_GroovyBasics
+log.info testRunner.testCase.testSuite.name
+
+// Printing project name -> MyProject
+log.info testRunner.testCase.testSuite.project.name
+
+// Printing workspace  name ->SoapuiDemo
+log.info testRunner.testCase.testSuite.project.workspace.name
+
+//Acceess a testcase from another testsuite
+log.info testRunner.
+							testCase.
+										testSuite.
+										project.
+										getTestSuiteByName('TS01_Test suite to test bank service').
+										getTestCaseByName('TC01_to test get Bank operation').name
+
+
+//Looping through all test suites in project - method 1
+def testSuiteMap = log.info testRunner.testCase.testSuite.project.testSuites
+
+testSuiteMap.each{
+	tsEntry -> 
+	log.info tsEntry.value
+}
+
+
+
+//Looping through all test suites in project - method 2
+def testSuiteList = log.info testRunner.testCase.testSuite.project.testSuiteList.name
+
+testSuiteList.each{
+	log.info it
+}
+
+
+//Looping through all test cases in a test suite
+
+def testCaseList =log.info testRunner.testCase.testSuite.project.getTestSuiteByName('TS03_Test suite to test bank service').testCaseList.name
+
+testCaseList.each{
+	log.info it
+}
+

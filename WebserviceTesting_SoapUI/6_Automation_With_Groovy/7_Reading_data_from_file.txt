@@ -1,0 +1,50 @@
+Project: MyProject
+TestSuite: TS07_GroovyBasics
+TestCase: TC01_Groovy Stuff
+
+Script: Groovy Script - Reading data from file
+
+File: C:\\udemy\\udemy_doku\\WebserviceTesting_SoapUI\\6_Automation_With_Groovy\\blz-service-data.txt
+
+
+Scope: Read comma saparated file an store data into values after splitting the elements
+--------------------------------------------------------------------------------------------------
+content:
+
+55010111,SEB,ESSEDE5F550,Mainz a Rhein,55116
+55010424,Aareal Bank,AARBDE5W550,Mainz a Rhein,55028
+55010800,Investitions- und Strukturbank RP,ISBRDE51XXX,Mainz a Rhein,55015
+55020100,Bausparkasse Mainz,BKMZDE51XXX,Mainz a Rhein,55004
+55020500,Sozialbank,BFSWDE33MNZ,Mainz a Rhein,55004
+
+----------------------------------------------------------------------------------------------------
+
+def filePath = 'C:\\udemy\\udemy_doku\\WebserviceTesting_SoapUI\\6_Automation_With_Groovy\\blz-service-data.txt'
+File file = new File(filePath)
+
+//loop through file -> split values into variables
+
+def blz,bezeichnung,bic,ort,plz
+
+file.eachLine{
+	line->
+	log.info line
+	def lineData = line.split(',')
+
+	/*
+	 *  55010111,SEB,ESSEDE5F550,Mainz a Rhein,55116
+	 *  lineData = [55010111,SEB,ESSEDE5F550,Mainz a Rhein,55116]
+	 */
+
+	 blz = lineData[0]
+	 bezeichnung = lineData[1]
+	 bic = lineData[2]
+	 ort = lineData[3]
+	 plz = lineData[4]
+
+	 log.warn "blz=$blz,  bezeichnung=$bezeichnung , bic=$bic  , ort=$ort  , plz= $plz "
+
+	 
+
+	 
+}

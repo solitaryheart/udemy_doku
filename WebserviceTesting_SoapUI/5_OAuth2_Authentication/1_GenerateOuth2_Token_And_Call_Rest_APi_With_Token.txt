@@ -1,0 +1,60 @@
+Download JAR -> oauth2-service.jar
+
+
+Run Jar : C:\SoapServices\test\oauth2-service.jar
+
+java -jar "C:\SoapServices\test\oauth2-service.jar"
+
+.....................................................................
+
+Start and check for 2 URI
+
+Rest URI  = http://localhost:9091/api/message (operation which needs the token)
+Token URI = http://localhost:9091/api/oauth/token (operation which provides this token)
+
+------------------------------------------------------------------------
+
+
+Project: REST_OAUTH2_Example - use URI - http://localhost:9091/api/message
+TestSuite: TS01_OUTH2
+TestCase
+
+Add authentication:
+
+
+Profile name: SmartBytes
+Click "Get Access Token
+
+OAuth 2 Flow: Select "Resource Owner Password Credetials Grant" - ask provide
+
+Resource Owner Name: admin
+Resource Owner Password: admin
+Client identification: smartbytes
+Client Secret: secret
+Access Token URI: http://localhost:9091/api/oauth/token
+Scope: read
+
+Click "Get Accesstoken"
+
+Methodes to use toke
+
+1.) Call Operation api/message directly by getting the access token directly
+
+Testcase: TC01_message_api_request_generating_token_in_request
+
+-> provide all oath2 on authoriasation tab
+
+2.) Call operation by using already requested token in query parameter and header parameter
+
+
+Testcase: TC02_message_api_request_reading_token
+
+- clone message api request on project level (request2)
+- add query parameter "access_token" as query parameter and copy generated token
+- Add Headers: Username=admin, Password=admin
+
+
+
+
+
+

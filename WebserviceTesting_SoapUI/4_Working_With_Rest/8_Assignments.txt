@@ -1,0 +1,62 @@
+Assignment : Create a new rest project and write assertions.
+
+Task1 : Create new project "Pet store" using REST URI  http://petstore.swagger.io/v2/pet/1
+
+Task2: Create TestSuite and TestCase for the available operation in the rest service
+
+Task3: Write assertions for the response using JSonPath expressions.
+
+-------------------------------------------------------------------------------------
+
+
+Project: Rest Swagger Petstore Procect
+Interface: Swagger Petstore
+Operation: getPetById
+
+
+-----------------------------------------------
+
+TestSuite: GetPetIDJsonAssertion
+TestCase: TC_05_GetPetID_JSON_Assertions
+
+------------------------------------------------
+
+Created Pet-JSON
+
+{
+   "id" : 31,
+   "category" : {
+      "id" : 4,
+      "name" : "dog"
+   },
+   "name" : "paul",
+   "photoUrls" : [
+      "string"
+   ],
+   "tags" : [
+      {
+         "id" : 5,
+         "name" : "Superdog"
+      }
+   ],
+   "status" : "available"
+}
+
+
+
+$.id = 31
+$.category.id = 4
+$.category.name = dog
+$.name = paul
+$.tags[0].id = 5
+$.tags[0].name = Superdog
+$.status = available
+
+-------------------------------------
+
+
+
+
+
+
+

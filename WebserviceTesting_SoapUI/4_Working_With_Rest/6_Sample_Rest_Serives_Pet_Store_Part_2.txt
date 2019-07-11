@@ -1,0 +1,38 @@
+****************************** SAMPLE PET STORE PART 2 ******************************************
+***************************************************************************************************
+
+Instructions: Download the file and unzip  "spring-petclinic-1.5.2.war" from resources section.
+
+Folder: C:\SoapServices\test
+
+Run Command: java -jar spring-petclinic-1.5.2.war
+
+Go to the folling URL tp see available services : http://localhost:9966/petclinic/swagger-ui.html
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+************************ CONTAINED SERVICES *********************************************************
+
+Owner Service: Operations relates to Pet Owners
+
+Pet Service: Operations related to Pets
+
+Pet Type Service: Operations related to Pet types
+
+Speciality Service: Operations related to Specilities
+
+Vet Service: Operations related to Vets
+
+Visit Service: Operations relates to Visits
+
+---------------------------------------------------------------------------------------
+
+ http://localhost:9966/petclinic/swagger-ui.html
+
+----------------------------------------------------------------------------------------
+
+
+

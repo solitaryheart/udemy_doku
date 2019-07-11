@@ -1,0 +1,56 @@
+Project: MyProject
+
+TestSuite: TS07_GroovyBasics
+
+TC01_Groovy Stuff
+
+Script: Groovy Script - Conditions
+
+--------------------------------------------
+
+boolean isPassed
+String grade ='B'
+
+isPassed = true
+
+// I I'am passed my dad will buy me a bike
+
+if(isPassed==true){
+	log.info 'Congratulations'
+} else{
+	log.error 'Better luck next time'
+}
+
+
+//Handling multiple scnearios / condtions
+
+//  A - car
+//  B - bike
+// C - nothing
+
+if(grade=='A'){
+	log.info ' You got a car !! '
+}else if (grade == 'B'){
+	log.warn 'You got a bike !!'
+} else{
+	log.error 'You got Nothing !!'
+
+
+-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
