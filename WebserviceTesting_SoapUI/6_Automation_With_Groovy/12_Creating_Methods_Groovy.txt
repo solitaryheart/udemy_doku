@@ -1,0 +1,107 @@
+***************Working with METHODS IN GROOVY *******************************
+***************************************************************************
+
+
+Project: MyProject
+
+TestSuite: TS07_GroovyBasics
+
+TC01_Groovy Stuff
+
+Script: Groovy Script - Methods
+Script: Groovy Script - Methods - Part2
+
+---------------------------------
+
+Script: Groovy Script - Methods
+
+- CONTAINS METHODS WITH RETURN VALUES
+------------------------------------
+def int addNumbers(int a, int b) {
+	a+b  
+}
+
+def int substractNumbers(int a, int b) {
+	a+b  
+}
+
+
+def int multiplyNumbers(int a, int b) {
+	a*b  
+}
+
+def Integer  divideNumbers(int a, int b) {
+	try{
+	a/b  
+	}catch (ArithmeticException e) {
+		log.warn "Division with ZERO not allowed"
+	}
+}
+
+int result = addNumbers(1,9)
+log.info "result is $result"
+
+result = substractNumbers(20,5)
+log.info "result is $result"
+
+result  = divideNumbers(200,4)
+log.info "result is $result"
+
+
+---------------------------------
+
+Script: Groovy Script - Methods - Part2
+
+- CONTAINS METHODS WITH NO RETURN VALUES
+- in Groovy there is no need to declare this methods by using "void"
+------------------------------------
+
+
+
+boolean isPassed
+String grade ='A'
+isPassed =true
+
+
+///Calling the method - if 
+printExamResult(isPassed,grade)
+
+
+def printExamResult(boolean isPassed,String grade){
+	if(isPassed==true){
+	log.info 'Congratulations'
+	//consider the grade only when exam is passed
+	printGradeMessage(grade)
+	
+	} else{
+	log.error 'Better luck next time'
+	}
+}
+
+
+def printGradeMessage(String grade){
+	if(grade=='A'){
+	log.info ' You got a car !! '
+	}else if (grade == 'B'){
+	log.warn 'You got a bike !!'
+	} else{
+	log.error 'You got Nothing !!'
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

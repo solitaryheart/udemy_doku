@@ -1,0 +1,84 @@
+*********************ACCESS DB BY USING GROOVY***********************
+**********************************************************************
+
+IMPORTANT: 
+
+ 1.) CHECK IF THE specific DB Connector is installed at Ready-API
+intallation file (\bin\ext) otherwise the connection will fail
+
+
+C:\Program Files\SmartBear\ReadyAPI-2.7.0\bin\ext
+
+2.) If not available got to https://www.soapui.org/jdbc/reference/jdbc-drivers.html
+    and check "download column
+
+------------------------------------------------------------------
+
+FOR MYSQL
+
+driver: com.mysql.jdbc.Driver
+connection string: jdbc:mysql://:/?user=&password= (downloaded)
+connection string: jdbc:mysql://localhost:3306/myzone?user=root&password=root
+
+------------------------------------------------------------------------
+
+Project: MyProject
+
+TestSuite: TS07_GroovyBasics
+
+TC01_Groovy Stuff
+
+Script: Groovy Script - SQL
+
+-------------------------------------------------------------------------------
+
+
+select * from customer
+
+
+import groovy.sql.Sql
+//Read data from the database Table
+
+String sqlStatement = 'SELECT * FROM CUSTOMER'
+
+def databaseURL = 'jdbc:mysql://localhost:3306/myzone?user=root&password=root'
+def username = 'root'
+def password = 'root'
+def driverName = 'com.mysql.jdbc.Driver'
+
+def sql = Sql.newInstance(databaseURL,username,password,driverName)
+
+//Exewcute the statement
+
+def myZoneID, firstName, lastName, phone, email
+
+sql.eachRow(sqlStatement){
+	row -> 
+	myZoneID =   row['myZoneID']
+	firstName =    row['firstName']
+	lastName  =   row['lastName']
+	phone = 		row ['phone']
+	email =            row['email']
+
+	log.info "myZoneID=$myZoneID, firstName=$firstName, lastName=$lastName, phone=$phone, email=$email"
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

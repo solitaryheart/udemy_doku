@@ -1,0 +1,166 @@
+Task 1: Create Test Suite "TS_Validate calculator service with Groovy script"
+
+Task 2: Create Test Case "TC_validate Add operation" for Add Operation. 
+
+Task 3: Add "Groovy Script" test step in the same test case
+
+Write groovy code to call the "Add" operation.
+Parse the "Add" operation response using "xmlSlurper" object.
+Write assertion for the "result".
+
+
+-----------------------------------------------------
+
+Reading Data from Excel-File - AddOperationData.xls
+
+-----------------------------------------------------
+
+Columns:
+
+Operator1
+Operator2
+ExpectedResult
+
+-----------------------------------------------------------
+
+Project: Calculator
+TestSuite: TS_Validate calculator service with Groovy script
+TestCase:  TC_validate Add operation" for Add Operation
+
+Groovy-Script
+
+------------------------------------------------------------
+
+Sample-Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Add>
+         <tem:intA>2</tem:intA>
+         <tem:intB>3</tem:intB>
+      </tem:Add>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+--------------------------------------------------------------
+Sample-Response:
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <AddResponse xmlns="http://tempuri.org/">
+         <AddResult>5</AddResult>
+      </AddResponse>
+   </soap:Body>
+</soap:Envelope>
+
+-------------------------------------------------------------------
+
+Replacing values in Request for Parameter intA und intB -> XPATH
+
+
+//tem:Add/tem:intA
+//tem:Add/tem:intb
+
+Finding Result in response -> XPATH
+
+//ns1:AddResponse/ns1:AddResult
+
+
+----------------------------------------------------------------------------------------
+
+
+import com.eviware.soapui.support.GroovyUtils
+
+
+//Import the JXL libraries
+import jxl.*
+import jxl.write.*
+
+//Import GroovyUttils
+import com.eviware.soapui.support.GroovyUtils
+
+// Create instance of GroovyUtils class and define run context
+def groovyUtils = new GroovyUtils(context)
+
+
+File excelFile = new File("C:\\udemy\\udemy_doku\\WebserviceTesting_SoapUI\\6_Automation_With_Groovy\\AddOperationData.xls")
+
+// -> /Create workbook instance
+Workbook workbook = Workbook.getWorkbook(excelFile)
+
+// -> Load the sheet
+jxl.Sheet sheet = workbook.getSheet(0)
+
+// -> Number of rows in the excel
+int noOfRows = sheet.getRows()-1
+log.info "noOfRows = $noOfRows"
+
+// - variables which will store value read from file -> use String cause otherwise assert will fail !
+String operator1, operator2, expectedResult
+String addResultResponse
+
+for(int rowIdx in 1..noOfRows){
+	operator1 = sheet.getCell(0,rowIdx).getContents()
+	operator2 = sheet.getCell(1,rowIdx).getContents()
+	expectedResult= sheet.getCell(2,rowIdx).getContents()
+
+	log.info "operator1=$operator1, operator2=$operator2, expectedResult=$expectedResult"
+
+
+	//c - call the add  operation with intA and intB value , that was read from file in the loop
+	// -> in the  add Request tntA and intB must be updated !
+
+	// -> extract the xml in add request an store in  requestXmlHolder variable
+	 requestXmlHolder = groovyUtils.getXmlHolder("add#Request")
+	 
+
+	 //updating the xml getBank request content >" <tem:intA>2</tem:intA> and <tem:intB>3</tem:intB>"
+	 //and updating the property value 
+	 requestXmlHolder["//tem:Add/tem:intA"] = operator1
+	 requestXmlHolder["//tem:Add/tem:intB"] = operator2
+	 
+	 requestXmlHolder.updateProperty()
+
+	 //call the add  operation with intA ans intB value, that was read from file
+	testRunner.testCase.getTestStepByName('add').run(testRunner,context)
+
+	//storing response in responseXmlHolder
+	responseXmlHolder = groovyUtils.getXmlHolder('add#Response')
+	 
+
+	 //parsing add result from response using xpath and store into value
+	 addResultResponse  = responseXmlHolder["//ns1:AddResponse/ns1:AddResult"]
+	 
+
+
+	//loggin parsed data
+	 log.info "addResult is =$addResultResponse"
+
+	 //assert response data with data in file
+	  assert expectedResult ==  addResultResponse
+	  
+
+	 
+
+	
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

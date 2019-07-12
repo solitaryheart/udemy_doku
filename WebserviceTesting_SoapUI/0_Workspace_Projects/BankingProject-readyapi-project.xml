@@ -593,6 +593,93 @@ file.eachLine{
 
 	 log.warn "blz=$blz,  bezeichnung=$bezeichnung , bic=$bic  , ort=$ort  , plz= $plz "
 }
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - Methods" id="654f20f0-744d-4a9b-b6b3-2b5fbd934253"><con:settings/><con:config><script>def int addNumbers(int a, int b) {
+	a+b  
+}
+
+def int substractNumbers(int a, int b) {
+	a+b  
+}
+
+
+def int multiplyNumbers(int a, int b) {
+	a*b  
+}
+
+def Integer  divideNumbers(int a, int b) {
+	try{
+	a/b  
+	}catch (ArithmeticException e) {
+		log.warn "Division with ZERO not allowed"
+	}
+}
+
+int result = addNumbers(1,9)
+log.info "result is $result"
+
+result = substractNumbers(20,5)
+log.info "result is $result"
+
+result  = divideNumbers(200,4)
+log.info "result is $result"
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - Methods - Part2" id="50df6175-7a42-443e-b3e5-135df7d3440b"><con:settings/><con:config><script>boolean isPassed
+String grade ='A'
+isPassed =true
+
+
+///Calling the method - if 
+printExamResult(isPassed,grade)
+
+
+def printExamResult(boolean isPassed,String grade){
+	if(isPassed==true){
+	log.info 'Congratulations'
+	//consider the grade only when exam is passed
+	printGradeMessage(grade)
+	
+	} else{
+	log.error 'Better luck next time'
+	}
+}
+
+
+def printGradeMessage(String grade){
+	if(grade=='A'){
+	log.info ' You got a car !! '
+	}else if (grade == 'B'){
+	log.warn 'You got a bike !!'
+	} else{
+	log.error 'You got Nothing !!'
+	}
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - SQL" id="6089fcdb-cf56-4cbe-b8e8-86e2e7b35e80"><con:settings/><con:config><script>import groovy.sql.Sql
+//Read data from the database Table
+
+String sqlStatement = 'SELECT * FROM CUSTOMER'
+
+def databaseURL = 'jdbc:mysql://localhost:3306/myzone?user=root&amp;password=root'
+def username = 'root'
+def password = 'root'
+def driverName = 'com.mysql.jdbc.Driver'
+
+def sql = Sql.newInstance(databaseURL,username,password,driverName)
+
+//Exewcute the statement
+
+def myZoneID, firstName, lastName, phone, email
+
+sql.eachRow(sqlStatement){
+	row -> 
+	myZoneID =   row['myZoneID']
+	firstName =    row['firstName']
+	lastName  =   row['lastName']
+	phone = 		row ['phone']
+	email =            row['email']
+
+	log.info "myZoneID=$myZoneID, firstName=$firstName, lastName=$lastName, phone=$phone, email=$email"
+	
+	
+}
 </script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="86043b32-d077-4738-a115-101e4d7e7cc2" name="TS08 Groovy Automation"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="681b8ca2-1488-48e0-9767-5471290d956c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC01_to test get Bank operation" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" name="get Bank - Request for BLZ code_55010111" id="dda634d3-86b5-4d56-8f0c-3e1b64f61d8f" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="get Bank - Request for BLZ code_55010111" id="d33c7d14-7004-47b3-8c8c-81b31449692d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
    <soapenv:Header/>
    <soapenv:Body>
@@ -638,7 +725,7 @@ assert expectedBICCode == actualBICCode, "BIC code not matching, expectted = $ex
 
 
 
-</script></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>ecd021d2-d2a0-4a54-a895-ccf62264ca36</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase id="20e1d09c-f680-4ecb-a236-cf58a2d33da8" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC02_Data-driven txt-file testing using groovy" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="7b71051f-c8a5-4d62-b92e-1ddbe3b1b2dd" name="getBank" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="getBank" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="69def286-6830-4db1-9186-5aa53e2f2cfd"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+</script></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>ecd021d2-d2a0-4a54-a895-ccf62264ca36</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase id="20e1d09c-f680-4ecb-a236-cf58a2d33da8" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC02_Data-driven txt-file testing using groovy" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="7b71051f-c8a5-4d62-b92e-1ddbe3b1b2dd" name="getBank"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="getBank" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="69def286-6830-4db1-9186-5aa53e2f2cfd"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
    <soapenv:Header/>
    <soapenv:Body>
       <blz:getBank>
@@ -699,6 +786,7 @@ file.eachLine{
 
 	///storing response in responseXmlHolder
 	 responseXmlHolder = groovyUtils.getXmlHolder('getBank#Response')
+
 
 	 //parsing value from response using xpath and store into values
 	 bezeichnungInResponse = responseXmlHolder["//ns1:bezeichnung"]

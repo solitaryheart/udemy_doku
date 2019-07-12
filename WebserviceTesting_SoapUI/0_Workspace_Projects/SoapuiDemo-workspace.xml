@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-workspace name="SoapuiDemo" cid="fb529072-208a-4f78-9953-e1b08443981f" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:project name="MyProject" lastOpened="2019-07-11T10:53:38.939+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/BankingProject-readyapi-project.xml</con:project>
-  <con:project name="Mock Services" lastOpened="2019-07-10T09:58:45.629+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/1_SoapUI_Basics/Mock Services-soapui-project.xml</con:project>
-  <con:project name="Calculator" lastOpened="2019-07-08T10:40:53.775+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Calculator-readyapi-project.xml</con:project>
+  <con:project name="MyProject" lastOpened="2019-07-12T12:13:50.298+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/BankingProject-readyapi-project.xml</con:project>
+  <con:project name="Mock Services" lastOpened="2019-07-12T11:32:45.191+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/1_SoapUI_Basics/Mock Services-soapui-project.xml</con:project>
+  <con:project name="Calculator" lastOpened="2019-07-12T12:18:33.726+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Calculator-readyapi-project.xml</con:project>
   <con:project name="Stock Project" lastOpened="2019-07-09T09:10:48.834+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Stock-Project-readyapi-project.xml</con:project>
   <con:project name="Account Service" lastOpened="2019-07-03T11:25:43.219+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Account-Service-readyapi-project.xml</con:project>
   <con:project name="REST Project for google maps api" lastOpened="2019-07-05T07:33:08.225+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/MyGoogleMapProject-readyapi-project.xml</con:project>
   <con:project name="REST Country Service" lastOpened="2019-07-11T11:57:41.778+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Country-Service-readyapi-project.xml</con:project>
-  <con:project name="REST Swagger Petstore Project" lastOpened="2019-07-11T11:15:57.976+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Swagger-Petstore-Project-readyapi-project.xml</con:project>
+  <con:project name="REST Swagger Petstore Project" lastOpened="2019-07-12T12:14:22.808+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Swagger-Petstore-Project-readyapi-project.xml</con:project>
   <con:project name="Rest_SmartByte_Services" lastOpened="2019-07-08T08:49:54.523+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Rest-SmartByte-Services-readyapi-project.xml</con:project>
   <con:project name="REST_OAUTH2_Example" lastOpened="2019-07-08T10:53:03.906+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/4_Working_With_Rest/REST-OAUTH2-Example-readyapi-project.xml</con:project>
   <con:recentItemCollection>
     <con:moduleId>ProjectsModule</con:moduleId>
-    <con:itemId>36105dae-23cb-4d77-84fe-527830d0f50f</con:itemId>
-    <con:itemId>0170d0e8-2d2c-480a-a524-5928cb4ecbc9</con:itemId>
     <con:itemId>bd92819f-03cb-470f-8553-92f7afc4b21b</con:itemId>
     <con:itemId>662cea77-b89f-4ceb-8cad-e7caa25d8ca7</con:itemId>
     <con:itemId>c9c06023-e927-42b0-9b0e-f9297e7ff49b</con:itemId>
+    <con:itemId>ce17d946-c41c-4cad-8868-7d65974f3562</con:itemId>
+    <con:itemId>e8e0bac5-26ac-42a5-a622-984302217050</con:itemId>
   </con:recentItemCollection>
   <con:recentItemCollection>
     <con:moduleId>SoapUiNGModule</con:moduleId>
-    <con:itemId>eadd592e-fb56-47ea-95aa-7438508bcc23</con:itemId>
-    <con:itemId>320b2ba3-2cf5-42de-8dcf-edc9a3839565</con:itemId>
-    <con:itemId>6adcf2e3-e8c5-48b3-9ae8-42edb7882b90</con:itemId>
-    <con:itemId>dcb84500-3989-4ded-935d-96ce384cc6a0</con:itemId>
-    <con:itemId>0800ff2b-15df-4b23-a62f-f0c4cc8f3231</con:itemId>
+    <con:itemId>2083d0de-8cec-4685-a7e7-59ddf295c969</con:itemId>
+    <con:itemId>7d5cabb1-b852-4646-ab02-ca847673bee2</con:itemId>
+    <con:itemId>76d9a8c6-593d-4740-8fad-204844eba649</con:itemId>
+    <con:itemId>011e1900-7590-40de-9448-90efe19ec185</con:itemId>
+    <con:itemId>2aa6227d-c74d-40d1-90c4-877c419040e6</con:itemId>
   </con:recentItemCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>Projects</con:rootNodeLabel>
@@ -341,6 +341,14 @@
       <con:id>1d526d32-cd71-47cc-bc4e-22991ad1b87f</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>ce17d946-c41c-4cad-8868-7d65974f3562</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>08ddcd9a-5b38-4e3e-b69f-6ba394baa5d4</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
   </con:navigatorNodeCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>operations</con:rootNodeLabel>
@@ -393,7 +401,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>80e073fc-9bd5-4285-b7e5-2c06493af7f3</con:id>
-      <con:expandState>false</con:expandState>
+      <con:expandState>true</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>687e22e1-acb4-4e52-a12c-b4c3b489406d</con:id>
@@ -641,6 +649,14 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>6adcf2e3-e8c5-48b3-9ae8-42edb7882b90</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>d201715a-7673-448a-a7db-fe0143e5e911</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>76d9a8c6-593d-4740-8fad-204844eba649</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
   </con:navigatorNodeCollection>
