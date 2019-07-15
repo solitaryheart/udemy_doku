@@ -330,37 +330,35 @@
       <http:address location="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint></con:endpoints><con:operation id="d7f8ff90-6acf-469b-a6a4-c8b67fffcad0" isOneWay="false" action="http://ws.cdyne.com/GetQuickQuote" name="GetQuickQuote" bindingOperationName="GetQuickQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e864d0d2-f335-4233-8048-fe2bebfac6d6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <ws:GetQuickQuote>\r
-         <!--Optional:-->\r
-         <ws:StockSymbol>?</ws:StockSymbol>\r
-         <!--Optional:-->\r
-         <ws:LicenseKey>?</ws:LicenseKey>\r
-      </ws:GetQuickQuote>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuickQuote"/></con:call></con:operation><con:operation id="f6c13812-296c-4154-ab31-d2d8c7666414" isOneWay="false" action="http://ws.cdyne.com/GetQuote" name="GetQuote" bindingOperationName="GetQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ab611059-921a-43c1-b652-7b7057603f27" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <ws:GetQuote>\r
-         <!--Optional:-->\r
-         <ws:StockSymbol>?</ws:StockSymbol>\r
-         <!--Optional:-->\r
-         <ws:LicenseKey>?</ws:LicenseKey>\r
-      </ws:GetQuote>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuote"/></con:call></con:operation><con:operation id="3d4e2965-b467-49b7-a0ef-157702f36f6a" isOneWay="false" action="http://ws.cdyne.com/GetQuoteDataSet" name="GetQuoteDataSet" bindingOperationName="GetQuoteDataSet" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b7e3ff63-bb77-4872-ab40-4dbefac048c8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <ws:GetQuoteDataSet>\r
-         <!--Optional:-->\r
-         <ws:StockSymbols>?</ws:StockSymbols>\r
-         <!--Optional:-->\r
-         <ws:LicenseKey>?</ws:LicenseKey>\r
-      </ws:GetQuoteDataSet>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuoteDataSet"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="0520d7f6-5f64-4f64-8c93-0341a65d8949" wsaVersion="NONE" name="DelayedStockQuoteSoap12" type="wsdl" bindingName="{http://ws.cdyne.com/}DelayedStockQuoteSoap12" soapVersion="1_2" anonymous="optional" definition="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint></con:endpoints><con:operation id="6cae1055-a293-40bc-b1db-01a50c657f8d" isOneWay="false" action="http://ws.cdyne.com/GetQuickQuote" name="GetQuickQuote" bindingOperationName="GetQuickQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5417209b-049f-411b-866f-25e2346d2c40" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://ws.cdyne.com/">\r
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:9094/StockService</con:endpoint><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint></con:endpoints><con:operation id="d7f8ff90-6acf-469b-a6a4-c8b67fffcad0" isOneWay="false" action="http://ws.cdyne.com/GetQuickQuote" name="GetQuickQuote" bindingOperationName="GetQuickQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e864d0d2-f335-4233-8048-fe2bebfac6d6" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:GetQuickQuote>
+         <!--Optional:-->
+         <ws:StockSymbol>GOOG</ws:StockSymbol>
+         <!--Optional:-->
+         <ws:LicenseKey>?</ws:LicenseKey>
+      </ws:GetQuickQuote>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuickQuote"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f6c13812-296c-4154-ab31-d2d8c7666414" isOneWay="false" action="http://ws.cdyne.com/GetQuote" name="GetQuote" bindingOperationName="GetQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ab611059-921a-43c1-b652-7b7057603f27" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:9094/StockService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:GetQuote>
+         <ws:StockSymbol>AAPL</ws:StockSymbol>
+         <ws:LicenseKey></ws:LicenseKey>
+      </ws:GetQuote>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuote"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3d4e2965-b467-49b7-a0ef-157702f36f6a" isOneWay="false" action="http://ws.cdyne.com/GetQuoteDataSet" name="GetQuoteDataSet" bindingOperationName="GetQuoteDataSet" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b7e3ff63-bb77-4872-ab40-4dbefac048c8" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:GetQuoteDataSet>
+         <!--Optional:-->
+         <ws:StockSymbols>GOOG</ws:StockSymbols>
+         <!--Optional:-->
+         <ws:LicenseKey>?</ws:LicenseKey>
+      </ws:GetQuoteDataSet>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuoteDataSet"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="0520d7f6-5f64-4f64-8c93-0341a65d8949" wsaVersion="NONE" name="DelayedStockQuoteSoap12" type="wsdl" bindingName="{http://ws.cdyne.com/}DelayedStockQuoteSoap12" soapVersion="1_2" anonymous="optional" definition="http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint></con:endpoints><con:operation id="6cae1055-a293-40bc-b1db-01a50c657f8d" isOneWay="false" action="http://ws.cdyne.com/GetQuickQuote" name="GetQuickQuote" bindingOperationName="GetQuickQuote" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5417209b-049f-411b-866f-25e2346d2c40" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws.cdyne.com/delayedstockquote/delayedstockquote.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://ws.cdyne.com/">\r
    <soap:Header/>\r
    <soap:Body>\r
       <ws:GetQuickQuote>\r
@@ -402,7 +400,105 @@
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="1b1d0cf3-59a4-498d-92ae-39a9054be596" name="SOAP Response"/><con:assertion type="XPath Match" id="fa002377-ad5f-49cb-84d2-7955b4ddef93" name="XPath Match - verify Stock Symbol"><con:configuration><path>declare namespace ns1='http://ws.cdyne.com/';
 //ns1:GetQuoteResponse[1]/ns1:GetQuoteResult[1]/ns1:StockSymbol[1]</path><content>GOOG</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="d1e8fa22-6c56-4d61-9f5d-f2a07e968163" name="XPath Match - verify LastTradeAmount is present"><con:configuration><path>declare namespace ns1='http://ws.cdyne.com/';
-count(//ns1:GetQuoteResponse[1]/ns1:GetQuoteResult[1]/ns1:LastTradeAmount[1])</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/DelayedStockQuoteSoap/GetQuoteRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+count(//ns1:GetQuoteResponse[1]/ns1:GetQuoteResult[1]/ns1:LastTradeAmount[1])</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/DelayedStockQuoteSoap/GetQuoteRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:mockService id="77e24d97-2123-425f-ab73-ec8282d1459e" port="9094" path="/StockService" host="localhost" name="DelayedStockQuoteSoap Virtual Service"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:constraints><con:congestion>0</con:congestion><con:inputBandwidth>-1</con:inputBandwidth><con:outputBandwidth>-1</con:outputBandwidth><con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity><con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity><con:virtError><con:start>0</con:start><con:endless>true</con:endless></con:virtError></con:constraints><con:dataSources/><con:headerValidator type="NONE"/><con:mockOperation name="GetQuote" id="18991b0e-5ee6-4893-85f9-8306d546d360" interface="DelayedStockQuoteSoap" operation="GetQuote"><con:settings/><con:defaultResponse>GOOG Response</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath>// 1  - import Groovy Util class
+import com.eviware.soapui.support.GroovyUtils
+
+// 2- create instance of groovy utils
+def groovyUtils = new GroovyUtils(context)
+
+// 3- Read the request xml-file -> only raw message
+def requestMessage = mockRequest.requestContent
+
+
+
+// 4- Converty raw request message to xml
+def requestXml = groovyUtils.getXmlHolder(requestMessage)
+
+//5. get the needed node from request xml hier -> blz.node
+def stockSymbol = requestXml.getNodeValue('//ws:StockSymbol')
+log.info "StockSymbol = $stockSymbol"
+
+
+//6 - based on BLZ code give back the corresponsing xml response
+// if request xml contains blz = 55010111 return "55010111 Response"
+
+return "$stockSymbol Response"</con:dispatchPath><con:dispatchXPath/><con:routeScript/><con:response name="GOOG Response" id="8feb8bef-a195-4ba2-b777-51eaae37e07c" httpResponseStatus="200" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">
+    <soap:Body>
+      <GetQuoteResponse xmlns="http://ws.cdyne.com/">
+         <GetQuoteResult>
+            <StockSymbol>GOOG</StockSymbol>
+            <LastTradeAmount>0</LastTradeAmount>
+            <LastTradeDateTime>0001-01-01T00:00:00</LastTradeDateTime>
+            <StockChange>0</StockChange>
+            <OpenAmount>0</OpenAmount>
+            <DayHigh>0</DayHigh>
+            <DayLow>0</DayLow>
+            <StockVolume>0</StockVolume>
+            <PrevCls>0</PrevCls>
+            <EarnPerShare>0</EarnPerShare>
+            <PE>0</PE>
+            <QuoteError>true</QuoteError>
+         </GetQuoteResult>
+      </GetQuoteResponse>
+   </soap:Body>       
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuote"/></con:response><con:response name="YHOO Response" id="8feb8bef-a195-4ba2-b777-51eaae37e07c" httpResponseStatus="200" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">
+    <soap:Body>
+      <GetQuoteResponse xmlns="http://ws.cdyne.com/">
+         <GetQuoteResult>
+           <StockSymbol>YHOO</StockSymbol>
+            <LastTradeAmount>0</LastTradeAmount>
+            <LastTradeDateTime>0001-01-01T00:00:00</LastTradeDateTime>
+            <StockChange>0</StockChange>
+            <OpenAmount>0</OpenAmount>
+            <DayHigh>0</DayHigh>
+            <DayLow>0</DayLow>
+            <StockVolume>0</StockVolume>
+            <PrevCls>0</PrevCls>
+            <EarnPerShare>0</EarnPerShare>
+            <PE>0</PE>
+            <QuoteError>true</QuoteError>        
+         </GetQuoteResult>
+      </GetQuoteResponse>
+   </soap:Body>       
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuote"/></con:response><con:response name="INFY Response" id="8feb8bef-a195-4ba2-b777-51eaae37e07c" httpResponseStatus="200" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">
+    <soap:Body>
+      <GetQuoteResponse xmlns="http://ws.cdyne.com/">
+         <GetQuoteResult>
+            <StockSymbol>INFY</StockSymbol>
+            <LastTradeAmount>0</LastTradeAmount>
+            <LastTradeDateTime>0001-01-01T00:00:00</LastTradeDateTime>
+            <StockChange>0</StockChange>
+            <OpenAmount>0</OpenAmount>
+            <DayHigh>0</DayHigh>
+            <DayLow>0</DayLow>
+            <StockVolume>0</StockVolume>
+            <PrevCls>0</PrevCls>
+            <EarnPerShare>0</EarnPerShare>
+            <PE>0</PE>
+            <QuoteError>true</QuoteError>
+         </GetQuoteResult>
+      </GetQuoteResponse>
+   </soap:Body>       
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuote"/></con:response><con:response name="AAPL Response" id="8feb8bef-a195-4ba2-b777-51eaae37e07c" httpResponseStatus="200" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.cdyne.com/">
+    <soap:Body>
+      <GetQuoteResponse xmlns="http://ws.cdyne.com/">
+         <GetQuoteResult>
+         <StockSymbol>AAPL</StockSymbol>
+            <LastTradeAmount>0</LastTradeAmount>
+            <LastTradeDateTime>0001-01-01T00:00:00</LastTradeDateTime>
+            <StockChange>0</StockChange>
+            <OpenAmount>0</OpenAmount>
+            <DayHigh>0</DayHigh>
+            <DayLow>0</DayLow>
+            <StockVolume>0</StockVolume>
+            <PrevCls>0</PrevCls>
+            <EarnPerShare>0</EarnPerShare>
+            <PE>0</PE>
+            <QuoteError>true</QuoteError>
+         </GetQuoteResult>
+      </GetQuoteResponse>
+   </soap:Body>       
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/GetQuote"/></con:response></con:mockOperation></con:mockService><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
 // This code is often used for adding custom authentication to SoapUI Pro tests
 
 // If hardcoding the token, uncomment and change line 5
