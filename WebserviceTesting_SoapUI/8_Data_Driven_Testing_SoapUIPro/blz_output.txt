@@ -1,0 +1,16 @@
+55020500,BFSWDE33MNZ,Sozialbank,<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"">
+   <soapenv:Body>
+      <ns1:getBankResponse xmlns:ns1=""http://thomas-bayer.com/blz/"">
+         <ns1:details>
+            <ns1:bezeichnung>Sozialbank</ns1:bezeichnung>
+            <ns1:bic>BFSWDE33MNZ</ns1:bic>
+            <ns1:ort>Mainz a Rhein</ns1:ort>
+            <ns1:plz>55004</ns1:plz>
+         </ns1:details>
+      </ns1:getBankResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
+55020500,BFSWDE33MNZ,Sozialbank
+55010800,ISBRDE51XXX,Investitions- und Strukturbank RP
+"55010800","ISBRDE51XXX","Investitions- und Strukturbank RP"
+55010800,ISBRDE51XXX,Investitions- und Strukturbank RP

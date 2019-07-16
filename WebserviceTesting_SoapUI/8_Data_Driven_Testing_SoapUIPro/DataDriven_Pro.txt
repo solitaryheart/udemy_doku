@@ -1,0 +1,117 @@
+*************** Data Source Grid*******************
+***************************************************
+
+CONTAINS: ALSO - EXPECTED RESULTS
+
+Project: My Project
+TestSuite: TS_Working wit data sources
+TestCase: TC01_working with grid
+
+Request: getBank
+DataSource: DataSource_Grid
+Property: 
+- blz_code
+- expected_bic
+
+
+Codes:
+55010800
+55020100
+55010111
+
+
+XPath Match Assertion
+
+ExpectedResult - Dynamic (from DataSource_Grid)
+
+${DataSource_Grid#expected_bic}
+
+--------------------------------
+
+VERY IMPORTANT - 
+
+To see the request und response xml for every looped operation
+it is import to uncheck the following checkbox in Data Source Loop
+teststep -> DICARDS SUCCESSFULL TEST STEP RESULTS WITHIN THE LOOP TO SAVE MONEY"
+
+
+-if checked: it is only possible to see request and response for failed test steps
+
+--------------------------------------------------------------------------------------
+*************** Data Source Excel*******************
+***************************************************
+
+CONTAINS: ALSO - EXPECTED RESULTS
+
+Project: My Project
+TestSuite: TS_Working wit data sources
+TestCase: TC02_working with excel
+
+XPath Match Assertion
+
+ExpectedResult - Dynamic (from DataSource_Excel)
+${DataSource_Excel#expected_ort}
+
+-------------------------------------------------------------------------------------------------
+*************** Data Source Database*******************
+***************************************************
+installed toa
+create database: demo
+create table: blz_data
+
+fields: 
+blz_code - VARCHAR(20) - primary key
+bic_code - VARCHAR(20)
+bezeichnung - VARCHAR(50)
+ort - VARCHAR(20)
+plz_code - VARCHAR(20)
+
+
+manuel insert statement
+
+INSERT INTO BLZ_DATA(blz_code, bic_code, bezeichnung, ort, plz_code) VALUES
+('55010111', 'ESSEDE5F550', 'SEB', 'Mainz a Rhein', '55116')
+
+
+Project: My Project
+TestSuite: TS_Working wit data sources
+TestCase: TC03_working with database
+
+DataSource: DataSource_MySQL
+
+---------------------------------------------------------------------------------------------------
+*************** WORKING WITH DATA GEN*******************
+********************************************************
+Project: My Project
+TestSuite: TS_Working wit data sources
+TestCase: TC04_working with datagen
+
+properties:
+
+country_name
+seq_no
+today_date -> Type Script
+comments -> Type template
+
+---------------------
+import java.util.Date
+Date today = new Date()
+return today
+---------------------
+
+"Order has been sent for order number ${DataGen#seq_no} on Date ${DataGen#today_date}
+
+--------------------------
+*************** WORKING WITH DATA SINK*******************
+********************************************************
+
+Project: My Project
+TestSuite: TS_Working wit data sources
+TestCase: TC05_working with datasink
+
+File: blz_output.txt
+
+
+
+
+
