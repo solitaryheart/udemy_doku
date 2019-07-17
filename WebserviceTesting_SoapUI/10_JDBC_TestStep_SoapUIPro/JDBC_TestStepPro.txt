@@ -1,0 +1,30 @@
+Project: My Project
+TestSuite: TS_working with JDBC
+Testcase: TC01_Request_Using_JDBC_Query
+
+Using: MySQL DB - demo
+
+Driver: MySql/com.mysql.jdbc.Driver
+Host: localhost
+Port: 3306
+User: root
+Passwort: root
+Database demo
+
+Using query builder:
+
+------------------------------
+Select blz_code.blz_code, blz_code.bic_code, blz_code.bezeichnung, blz_code.ort,
+  blz_code.plz
+From blz_code
+
+---------------------------------------------------------------------------
+
+Test
+
+getBank - operation after Get Data from JDBC Request_
+
+${JDBC Request#ResponseAsXml#//Results[1]/ResultSet[1]/Row[1]/BLZ_CODE.BLZ_CODE[1]}
+
+
+-----------------------------------------------------------------------

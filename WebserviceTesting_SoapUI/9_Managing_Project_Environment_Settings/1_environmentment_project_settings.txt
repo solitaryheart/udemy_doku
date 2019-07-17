@@ -1,0 +1,89 @@
+***************Managing environment ****************************************
+*****************************************************************************
+
+Scenario:
+
+- On project level custom properties will be defined
+- customer property reflecting different envirnment(dev, prod)
+- custom property reflecting specific setting needed for test case execution - e.g endpoint db settings
+- for each evironment a property file exists (dev.properties, prod.properties)
+- each property file contains values for the defined custom properties on project level
+- file and setting will be loaded by using setup script containing groovy statements
+
+- based on selected value on project level (env=dev, env=prod) the corresponding properties
+  file will be loaded into memory by using setup script (groovy) placed on testsuite-level 
+
+
+
+-----------------------------------------------------------------------
+
+Project: Managing Environment in Free version
+
+here: dev- environment is pointing to mock services, prod environment is
+      pointing to actual deployed services 
+
+- dev.properties
+
+bankEndpoint=http://localhost:8089/mockBLZServiceSOAP11Binding
+
+
+- prod.poperties
+
+bankEndpoint=http://www.thomas-bayer.com/axis2/services/BLZService
+supplierEndpoint=http://www.webservicex.net/medicareSupplier.asmx
+------------------------------------------------------------------------
+
+1.) Create Custome properties on project level:
+
+env -> dev, or prod
+bankEndpoint -> depends on selected value in env -> loaded from property file
+
+
+
+
+
+
+2.) Replace endpoint url in testcases to load values from project level
+
+- TC01_get bank data - get Bank -> ${#Project#bankEndpoint}
+- TC02_suppliert by zipcode- > GetSupplierByZipCode -> ${#Project#supplierEndpoint}
+
+
+3.) On TestSuite Level go to setUp Script an create groovy script
+
+----------------------------------------------------------------------------------------
+
+//load property file based on environment
+String env = context.expand('${#Project#env}')
+log.info "Environment is $env"
+
+//load the configuration file based on environment (dev, or prod)
+String filePath = "C:\\udemy\\udemy_doku\\WebserviceTesting_SoapUI\\9_Managing_Project_Environment_Settings\\"+env+".properties"
+log.info "Loading file $filePath"
+Properties props = new Properties()
+
+//loop through file content and load properties.
+File configFile =new File(filePath)
+configFile.withInputStream{
+	line->
+	props.load(line)
+}
+log.info props['bankEndpoint']
+testSuite.project.setPropertyValue('bankEndpoint',props['bankEndpoint'])
+
+----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

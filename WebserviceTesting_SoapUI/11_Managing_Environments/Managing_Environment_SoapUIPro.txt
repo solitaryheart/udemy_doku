@@ -1,0 +1,18 @@
+*******************MANAGING ENVIRONMENTS************
+
+Project: Managing Environments in Free Version
+
+
+1.) Select project
+2.) Click environments editor icon
+3.) Click Add Environment: DEV
+4.) Spcify environment name
+    -> select "Copy endpoints & credentials from the project
+
+
+the following tabs are available for each environment:
+
+SOAP Services -> endpoints
+RESt Services -> endpoints
+Customer Properties
+JDBC connections
