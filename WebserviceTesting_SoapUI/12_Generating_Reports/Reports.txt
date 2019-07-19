@@ -1,0 +1,2 @@
+- can be generated on the following levels (test case, test suite, project)
+- JUNIT (klick in index.html) style and PDF availabe

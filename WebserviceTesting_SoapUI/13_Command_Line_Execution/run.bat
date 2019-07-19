@@ -1,0 +1,1 @@
+"C:\Program Files\SmartBear\ReadyAPI-2.7.0\bin\testrunner.bat" "-sTS01_Test suite to test bank service" -fC:\udemy\udemy_doku\WebserviceTesting_SoapUI\13_Command_Line_Execution "-RJUnit-Style HTML Report" -FXML "-EDefault environment" C:\udemy\udemy_doku\WebserviceTesting_SoapUI\0_Workspace_Projects\BankingProject-readyapi-project.xml

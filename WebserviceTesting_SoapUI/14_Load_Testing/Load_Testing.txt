@@ -1,0 +1,33 @@
+************************ LOAD TESTING **************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+
+Project: Mock Services
+TestSuite: TS01 Load_Testing
+TestCase: TC01_Load_Test_Get_Bank
+
+Operation: getBankOperation
+
+IMPORTANT -> Test Execution against virtual service "getBank" -> start virtual service
+
+Duration: 10 Sekunden
+
+-------------------------------------------------------------------
+
+Available VU Load Profils
+
+Fixed - simulates the specific number of virtual users during the entire test run
+Burst - runs a load test with sudden load increases
+Ramp Up - Runs a load test with the load increase over time
+Variance: Runs a load test with the number of users simulated according to
+          mathematical wave-forms for example, sine or saw waves
+Custom: Run a load test with a custom load shape
+
+--------------------------------------------------------------------
+
+1. Run: 
+VU: 10
+LoadProfile: fixed
+Duration 10
+
+

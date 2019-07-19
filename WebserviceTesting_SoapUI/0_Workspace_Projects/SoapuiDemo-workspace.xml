@@ -1,36 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-workspace name="SoapuiDemo" cid="fb529072-208a-4f78-9953-e1b08443981f" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:project name="MyProject" lastOpened="2019-07-17T11:25:04.095+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/BankingProject-readyapi-project.xml</con:project>
+  <con:project name="MyProject" lastOpened="2019-07-19T11:50:43.484+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/BankingProject-readyapi-project.xml</con:project>
   <con:project name="Calculator" lastOpened="2019-07-12T12:18:33.726+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Calculator-readyapi-project.xml</con:project>
   <con:project name="Stock Project" lastOpened="2019-07-15T12:21:18.355+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Stock-Project-readyapi-project.xml</con:project>
   <con:project name="Account Service" lastOpened="2019-07-03T11:25:43.219+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Account-Service-readyapi-project.xml</con:project>
-  <con:project name="REST Project for google maps api" lastOpened="2019-07-05T07:33:08.225+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/MyGoogleMapProject-readyapi-project.xml</con:project>
-  <con:project name="REST Country Service" lastOpened="2019-07-11T11:57:41.778+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Country-Service-readyapi-project.xml</con:project>
-  <con:project name="REST Swagger Petstore Project" lastOpened="2019-07-12T12:14:22.808+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Swagger-Petstore-Project-readyapi-project.xml</con:project>
+  <con:project name="REST Project for google maps api" lastOpened="2019-07-18T08:42:44.095+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/MyGoogleMapProject-readyapi-project.xml</con:project>
+  <con:project name="REST Country Service" lastOpened="2019-07-18T11:31:24.401+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Country-Service-readyapi-project.xml</con:project>
+  <con:project name="REST Swagger Petstore Project" lastOpened="2019-07-18T08:26:10.582+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Swagger-Petstore-Project-readyapi-project.xml</con:project>
   <con:project name="Rest_SmartByte_Services" lastOpened="2019-07-17T11:06:43.723+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Rest-SmartByte-Services-readyapi-project.xml</con:project>
   <con:project name="REST_OAUTH2_Example" lastOpened="2019-07-15T08:39:55.788+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/4_Working_With_Rest/REST-OAUTH2-Example-readyapi-project.xml</con:project>
-  <con:project name="Mock Services" lastOpened="2019-07-17T09:21:22.124+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Mock-Services-readyapi-project.xml</con:project>
+  <con:project name="Mock Services" lastOpened="2019-07-18T10:59:18.180+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Mock-Services-readyapi-project.xml</con:project>
   <con:project name="Managing Enviroments in Free version" lastOpened="2019-07-17T12:44:06.583+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/9_Managing_Project_Environment_Settings/Managing Enviroments in Free version-soapui-project.xml</con:project>
   <con:recentItemCollection>
     <con:moduleId>ProjectsModule</con:moduleId>
-    <con:itemId>662cea77-b89f-4ceb-8cad-e7caa25d8ca7</con:itemId>
     <con:itemId>4a91a21b-d162-4db2-a8a8-ed56f8d9ce7c</con:itemId>
     <con:itemId>430df3d5-19dd-4ad5-a19e-d6f7afd780fd</con:itemId>
+    <con:itemId>662cea77-b89f-4ceb-8cad-e7caa25d8ca7</con:itemId>
+    <con:itemId>e363209c-6a3b-4e9e-a446-e1c5b594c233</con:itemId>
+    <con:itemId>0559df8a-891b-488a-b951-fa04799cab5c</con:itemId>
   </con:recentItemCollection>
   <con:recentItemCollection>
     <con:moduleId>SoapUiNGModule</con:moduleId>
-    <con:itemId>596acfaa-bf7a-4354-8968-cf3fedee05a5</con:itemId>
-    <con:itemId>8b0d57d6-4bf8-40ec-aa84-652959cc331a</con:itemId>
-    <con:itemId>7fa02542-bea5-4ab8-93bf-c81c0d3e34b7</con:itemId>
-    <con:itemId>96c2b0fd-ee06-4168-95e5-ff19b9ee9159</con:itemId>
-    <con:itemId>a51afc65-6083-442c-a79f-f4d7faecacb4</con:itemId>
+    <con:itemId>b2500b91-3b1c-44e3-892c-b8a8e6585e7d</con:itemId>
+    <con:itemId>debb1eb9-d50f-4b9c-8251-769bfc03acbd</con:itemId>
+    <con:itemId>320b2ba3-2cf5-42de-8dcf-edc9a3839565</con:itemId>
+    <con:itemId>faf55113-e9ff-4ce1-b1ff-1348a2e755bc</con:itemId>
+    <con:itemId>404ca0bb-6aea-4174-b7dc-abf6a32ddd6e</con:itemId>
   </con:recentItemCollection>
   <con:recentItemCollection>
     <con:moduleId>ServiceVirtualizationModule</con:moduleId>
     <con:itemId>77e24d97-2123-425f-ab73-ec8282d1459e</con:itemId>
-    <con:itemId>7f8ca563-0e2a-447f-9ba5-e7402be00920</con:itemId>
     <con:itemId>ad3a7ef9-abcc-4507-b7cc-bbdf4b4bf08b</con:itemId>
+    <con:itemId>7f8ca563-0e2a-447f-9ba5-e7402be00920</con:itemId>
+  </con:recentItemCollection>
+  <con:recentItemCollection>
+    <con:moduleId>LoadUINGModule</con:moduleId>
+    <con:itemId>32968268-37cf-4cec-8725-1639350eb984</con:itemId>
+    <con:itemId>cc7c5dd2-50ce-40da-9b23-d3bb3366ecd3</con:itemId>
   </con:recentItemCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>Projects</con:rootNodeLabel>
@@ -104,11 +111,11 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>80e073fc-9bd5-4285-b7e5-2c06493af7f3</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>3bf24f68-5f8c-4f2a-8d5d-bb5577a3f443</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>b31cee1c-9e16-4cc3-aa3c-3dbb6005577d</con:id>
@@ -180,7 +187,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>df496765-c8e5-4bbb-926b-8c92704bef77</con:id>
-      <con:expandState>false</con:expandState>
+      <con:expandState>true</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>a4d099f7-7b97-4b42-80bd-691fbf22f66d</con:id>
@@ -236,7 +243,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>529244a7-fa23-4469-82e7-109cd7323e0a</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>bfca48a6-4f00-49fa-b7ec-ece24930f336</con:id>
@@ -256,7 +263,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>2e3f5c3b-b850-4c5f-a0cc-425170994a39</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>b37ad0a4-75ae-44cf-b209-ee8aa3b23a2e</con:id>
@@ -332,7 +339,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>ed351fc9-5eb6-4827-91b3-db7aa37feb24</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>36105dae-23cb-4d77-84fe-527830d0f50f</con:id>
@@ -368,7 +375,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>a2d4a8b1-2f07-430b-9bb9-3ff88819f1a3</con:id>
-      <con:expandState>false</con:expandState>
+      <con:expandState>true</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>802d87c8-e9a9-4397-9a7a-725c89e04474</con:id>
@@ -458,11 +465,11 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>6740690f-0459-4cbf-97a6-b880828ab8a5</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>1a869b93-b448-4453-8f00-bb17c0f73e37</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>71126916-6c09-4eb6-b243-279604992886</con:id>
@@ -482,7 +489,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>8e6b69e9-120e-4a14-ac00-8f9d08565efb</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>712f2444-8925-415e-bda6-dc680ae82d3f</con:id>
@@ -522,7 +529,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>d21788c4-31ab-4ad0-b670-fb283440c170</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>b9f5ba67-9593-4d9b-a241-b34b7df13b91</con:id>
@@ -638,7 +645,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>df1f9fa3-8b7a-4be4-8bb0-fe63d6b294a5</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>4944edc6-615e-4549-bf7a-36385477a349</con:id>
@@ -658,7 +665,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>7ee666e9-55ca-4df1-9fe0-5e0d5a5d1136</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>e7500bfe-0274-44bf-8a6d-b6dddb055d4e</con:id>
@@ -670,7 +677,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>fdaad051-b678-4678-9eee-b947bbf4d384</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>932f77f5-dc06-4d13-b290-b36d55c196ca</con:id>
@@ -694,7 +701,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>8604b59f-c9e7-4d5d-9b93-7f1cabb27737</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>5ea53b46-e638-49e3-b6ac-61fa96932022</con:id>
@@ -706,7 +713,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>d9d1cb39-c5da-485a-8a4a-4ee572006730</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>7143b5be-16f3-4998-8202-1066c2fc6811</con:id>
@@ -714,7 +721,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>86043b32-d077-4738-a115-101e4d7e7cc2</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>65edd7f3-594a-4f36-8a13-46f6f92305bd</con:id>
@@ -778,7 +785,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>8b0d57d6-4bf8-40ec-aa84-652959cc331a</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>96c2b0fd-ee06-4168-95e5-ff19b9ee9159</con:id>
@@ -790,15 +797,43 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>9b7e7e06-c221-40f3-b8e6-0032f00be892</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>f0000ff0-34c1-47ac-8954-54da94303977</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>51aafca4-d3f0-4835-92d4-640fe5fdc16b</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>3617656e-735d-4bae-960c-ab688dd4d74b</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>a2d4a8b1-2f07-430b-9bb9-3ff88819f1a3</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>dbaa6168-9835-40ec-839a-1878df3fb3f5</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>d217c74c-f16f-45a2-9813-6c770f6590cc</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
   </con:navigatorNodeCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>LoadUI</con:rootNodeLabel>
+    <con:expandNodeState>
+      <con:id>2a24a3d7-eaed-4f98-96b8-f7bb34cd8858</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>a2d4a8b1-2f07-430b-9bb9-3ff88819f1a3</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
   </con:navigatorNodeCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>ServiceV</con:rootNodeLabel>

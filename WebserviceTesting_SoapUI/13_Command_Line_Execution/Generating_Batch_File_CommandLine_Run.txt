@@ -1,0 +1,26 @@
+*************************** Create a Batch File to Execute SoapUI-Tests from the Command Line ****************
+**************************************************************************************************************
+
+
+Project: MyProject
+TestSuite: TS01_Test_Suite to test bank service
+
+1.) Select SoapUIPro - tab
+2.) Select Project
+3.) Right click project, select menu item "Launch TestRunner"
+4.) Specify arguments for lauchning SoapUI TestRunner
+
+
+-----------------------------------
+
+A) Getting the Command-LineCommand -> Click "GetCommandLine"
+- past command into txt.file and save as .bat file (here: run.bat)
+
+B) Run tests from the coommand line
+- double click file in explorer
+- or start file from the command-line
+
+-------------------------------------------
+"C:\Program Files\SmartBear\ReadyAPI-2.7.0\bin\testrunner.bat" "-sTS01_Test suite to test bank service" -fC:\udemy\udemy_doku\WebserviceTesting_SoapUI\13_Command_Line_Execution "-RJUnit-Style HTML Report" -FXML "-EDefault environment" C:\udemy\udemy_doku\WebserviceTesting_SoapUI\0_Workspace_Projects\BankingProject-readyapi-project.xml
+---------------------------------------------------------------------------------------------
+

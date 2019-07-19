@@ -1,0 +1,41 @@
+************************* OPERATORS **********************************
+**********************************************************************
+
+Operator: "|"
+Description: computes to node-sets
+Example: //book | //cd
+
+Operator: "="
+Description: Equal
+Example: price = 9.80
+
+Operator: "!="
+Description: Not Equal
+Example: price != 9.80
+
+Operator: "<"
+Description: Less than
+Example: price < 9.80
+
+Operator: "<="
+Description: Less than or equal to
+Example: price < 9.80
+
+Operator: ">"
+Description: Greather than
+Example: price > 9.80
+
+Operator: ">="
+Description: Greather than or equal to
+Example: price >= 9.80
+
+Operator: "or"
+Description: or
+Example: price = 9.80 or price =9.70
+
+Operator: "and"
+Description: and
+Example: price = 9.00 and price < 9.70
+
+
+

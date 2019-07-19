@@ -1,0 +1,36 @@
+******************* XPATH Tools ***************************************
+************************************************************************
+
+XPath extensions/plugins available for Chrome ore Firefox:
+
+Chrome:
+
+- ChroPath
+- Eskry
+- XPath Helper
+- Relative XPath Helper
+- Element Locator
+- Renorex Selocity
+
+Firefox:
+
+- ChroPath
+- Eskry
+- XPath Finder
+- Try XPath
+- Firebug & Firepath !
+
+----------------------------------------------------------------
+
+Firebug ans Firepath are grear extensions to find XPath and CSS selector -> only until Firefox 46 !
+
+---------------------------
+
+Bestmethod
+
+- Chome
+- Inspect 
+- Click "Elements" tab
+- CTRL + F
+
+-> if display is heart to read -increase font "CTRL +"

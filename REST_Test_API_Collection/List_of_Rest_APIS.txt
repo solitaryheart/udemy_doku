@@ -1,0 +1,59 @@
+********************* LIST OF REST_API'S ****************************************
+*********************************************************************************
+Udemy-Course: ReadyAPI_SoapUIPro
+SoapUI Workspace: C:\SoapUIPro\Projects\MySql_Rest_API (shared project)
+-------------------------------------------------
+A.) REST with MySQL-Database (locally installed)
+
+- Wechsel in Ordner: "C:\SoapUIPro\MySQL_LearningDB"
+- hier liegt jar File - mysql-connector-java-5.1.35-bin.jar
+- cmd Befehl -> direkt in Explorer eingeben
+- in cmd - jar File starten: java -jar myzone-0.0.1-SNAPSHOT.jar
+- MySQl-Service "MySQL57" has to be run
+- Start MySQL Workbench: user/pw rooo: db: myzone (also TOAD for MySQL can be used)
+
+-SoapUI Workspace: C:\SoapUIPro\Projects\MySql_Rest_API (shared project)
+
+---------------------------------------------------------------------------
+
+
+Udemy-Course: WebserviceTesting_SoapUI
+SoapUI Workspace: C:\udemy\udemy_doku\WebserviceTesting_SoapUI\0_Workspace_Projects
+-------------------------------------------------
+B.) REST with Swagger - online
+
+- Pet Store project -> http://petstore.swagger.io
+- Swagger-File -> https://petstore.swagger.io/v2/swagger.json
+
+
+
+
+C.) REST with Swagger installed locally
+
+- folder: C:\SoapServices\test
+- Run Command: java -jar spring-petclinic-1.5.2.war
+- Go to the folling URL tp see available services : http://localhost:9966/petclinic/swagger-ui.html
+
+
+D.) SOAP with MYSQl database
+
+
+- WSDL-file: http://www.thomas-bayer.com/axis2/services/BLZService?wsdl
+- Project: My Project
+- TestSuite: TS_working with JDBC
+- Testcase: TC01_Request_Using_JDBC_Query
+
+- Using: MySQL DB - demo
+
+- Driver: MySql/com.mysql.jdbc.Driver
+- Host: localhost
+- Port: 3306
+- User: root
+- Passwort: root
+- Database: demo
+
+(also TOAD for MySQL can be used)
+
+
+
+
