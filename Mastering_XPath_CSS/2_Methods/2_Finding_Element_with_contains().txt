@@ -1,0 +1,33 @@
+************************************* FINDING ELEMENTS WITH CONTAINS **************************************************
+*******************************************************************************************************************
+
+http://demo.automationtesting.in/WebTable.html 
+
+Syntax 1: "//*[contains(text(),'partial text Text')]"
+Syntax 2: "//*[contains(.,'partial text Text')]"
+
+Syntax 3: "//tagName[contains(text(),'partial text Text')]"
+Syntax 4: "//tagName[contains(.,'partial text Text')]"
+
+Syntax 5: "//*[contains(@attribute,'partial text')]
+Syntax 6: "//tagName[contains(@attribute,'partial text')]
+
+-> partial text should be startic, 
+-> usage: dynamic id's with constant value
+
+
+Examples:
+
+http://demo.automationtesting.in/WebTable.html
+
+-> column header "Last Name"
+
+//span[contains(text(),'Last')]
+
+
+
+http://demo.automationtesting.in/Register.html
+
+-> List box Date of birth "year"
+
+//select[contains(@id,'year')]

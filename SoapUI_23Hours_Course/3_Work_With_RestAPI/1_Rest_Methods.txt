@@ -1,0 +1,89 @@
+*****************REST API **********************************************
+**************************************************************************
+
+Sample-Rest-Services: http://thetestingworldapi.com/
+
+BaseURL: http://thetestingworldapi.com/
+
+GET METHOD
+
+http://thetestingworldapi.com/api/studentsDetails
+
+TestSuite: SmokeTestSuite
+TestCase: TC_001_Get_Studen_Information
+Rest-Step: FetchInformation
+---------------------------------------
+
+GET METHOD
+
+http://thetestingworldapi.com/api/studentsDetails/138962
+
+TestSuite: SmokeTestSuite
+TestCase: TC_001_Fetch_Particular_Student_Details
+Rest-Step: FetchDetailsById
+
+----------------------------------------------
+POST METHOD
+
+http://thetestingworldapi.com/api/studentsDetails
+
+TestSuite: SmokeTestSuite
+TestCase: TC_001_Get_Studen_Information
+Rest-Step: Create New Student
+
+Format:
+
+{
+  "first_name": "sample string 2",
+  "middle_name": "sample string 3",
+  "last_name": "sample string 4",
+  "date_of_birth": "sample string 5"
+}
+
+{
+  "first_name": "Paul",
+  "middle_name": "Meier",
+  "last_name": "Mueller",
+  "date_of_birth": "29/07/1966"
+}
+
+-------------------------------------------------
+PUT METHOD
+
+
+http://thetestingworldapi.com/api/studentsDetails/{id}
+
+TestSuite: SmokeTestSuite
+TestCase: TC_001_Get_Studen_Information
+Rest-Step: Delete
+
+
+Format:
+
+{
+  "id": 1,
+  "first_name": "sample string 2",
+  "middle_name": "sample string 3",
+  "last_name": "sample string 4",
+  "date_of_birth": "sample string 5"
+}
+
+
+{
+  "id": 139026,
+  "first_name": "Paul",
+  "middle_name": "Meier",
+  "last_name": "Mueller",
+  "date_of_birth": "29/07/1967"
+}
+
+-----------------------------------------------------------------------------------
+DELETE METHOD
+
+
+http://thetestingworldapi.com/api/studentsDetails/{id}
+
+
+
+
+

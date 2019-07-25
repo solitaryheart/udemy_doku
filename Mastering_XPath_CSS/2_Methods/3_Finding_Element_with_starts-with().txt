@@ -1,0 +1,35 @@
+************************************* FINDING ELEMENTS WITH STARTS WITH **************************************************
+*******************************************************************************************************************
+
+http://demo.automationtesting.in/WebTable.html 
+
+Syntax 1: "//*[starts-with(text(),'partial text Text')]"
+Syntax 2: "//tagName[starts-with(text(),'partial text Text')]"
+Syntax 3: "//*[starts-with(@attribute,'partial text')]
+Syntax 4: "//tagName[starts-with(@attribute,'partial text')]
+
+-> partial text should be startic, 
+-> usage: dynamic id's with constant value
+
+
+Examples:
+
+http://demo.automationtesting.in/WebTable.html
+
+-> column header "Last Name"
+
+//span[starts-with(text(),'Last')]
+
+https://www.cs.uic.edu/~tj/WebTables/hscf_sample.html
+
+> how many namess  starts with "0098"
+
+//td[starts-with(text(),'0098')]
+
+
+
+http://demo.automationtesting.in/Register.html
+
+-> Email address edit field 
+
+//input[starts-with(@ng-model,'Email')]

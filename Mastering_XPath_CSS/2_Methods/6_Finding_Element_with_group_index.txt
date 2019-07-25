@@ -1,0 +1,16 @@
+************************************* FINDING ELEMENTS WITH GROUP INDEX **************************************************
+*************************************************************************************************************************
+- handling elements with XPath index but index give more than one element, which are under different parents
+  -> here: the index does not help
+
+- Group matches put all matches into a list and gives indexes to them
+- we have to use parentheses to make an XPath into group xpath after it index the path
+
+
+Sample Site: C:\udemy\udemy_doku\Mastering_XPath_CSS\0_HTML_For_XPath_and_CSS -> index-html
+
+step 1 xpath:  			"//input[@type='text']" -> 5 elements
+step 2 xpath-group with index:  (//input[@type='text'])[3] -> first-name text input field
+				(//input[@type='text'])[4] -> last-name text input field
+				(//input[@type='text'])[5] -> company  text input field
+				

@@ -1,0 +1,47 @@
+************************************* FINDING ELEMENTS WITH NORMALIZE SPACE **************************************************
+*******************************************************************************************************************
+
+- matches the element ignoring starting and ending spaces in html-code (similar to a trim() method 
+
+
+
+
+
+
+
+
+Usage in text()-method:
+
+
+Syntax 1: "//tagName[normalize-space(text()) ='exact Text']"
+
+
+Usage for attribute:
+
+Syntax 2: "//tagName[normalize-space(@attributename)='exact Text']"
+
+
+Examples:
+
+http://demo.automationtesting.in/Register.html
+
+Button "Datei auswählen"
+
+
+html code
+
+<input id="imagesrc" type="file" style=" margin-top: 10px!important; " onchange="uploadimg()">
+
+
+//input[normalize-space(@style)='margin-top: 10px!important;']
+
+
+
+
+
+
+
+
+
+
+

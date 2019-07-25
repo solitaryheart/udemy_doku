@@ -1,0 +1,63 @@
+*******************************EXACT XPATH ******************************************************************
+*************************************************************************************************************
+Demo -side: http://demo.automationtesting.in/Register.html
+
+------------------------------
+
+-> fing elements with their own attributes
+-> start with double forward slash
+-> will find elements by his attributs (id, value, class name)
+-> //input[@placeholder='firstName']
+-> //button[@id='Login']
+
+PREFERED STRATEGY !!!!!!!!!!!
+-----------------------------------------------------------------------------
+
+A.) Finding element with Single Attribute
+
+B.) Finding element with Attribute and Tag name
+
+C.) Finding element with Multiple Attributes
+
+---------------------------------------------------------
+
+Selecting: Password_Text_Field (absolut XPATH)
+
+html/body/section/div/div/div[2]/form/div[12]/div/input
+
+----------------------------------------------
+A.) Finding element with Single Attribute
+
+Syntax: "//*[@attribute = 'attributeValue']
+
+Example: //*[@id='firstpassword']
+
+-------------------------------------------------
+
+
+B.) Finding element with Attribute and Tag name
+
+Syntax: "//tagName[@attribute = 'attributeValue']
+
+Example: //input[@id='firstpassword']
+Example: //textarea[@ng-model='Adress']  (text area
+-------------------------------------------------------------
+
+C.) Finding element with Multiple Attributes
+
+Syntax 1: "//tagName[@attribute1 = 'attributeValue1'][[@attribute2 = 'attributeValue2']
+Syntax 2: "//tagName[@attribute1 = 'attributeValue1'and/or @attribute2 = 'attributeValue2']
+
+
+Example1 : //input[@id='secondpassword'] [@ng-model='CPassword']
+Example1:  //input[@id='secondpassword' and @ng-model='CPassword']
+
+
+
+
+
+
+
+
+
+

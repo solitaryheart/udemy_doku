@@ -1,0 +1,9 @@
+************************************* FINDING ELEMENTS WITH TEXT **************************************************
+*******************************************************************************************************************
+
+Syntax 1: "//*[text() = 'exact Text']
+Syntax 2: "//tagName[text() = 'exact Text']
+
+Example:
+
+https://ffm-zurrose-d-dotnet-01.hosting.kps.com:4444/swagger/v1/swagger.json

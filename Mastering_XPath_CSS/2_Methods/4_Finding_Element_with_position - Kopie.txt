@@ -1,0 +1,56 @@
+************************************* FINDING ELEMENTS WITH POSITION **************************************************
+*******************************************************************************************************************
+
+- helps the user to get match at particular index
+- can get element which are less or greather than the position as well
+- locating an element when there are many candidate elements matching the given XPath
+
+
+
+
+
+Syntax 1: XPath[n] or XPath[position()=n]
+Syntax 2: XPath[last()]
+Syntax 3: XPath[last()-n]
+Syntax 4: XPath[position()>n]
+Syntax 5: XPath[position()<n]
+Syntax 6: XPath[position()>=n]
+Syntax 6: XPath[position()<=n]
+
+
+
+
+Examples:
+
+https://www.toolsqa.com/automation-practice-table/ 
+
+-> selecting the complete table: //table[contains(@class, 'tsc_')]
+
+
+
+7 Columns: -
+
+
+Column 1:	"Country"
+Column 2:	"City"
+Column 3:	"Height"
+Column 4:	"Built"
+Column 5:	"Rank"
+Column 6:	".."
+
+
+important: first row = column headers, second row = data
+
+
+------------------------
+
+Examples
+
+selecting "Rank 1" in row 2:			 	//table[contains(@class, 'tsc_')]/tbody/tr[1]/td[5]
+
+selecting "Rank 1" in row 2 using position:		//table[contains(@class, 'tsc_')]/tbody/tr[1]/td[position()=5]
+
+selecting Last element in row 2	("Details")		//table[contains(@class, 'tsc_')]/tbody/tr[1]/td[last()]	
+
+selecting Last element -2  in row 2 ("Built")		//table[contains(@class, 'tsc_')]/tbody/tr[1]/td[last()-2]
+

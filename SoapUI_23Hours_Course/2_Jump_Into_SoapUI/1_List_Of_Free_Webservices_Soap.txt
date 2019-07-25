@@ -1,0 +1,21 @@
+Holiday-WSDL:
+
+http://www.holidaywebservice.com//HolidayService_v2/HolidayService2.asmx?wsdl
+
+
+Calculator-WSDL:
+
+http://www.dneonline.com/calculator.asmx?WSDL
+
+Waether-WSDL:
+
+http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL
+
+Country-Detail WSDL:
+
+http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL
+
+
+http://thetestingworldapi.com/api/studentsDetails
+
+03030333930393130323BCDEF0226

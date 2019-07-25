@@ -1,0 +1,18 @@
+*******************************RELATIVE XPATH ******************************************************************
+*************************************************************************************************************
+Demo -side: http://demo.automationtesting.in/Register.html
+
+USAGE: IF NO UNIQUE ATTRUBUTES ARE AVAILABLE - GO FROM ONE KNOWN ELEMENT TO THE ELEMENT WITHOUT UNIQUE-ID's
+
+------------------------------
+
+-> start with any element we want
+-> will not start with the root node
+-> start with double forward slash
+-> //*[@id='basicBootstrapForm']/div[1]/div[1]/input
+
+--------------------------------------------------
+
+Scenaria Selecting "Firname" relative from an grad parent element
+
+//form[@id='basicBootstrapForm']/div[1]/div[1]/input

@@ -1,0 +1,13 @@
+***********************RESSOURCES ******************************************
+****************************************************************************
+
+Source-Code: complete available on GitHub:
+
+https://github.com/danvega/apache-groovy-course
+
+
+Groovy Webseite: http://groovy-lang.org/
+
+Groovy Documentation: http://groovy-lang.org/documentation.html
+
+Groovy API: http://groovy-lang.org/api.html

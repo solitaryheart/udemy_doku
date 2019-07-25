@@ -1,0 +1,85 @@
+****************************E2E SCENARIOS - NOT DYNAMIC ***************************************************
+***********************************************************************************************************
+
+TestSuite: StudentInformation
+TestCase: E2EProcess
+
+Steps:
+
+AddNewStudent -> ID: 13903
+AddTechnicalSkills
+AddAddress
+FetchDetails
+
+-------------------------------------------------------------------
+
+1.) Adding missing Interfaces Operations
+
+- AddTechnicalSkills -> http://thetestingworldapi.com/api/technicalkills
+
+Format:
+
+{
+  "id": 1,
+  "language": [
+    "sample string 1",
+    "sample string 2"
+  ],
+  "yearexp": "sample string 2",
+  "lastused": "sample string 3",
+  "st_id": "sample string 4"
+}
+
+- AddAddress -> http://thetestingworldapi.com/api/addresses
+
+Format:
+
+{
+  "Permanent_Address": {
+    "House_Number": "sample string 1",
+    "City": "sample string 2",
+    "State": "sample string 3",
+    "Country": "sample string 4",
+    "PhoneNumber": [
+      {
+        "Std_Code": "sample string 1",
+        "Home": "sample string 2",
+        "Mobile": "sample string 3"
+      },
+      {
+        "Std_Code": "sample string 1",
+        "Home": "sample string 2",
+        "Mobile": "sample string 3"
+      }
+    ]
+  },
+  "Current_Address": {
+    "House_Number": "sample string 1",
+    "City": "sample string 2",
+    "State": "sample string 3",
+    "Country": "sample string 4",
+    "PhoneNumber": [
+      {
+        "Std_Code": "sample string 1",
+        "Home": "sample string 2",
+        "Mobile": "sample string 3"
+      },
+      {
+        "Std_Code": "sample string 1",
+        "Home": "sample string 2",
+        "Mobile": "sample string 3"
+      }
+    ]
+  },
+  "stId": "sample string 1"
+}
+
+----------------------------------------------
+
+- FetchDetails -> http://thetestingworldapi.com/api/FinalStudentDetails/{id}
+
+
+
+
+
+

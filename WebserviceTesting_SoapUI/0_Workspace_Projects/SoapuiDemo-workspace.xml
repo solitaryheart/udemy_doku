@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-workspace name="SoapuiDemo" cid="fb529072-208a-4f78-9953-e1b08443981f" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:project name="MyProject" lastOpened="2019-07-19T11:50:43.484+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/BankingProject-readyapi-project.xml</con:project>
-  <con:project name="Calculator" lastOpened="2019-07-12T12:18:33.726+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Calculator-readyapi-project.xml</con:project>
+  <con:project name="MyProject" lastOpened="2019-07-23T10:27:14.095+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/BankingProject-readyapi-project.xml</con:project>
+  <con:project name="Calculator" lastOpened="2019-07-23T11:36:01.320+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Calculator-readyapi-project.xml</con:project>
   <con:project name="Stock Project" lastOpened="2019-07-15T12:21:18.355+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Stock-Project-readyapi-project.xml</con:project>
   <con:project name="Account Service" lastOpened="2019-07-03T11:25:43.219+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Account-Service-readyapi-project.xml</con:project>
   <con:project name="REST Project for google maps api" lastOpened="2019-07-18T08:42:44.095+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/MyGoogleMapProject-readyapi-project.xml</con:project>
   <con:project name="REST Country Service" lastOpened="2019-07-18T11:31:24.401+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Country-Service-readyapi-project.xml</con:project>
-  <con:project name="REST Swagger Petstore Project" lastOpened="2019-07-18T08:26:10.582+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Swagger-Petstore-Project-readyapi-project.xml</con:project>
+  <con:project name="REST Swagger Petstore Project" lastOpened="2019-07-23T10:27:10.817+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/REST-Swagger-Petstore-Project-readyapi-project.xml</con:project>
   <con:project name="Rest_SmartByte_Services" lastOpened="2019-07-17T11:06:43.723+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Rest-SmartByte-Services-readyapi-project.xml</con:project>
   <con:project name="REST_OAUTH2_Example" lastOpened="2019-07-15T08:39:55.788+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/4_Working_With_Rest/REST-OAUTH2-Example-readyapi-project.xml</con:project>
-  <con:project name="Mock Services" lastOpened="2019-07-18T10:59:18.180+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Mock-Services-readyapi-project.xml</con:project>
-  <con:project name="Managing Enviroments in Free version" lastOpened="2019-07-17T12:44:06.583+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/9_Managing_Project_Environment_Settings/Managing Enviroments in Free version-soapui-project.xml</con:project>
+  <con:project name="Mock Services" lastOpened="2019-07-23T10:30:42.229+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/0_Workspace_Projects/Mock-Services-readyapi-project.xml</con:project>
+  <con:project name="Managing Enviroments in Free version" lastOpened="2019-07-23T10:30:20.427+02:00">C:/udemy/udemy_doku/WebserviceTesting_SoapUI/9_Managing_Project_Environment_Settings/Managing Enviroments in Free version-soapui-project.xml</con:project>
   <con:recentItemCollection>
     <con:moduleId>ProjectsModule</con:moduleId>
-    <con:itemId>4a91a21b-d162-4db2-a8a8-ed56f8d9ce7c</con:itemId>
-    <con:itemId>430df3d5-19dd-4ad5-a19e-d6f7afd780fd</con:itemId>
-    <con:itemId>662cea77-b89f-4ceb-8cad-e7caa25d8ca7</con:itemId>
-    <con:itemId>e363209c-6a3b-4e9e-a446-e1c5b594c233</con:itemId>
-    <con:itemId>0559df8a-891b-488a-b951-fa04799cab5c</con:itemId>
+    <con:itemId>27eccc40-b344-40d2-8ec3-23b95835d49e</con:itemId>
+    <con:itemId>b61b6067-05b5-4664-b2ea-524e3a0c7812</con:itemId>
+    <con:itemId>21d811d0-c3c9-4d5c-b4ea-0596a1b19d49</con:itemId>
+    <con:itemId>83776029-efa9-43ad-b17c-d8f953172ec6</con:itemId>
   </con:recentItemCollection>
   <con:recentItemCollection>
     <con:moduleId>SoapUiNGModule</con:moduleId>
-    <con:itemId>b2500b91-3b1c-44e3-892c-b8a8e6585e7d</con:itemId>
-    <con:itemId>debb1eb9-d50f-4b9c-8251-769bfc03acbd</con:itemId>
-    <con:itemId>320b2ba3-2cf5-42de-8dcf-edc9a3839565</con:itemId>
-    <con:itemId>faf55113-e9ff-4ce1-b1ff-1348a2e755bc</con:itemId>
-    <con:itemId>404ca0bb-6aea-4174-b7dc-abf6a32ddd6e</con:itemId>
+    <con:itemId>d515674f-ba1e-48cf-a9c6-4943beca1f38</con:itemId>
+    <con:itemId>4944edc6-615e-4549-bf7a-36385477a349</con:itemId>
+    <con:itemId>07cf02fb-0845-48a2-a62a-d7237290abdf</con:itemId>
+    <con:itemId>58541d5b-1e8c-4343-bdc6-30b20a1655dd</con:itemId>
+    <con:itemId>8b0d57d6-4bf8-40ec-aa84-652959cc331a</con:itemId>
   </con:recentItemCollection>
   <con:recentItemCollection>
     <con:moduleId>ServiceVirtualizationModule</con:moduleId>
-    <con:itemId>77e24d97-2123-425f-ab73-ec8282d1459e</con:itemId>
     <con:itemId>ad3a7ef9-abcc-4507-b7cc-bbdf4b4bf08b</con:itemId>
     <con:itemId>7f8ca563-0e2a-447f-9ba5-e7402be00920</con:itemId>
   </con:recentItemCollection>
@@ -445,6 +443,114 @@
       <con:id>b528755d-5ebb-4c7d-b7ab-3c1ce7ef8d2f</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>2a24a3d7-eaed-4f98-96b8-f7bb34cd8858</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>2e3f5c3b-b850-4c5f-a0cc-425170994a39</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>b37ad0a4-75ae-44cf-b209-ee8aa3b23a2e</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>6d884289-1221-4eb9-8175-0ceeae77c3af</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>0f9b01c9-2fc0-4847-87e3-5dd56a2bb9a2</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>900218a8-70c7-474c-8b65-410cf5ad9ceb</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>0c71f95b-a41a-4a67-94e7-b87bb73ebed6</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>73dbb20d-7326-4c78-ba63-d69d2a000616</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>3b77ec4e-d10b-4d65-9b58-e30d74b43375</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>80e073fc-9bd5-4285-b7e5-2c06493af7f3</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>83776029-efa9-43ad-b17c-d8f953172ec6</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>b61b6067-05b5-4664-b2ea-524e3a0c7812</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>f2993fbc-0cde-4d4e-9fe6-a402b397a7b6</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>796063e0-dc0b-4170-ab73-a3694639ba57</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>1e3c1634-4c13-46a6-8cbc-3c76be979345</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>1cbb0fd9-82f8-4ec6-a7ef-180da2b0c7dc</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>0499e536-627f-433a-b2e9-a7080a61bc88</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>c78a5be2-cbae-4e73-9ce9-0ad25c168201</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>2b53a06d-394e-4017-a519-8d7619e670c3</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>1a4cfc04-d8e5-42e4-ae95-590823ee0639</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>9ace04cb-6a96-482a-8bbb-00a47a2527e9</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>f0349b50-2c29-4713-b282-ce80d868f26e</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>8680c3a5-b322-4e88-aaff-dff5f07a838e</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>9c04d5b9-b310-414b-93e3-5bd37511113e</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>1e2cc8b2-5ac6-43bc-ac08-d93be9cbab74</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>04de6e74-7ad2-4b84-82d9-da97f9d0b8e1</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>baae37de-a924-4b0d-9f60-f493a1a488b0</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
   </con:navigatorNodeCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>operations</con:rootNodeLabel>
@@ -823,6 +929,58 @@
       <con:id>d217c74c-f16f-45a2-9813-6c770f6590cc</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>2e3f5c3b-b850-4c5f-a0cc-425170994a39</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>df1f9fa3-8b7a-4be4-8bb0-fe63d6b294a5</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>4944edc6-615e-4549-bf7a-36385477a349</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>d9d1cb39-c5da-485a-8a4a-4ee572006730</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>7143b5be-16f3-4998-8202-1066c2fc6811</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>a2d4a8b1-2f07-430b-9bb9-3ff88819f1a3</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>3b77ec4e-d10b-4d65-9b58-e30d74b43375</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>2a24a3d7-eaed-4f98-96b8-f7bb34cd8858</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>97d2a238-a292-45b3-ab4b-030230e9f2e4</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>07cf02fb-0845-48a2-a62a-d7237290abdf</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>8b0d57d6-4bf8-40ec-aa84-652959cc331a</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>80e073fc-9bd5-4285-b7e5-2c06493af7f3</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>cfc79bbf-c8cb-4a17-96b8-02b406413dbf</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
   </con:navigatorNodeCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>LoadUI</con:rootNodeLabel>
@@ -859,6 +1017,14 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>3b77ec4e-d10b-4d65-9b58-e30d74b43375</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>3b77ec4e-d10b-4d65-9b58-e30d74b43375</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>a2d4a8b1-2f07-430b-9bb9-3ff88819f1a3</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
   </con:navigatorNodeCollection>
