@@ -6,7 +6,7 @@ TestCase: E2EProcess
 
 Steps:
 
-AddNewStudent -> ID: 13903
+AddNewStudent -> ID: 139032
 AddTechnicalSkills
 AddAddress
 FetchDetails
@@ -15,7 +15,20 @@ FetchDetails
 
 1.) Adding missing Interfaces Operations
 
-- AddTechnicalSkills -> http://thetestingworldapi.com/api/technicalkills
+- AddTechnicalSkills -> http://thetestingworldapi.com/api/technicalskills
+
+{
+  "id": 1,
+  "language": [
+    "sample string 1",
+    "sample string 2"
+  ],
+  "yearexp": "sample string 2",
+  "lastused": "sample string 3",
+  "st_id": "sample string 4"
+}
+
+
 
 Format:
 
@@ -33,6 +46,7 @@ Format:
 - AddAddress -> http://thetestingworldapi.com/api/addresses
 
 Format:
+
 
 {
   "Permanent_Address": {
@@ -76,7 +90,80 @@ Format:
 
 ----------------------------------------------
 
+
+Sample:
+{
+  "Permanent_Address": {
+    "House_Number": "17",
+    "City": "Dortmund",
+    "State": "NRW",
+    "Country": "Deutschland",
+    "PhoneNumber": [
+      {
+        "Std_Code": "333",
+        "Home": "323223232",
+        "Mobile": "4333343434"
+      },
+      {
+        "Std_Code": "334",
+        "Home": "5454545",
+        "Mobile": "7335333345"
+      }
+    ]
+  },
+  "Current_Address": {
+    "House_Number": "65",
+    "City": "Ohio",
+    "State": "Alabama",
+    "Country": "USA",
+    "PhoneNumber": [
+      {
+        "Std_Code": "555",
+        "Home": "56565656",
+        "Mobile": "76767676767"
+      },
+      {
+        "Std_Code": "556",
+        "Home": "76767676767",
+        "Mobile": "87878787878"
+      }
+    ]
+  },
+  "stId": "sample string 1"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - FetchDetails -> http://thetestingworldapi.com/api/FinalStudentDetails/{id}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

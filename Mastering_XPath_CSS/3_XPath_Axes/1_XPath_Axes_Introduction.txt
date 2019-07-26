@@ -1,0 +1,59 @@
+*************************** XPATH - AXES - Introduction *****************************************
+************************************************************************************************
+
+- axes search different nodes from current context node
+- axes are the methods used to find dynamic elements
+- used to find elements which dynamically change on refresh or other operations
+
+methods
+
+- ancestor
+- parent
+- preceding
+- following
+- self (referece element)
+- preceding siblings
+- following siblings
+- child
+- descendant
+
+
+sample html
+
+-----------------------------------------------
+select
+a
+input (reference element)
+button
+div
+
+following sibling = button, div
+prece sibling = selct, a
+
+
+-----------------------------------------------------------------------------
+
+************* FINDING PARENT ELEMENT *************************************
+**************************************************************************
+
+Syntax:
+
+//knownXPath/parent::*			//input[@name='firstName']/parent::*
+
+//knownXPath/parent::tagName		//input[@name='firstName']/parent::div
+
+//knownXPath/..				//input[@name='firstName']/.. (parents parents possible //input[@name='firstName']/../.
+
+----------------------------------------------------------------------------
+************* FINDING CHILD ELEMENT *************************************
+**************************************************************************
+
+
+//knownXPath/child::*			//div[@id='first-name']/child::*		
+
+//knownXPath/child::tagName		//div[@class='form-free-trial__row']/child::input
+
+//knownXPath/tagName			relative xpath
+
+-------------------------------------------------------------------------------------------
+

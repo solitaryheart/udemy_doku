@@ -1,0 +1,71 @@
+********************************************** PROPERTIES in SoAPUI-Pro*****************************************************************
+***************************************************************************************************************************
+Project: CalculationProject
+
+
+
+Overview:
+
+1.) What is Property
+2.) Why to Use Property
+3.) Where an How to define Property
+4.) Operations on Properties and to use Property on Test Case
+
+--------------------------------------------------------------------------------------
+1.) What is Property
+
+- A Property is a variable
+---------------------------------------------------------------------------------------
+2.) Why to Use Property
+
+- Store data on one place und reuse this data on several places
+
+3.) Where an How to define Property
+
+A) global-level properties -> using same values in all project -> File -> preferences -> Global properties
+
+Properties: A = 100, B= 200
+
+B) project-level properties -> can be used in same project / single project
+
+Custom Properties: PA=1000, PB=500 
+
+C) TestSuite-level properties -> can be used in particular test suite
+
+Custom Properties: SA=80, SB=40
+
+
+D) TestCase-level properties -> can be used in particular test case level only
+
+Custom Properties (TC "Validation functionality"): CA=200, CB=100
+
+
+
+--------------------------------------------------
+4.) Operations on Properties and to use Property
+
+A) Operations (only GUI)
+
+- Create Property
+
+- Delete Property
+
+- Move Up and Down
+
+- Sort Properties
+
+- Export & Import
+
+
+B) Use Properties in Test case
+
+TC: Validation functionality
+
+Get Data global level: 		${A}, ${B}
+Get Data project level:         ${#Project#PA}, ${#Project#PB}
+Get Data test-suite level:      ${#TestSuite#SA}, ${#TestSuite#SB}
+Get Data test-case level:	${#TestCase#CA}, ${#TestCase#CB}
+
+
+
+
