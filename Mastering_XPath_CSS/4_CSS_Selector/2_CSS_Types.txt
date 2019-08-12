@@ -1,0 +1,52 @@
+A: ABSOLUTE CSS SELECTOR
+
+- direct way of finding the element
+- starts with the root/context node (i.e. html)
+
+example: html>body>div>div>form>div>input
+
+-----------------------------------------------------------------------------------
+
+B: EXACT CSS SELECTOR
+
+- find elements with their own attributes
+- chances of failing is very less
+- will find by taking an element's attributes like Id, Value, Class Name, Placeholder, Name
+
+example: input[placeholder='firstname']
+example: button[id='Login']
+
+Syntax
+
+- [attribute = 'attributeValue']
+- tagName[attribute = 'attributeValue']
+- tagName[attribute1 = 'attributeValue1'][attribute2 = 'attributeValue2'] etc..
+
+
+
+1.) Finding element with Single Attribute
+
+- [id='email']
+
+2.) Finding element with Attribute and Tag name
+
+
+
+- input[id='last-name']
+
+3.) Finding element with Multiple Attributes
+
+-input[type='text'][class='form-input'][maxlength='10]
+
+---------------------------------------------------------------------------
+
+B: RELATIVE CSS SELECTOR
+
+- start with any of the element 
+- will not start with the root node
+- writing is bit time consuming
+- chances of failing is very lesse
+- will not be long as absolute CSS selector
+- use if no unique attribute are available -> select a parent for example with unique attributes
+
+example: form[id='form-free-online-trial']>div>input

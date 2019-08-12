@@ -5,6 +5,15 @@
 - axes are the methods used to find dynamic elements
 - used to find elements which dynamically change on refresh or other operations
 
+
+RELATIONSHIP OF NODES
+
+a) parent - each element and attribute has one parent - except root
+b) children - elemnt bodes may have ZERO, ONE, or MORE children
+c) siblings - nodes habe the same parent (Geschwister)
+d) ancestors - a nodes parent, parent's parent etc (Vorfahren)
+e) descendants - a node's children, children's children etc. (Nachkommen)
+
 methods
 
 - ancestor
@@ -28,7 +37,7 @@ button
 div
 
 following sibling = button, div
-prece sibling = selct, a
+preceding sibling = selct, a
 
 
 -----------------------------------------------------------------------------
@@ -56,4 +65,81 @@ Syntax:
 //knownXPath/tagName			relative xpath
 
 -------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+************* FINDING ANCESTORS *************************************
+**************************************************************************
+
+- ancestor specifies the ancestors of the current element
+- includes the parents up to the root element
+
+
+//knownXPath/ancestor::*		//td[text()='1234567890']/ancestor::*
+
+
+//knownXPath/ancestor::tagName		//td[text()='1234567890']/ancestor::div
+
+
+----------------------------------------------------------------------------------
+************* FINDING DESCENDANTS *************************************
+**************************************************************************
+- descendants specifies all the children and grandchildren elements
+
+//knownXPath/descendant::*		//table[@id='customers']/descendant::*	
+
+//knownXPath/descendant::tagName	//table[@id='customers']/descendant::tr	
+
+----------------------------------------------------------------------------------
+************* FINDING FOLLOWING ELEMENT *************************************
+*****************************************************************************
+- specifies all elements that come after the current element
+- includes elements of other div elements as well
+
+
+//knownXPath/following::*		//td[text()='Angel@yahoo.com']/following::*
+
+//knownXPath/following::tagName		//td[text()='Angel@yahoo.com']/following::tr	
+
+
+--------------------------------------------------------------------------------------
+************* FINDING FOLLOWING SIBLING ELEMENT *************************************
+*************************************************************************************
+
+- specifies the following siblings of the current element
+- siblings are at the same level as the current element and share its parent
+
+//knownXPath/following-sibling::*	//td[text()='Angel@yahoo.com']/following-sibling::*
+
+//knownXPath/following-sibling::tagName	//td[text()='Wilfred@gmail.com']/following-sibling::td[2]
+
+----------------------------------------------------------------------------------------
+
+************* FINDING PRECEDING ELEMENT *************************************
+*****************************************************************************
+
+- specifies all elements that come before the current element (i.e. before it's opening tag)
+
+
+//knownXPath/preceding::*		//td[text()='Angel@yahoo.com']/preceding::*
+
+//knownXPath/preceding::tagName		//td[text()='Angel@yahoo.com']/preceding::tr[3]
+
+
+--------------------------------------------------------------------------------------------
+
+************* FINDING PRECEDING SIBLING ELEMENT *************************************
+*************************************************************************************
+
+- specifies the preceding siblings of the current element
+- siblings are at the same level as the current element and share its parent
+
+//knownXPath/preceding-sibling::*	//td[text()='Angel@yahoo.com']/preceding-sibling::*
+
+//knownXPath/preceding-sibling::tagName	//td[text()='Wilfred@gmail.com']/preceding-sibling::td[2]
+
+
+
+
+
+
 
