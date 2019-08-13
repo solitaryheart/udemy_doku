@@ -1,0 +1,19 @@
+************************* FIND ELEMENT BY CLASS ***************************************************************
+**************************************************************************************************************
+
+
+Syntax for Class:		.classValue
+
+------------------------------------------
+
+HTML-Code containing 2 classes separated by space character:
+
+<input required="" maxlength="32" type="text" value="" name="firstName" class="form-input txtInput" id="first-name" placeholder="Enter your first name">
+
+
+
+Example:		.txtInput
+
+
+Example (generic)	[class='form-input txtInput']
+

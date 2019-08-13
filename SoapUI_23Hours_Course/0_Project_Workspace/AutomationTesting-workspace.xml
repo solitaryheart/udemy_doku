@@ -3,21 +3,22 @@
   <con:settings/>
   <con:project name="StudentManagementSystem" lastOpened="2019-07-25T11:15:46.864+02:00">C:/udemy/udemy_doku/SoapUI_23Hours_Course/0_Project_Workspace/StudentManagementSystem-readyapi-project.xml</con:project>
   <con:project name="Calculation_Project_SOAP" lastOpened="2019-07-25T11:15:24.632+02:00">C:/udemy/udemy_doku/SoapUI_23Hours_Course/0_Project_Workspace/Calculation-Project-SOAP-readyapi-project.xml</con:project>
+  <con:project name="SoapAutomation" lastOpened="2019-08-13T12:01:42.039+02:00">C:/udemy/udemy_doku/SoapUI_23Hours_Course/0_Project_Workspace/SoapAutomation-readyapi-project.xml</con:project>
   <con:recentItemCollection>
     <con:moduleId>ProjectsModule</con:moduleId>
-    <con:itemId>7fe986f0-6118-45ec-aec2-e02acab9097f</con:itemId>
-    <con:itemId>95133f33-8406-45fb-b687-4163d4fbcbb8</con:itemId>
-    <con:itemId>ace52644-2d63-4f0f-b0f3-d1b94c6afb5b</con:itemId>
-    <con:itemId>b2ce5247-74bb-4b06-9127-043d08acf346</con:itemId>
-    <con:itemId>b85c2f6f-cec5-4378-a819-21331aa0121a</con:itemId>
+    <con:itemId>9cca828a-2688-4c1c-8650-b6fca5539645</con:itemId>
+    <con:itemId>b0de8bc0-9258-4aa4-8306-914a384f042c</con:itemId>
+    <con:itemId>7fa5ce2c-9307-4b13-a3fb-cebaf7768aa8</con:itemId>
+    <con:itemId>ce2b2bf0-0047-4c27-be37-b1d5879acbb5</con:itemId>
+    <con:itemId>1bfe3545-0290-428e-8a98-08b09d877f52</con:itemId>
   </con:recentItemCollection>
   <con:recentItemCollection>
     <con:moduleId>SoapUiNGModule</con:moduleId>
-    <con:itemId>6d6d825d-1519-42b8-9527-7d358870c8d3</con:itemId>
-    <con:itemId>99cae37f-aabb-4633-b14b-8437272e017f</con:itemId>
-    <con:itemId>d7389314-bf32-4cc7-b5ab-c558b353d387</con:itemId>
-    <con:itemId>e3558886-1ba0-4fba-88ac-6ee35a04f12a</con:itemId>
-    <con:itemId>34b16701-ae02-42c7-9bdd-99131348a570</con:itemId>
+    <con:itemId>b8d300d2-c6cd-4e81-87e0-19c35d439a14</con:itemId>
+    <con:itemId>9cbef584-921f-48e5-a68f-48cc05cafebc</con:itemId>
+    <con:itemId>63706f19-93dd-46be-b5d9-48bb686a5735</con:itemId>
+    <con:itemId>899066d6-9051-49da-acbc-673009fc25a3</con:itemId>
+    <con:itemId>00aa92b8-77c7-4ac0-9cbe-909dcafa4908</con:itemId>
   </con:recentItemCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>Projects</con:rootNodeLabel>
@@ -35,7 +36,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>6d205ee3-fe42-4737-8b23-51123c16ce39</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>df4b39c1-553a-45a9-bae7-a21d37095b4c</con:id>
@@ -167,7 +168,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>477d5b25-81d2-4984-aaa4-d6c1c1ff8c91</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>b85c2f6f-cec5-4378-a819-21331aa0121a</con:id>
@@ -175,6 +176,66 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>33f7b175-328a-4b2d-bc13-e571cd580f2d</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>0fd72218-1728-4c4f-aefa-bd8411219c0b</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>2a801d88-bb71-449a-ba8f-d943cfa364ff</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>1c13a175-6275-4412-8e04-c1fde7948a9b</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>ed8b08af-d064-45e6-905d-14d3a38f9ed6</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>173f25ac-ab9e-4625-bb69-2eea132ab45e</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>2b32c26d-802e-4eda-b97b-003b3699074e</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>4299a370-e554-498c-b93f-a3c5b2d8d17d</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>739eb31c-a4b0-42d1-bedc-2aa7ebef19ef</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>bdbd0a8f-6b80-4e71-9d5f-4a197889cdd0</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>d5d4f130-5071-45bc-97c8-954c02c6f43a</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>6925b473-e326-4f99-b05b-14fad6d79210</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>5d4473d6-9c47-4229-8436-074a58d8888d</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>f3f8ae2d-832d-4cdb-ab37-854040649928</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>93b2594d-8d05-4456-9219-f64a94268014</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>bda57123-39ff-4e54-99c7-88e356533fbe</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
   </con:navigatorNodeCollection>
@@ -218,6 +279,26 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>fc170f1e-eb44-482c-a78b-2bdd785a72e6</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>0fd72218-1728-4c4f-aefa-bd8411219c0b</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>a7b8cd3c-7573-4d6a-84c7-b5a8cfdbe141</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>63706f19-93dd-46be-b5d9-48bb686a5735</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>2b8f218a-cecc-4491-932f-3c9c551be201</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>00aa92b8-77c7-4ac0-9cbe-909dcafa4908</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
   </con:navigatorNodeCollection>

@@ -1,0 +1,20 @@
+************************* FIND Descendant Elements Elements ****************************************************************************
+**************************************************************************************************************************
+
+
+Syntax for descendant child:		parentElement childElement
+
+Note:					">" represents immediate child, " " represents all childs
+
+------------------------------------------
+
+
+                               
+
+Example:		table[id='customers'] tr    (11 rows)
+Example:		table[id='customers'] th    (5 columns)
+Example:		table[id='customers'] td    (50 cell data)
+
+
+
+

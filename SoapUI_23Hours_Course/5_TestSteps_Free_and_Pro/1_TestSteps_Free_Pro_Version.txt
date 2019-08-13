@@ -1,2 +1,44 @@
 ************************** COMMON TEST STEPS IN FREE AND PRO VERSION *******************************************************
 ****************************************************************************************************************************
+
+Interface: http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL
+
+Project: SoapAutomation
+
+
+
+
+
+--------------------------------------------------------------
+1.) Delay Test Step
+
+waiting for a specific time before invoking the next test step
+----------------------------------------------------------------
+2.) Groovy Test Step
+
+insert a Groovy Programm
+--------------------------------------------------------------
+3.) Propery Script Test Step
+
+define variables for later use in several test steps
+
+usage in request test-step: 
+
+${Properties#LanguageName}
+${Properties#ISOCode}
+
+---------------------------------------------------------------
+4.) Manual Test Step
+
+- performing test steps manually which can't be performed by SoapUi
+-----------------------------------------------------------------
+5.) Run Test Case Test Step
+
+- reuse commen teststeps defined in one place by calling 
+this test steps (testcase) from another testcase
+----------------------------------------------------------------------
+6.) Assertion Test Step
+
+- grouping assertions from several test steps in one place
+
+-------------------------------------------------------------------------

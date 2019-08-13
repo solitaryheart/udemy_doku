@@ -1,0 +1,46 @@
+************************* DIFFERENCE NTH-CHILD()_NTH-OF-TYPE()*************************************************************************************
+*****************************************************************************************************************************************
+
+NTH-CHILD() -> searching in all children
+NTH-OF-TYPE() -> seaeching only in children based on specific type (tag)
+
+---------------------------------------------------------------------------------------------------------
+
+Syntax for nth-child():		parentElement childElement:nth-child(n)
+
+Note:				">" represents immediate child, " " represents all childs
+
+------------------------------------------
+
+Table
+                               
+
+Example:		table[id='customers'] tr:nth-child(1)     (first table row)
+Example:		table[id='customers'] tr:nth-child(2)     (second table row)
+Example:		table[id='customers'] td:nth-child(1)     (first table cell)
+Example:		table[id='customers'] td:nth-child(2)     (second table cell)
+Example:		table[id='customers'] tr:nth-child(11)>td:nth-child(2)     (second table cell, elevent row)
+
+form[id='form-free-online-trial']>label (4 labels)
+
+finding all the label in html-form with nth-child (exakt child position necessary):
+
+Example: form[id='form-free-online-trial']>label:nth-child(1) -> first label in child position 1
+Example: form[id='form-free-online-trial']>label:nth-child(4) -> second label in child position 4
+Example: form[id='form-free-online-trial']>label:nth-child(7) -> third label in child position 7
+Example: form[id='form-free-online-trial']>label:nth-child(10) -> fourth label in child position 10
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+Syntax for nth-of-type():		parentElement childElement:nth-of-type(n)
+
+form[id='form-free-online-trial']>label (4 labels)
+
+
+finding all the label in html-form with nth-child (exakt child position not necessary cause search based on tag "label"):
+
+Example: form[id='form-free-online-trial']>label:nth-of-type(1) - first label
+Example: form[id='form-free-online-trial']>label:nth-of-type(2) - second label
+Example: form[id='form-free-online-trial']>label:nth-of-type(3) - third label
+Example: form[id='form-free-online-trial']>label:nth-of-type(4) - fourth label
