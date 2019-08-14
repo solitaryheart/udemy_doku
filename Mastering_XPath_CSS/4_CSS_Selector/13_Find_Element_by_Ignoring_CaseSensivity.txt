@@ -1,0 +1,25 @@
+************************* FIND ELEMENT IGONORING CASE SENSIVITY ***************************************************************************************
+******************************************************************************************************************************************************
+
+
+
+
+Syntax ignoring case sensitvity
+
+- [attribute = 'attributeValue' i]
+- tagName[attribute = 'attributeValue' i]
+- tagName[attribute1 = 'attributeValue1' i][attribute2 = 'attributeValue2' i] etc..
+
+
+
+
+Example:
+
+HTML code
+
+<input required="" maxlength="100" type="email" value="" name="emailAddress" class="form-input" id="email" placeholder="example@example.com">
+
+- [id='EMail' i]
+- [id='EMAIL' i]
+- [id='email' i]
+

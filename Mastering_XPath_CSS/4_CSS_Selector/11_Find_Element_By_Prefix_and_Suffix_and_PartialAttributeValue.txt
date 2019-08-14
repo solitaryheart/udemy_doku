@@ -1,0 +1,65 @@
+************************* FIND ELEMENT BY PREFIX AND SUFFIX AND PARTIAL ATTRIBUTE VALUE ****************************************************************************
+******************************************************************************************************************************************************
+
+
+Syntax for prefix:   	       [attribute^='attributePrefixValue']
+			tagName[attribute^='attributePrefixValue']
+
+Usage:
+- to identify elements with dynammic attribute values
+- xpath uses starts-with() to identify those elements		
+
+HTML-Code
+
+<input required="" maxlength="32" type="text" name="firstName" class="form-input" id="first-name_991">
+
+- id="first-name_991" -> suffix "_991" changes every time after page is refreshed
+- constant prefix = first-name_
+- dynamix suffix = _991
+
+
+Example:		input[id^='first-name_']
+
+
+
+-------------------------------------------------------------------------------------
+
+Syntax for suffix:   	       [attribute$='attributeSuffixValue']
+			tagName[attribute$='attributeSuffixValue']
+
+
+Usage:
+- to identify elements with dynammic attribute values
+- xpath uses ends-with() to identify those elements
+
+HTML-Code
+
+<input required="" maxlength="32" type="text" value="" name="lastName" class="form-input" id="559_last-name" placeholder="Enter your last name">
+
+- id="559_last-name" -> prefix "559" changes every time after page is refreshed
+- dynamic prefix = 559
+- constant suffix = _last-name
+
+Example:		input[id$='_last-name']
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Syntax for partial:   	       [attribute*='partialAttributeValue']
+			tagName[attribute*='partialAttributeValue']
+
+
+Usage:
+- to identify elements with dynammic attribute values
+- xpath uses contains() to identify those elements (substring)
+
+HTML-Code
+
+<input required="" maxlength="32" type="text" value="" name="lastName" class="form-input" id="559_last-name" placeholder="Enter your last name">
+
+
+Example:		input[id*='last-name']
+Example:                input[placeholder*='Enter']
+
+
+
+

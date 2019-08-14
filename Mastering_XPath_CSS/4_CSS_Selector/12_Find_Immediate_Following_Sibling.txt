@@ -1,0 +1,75 @@
+************************* FIND IMMEDIATE AND FOLLOWING SIBLING ****************************************************************************
+******************************************************************************************************************************************************
+
+
+Syntax for immediate:   	       cssSelector + immediateSibling Element
+			
+
+Usage:
+- to identify elements with no unique attributes
+- identify unique element and from that position go to immediateSibling		
+
+HTML-Code
+
+<form method="post" action="/free-online-trial-processing" class="form-free-trial__form" id="form-free-online-trial">
+                                <label for="first-name">First Name</label>
+                                <input required="" maxlength="32" type="text" value="" class="form-input">
+                                <span class="required-span"></span>
+                            </form>
+
+
+- input field has no unique attributes
+- label field has unique attributes
+- from label position we can go to immediate sibling by using "+" 
+
+
+
+Example1:		label[for='first-name'] + input	
+
+Example2:		label[for='first-name'] + input + span   (immediate siblinf after input)
+
+--------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+
+
+Syntax for following:   	       cssSelector ~ immediateSibling Element
+
+Usage:
+- to identify elements with no unique attributes
+- identify unique element and from that position go to following Sibling (no need to use more than one + symbol (refer to Example2 - label[for='first-name'] + input + span 
+
+
+HTML-Code
+
+<form method="post" action="/free-online-trial-processing" class="form-free-trial__form" id="form-free-online-trial">
+                                <label for="first-name">First Name</label>
+                                <input required="" maxlength="32" type="text" value="" class="form-input">
+                                <span class="required-span"></span>
+                                <label>Last Name</label>
+                                <input required="" maxlength="32" type="text" value="" name="lastName" class="form-input" id="last-name" placeholder="Enter your last name">
+                                <span class="required-span"></span>
+                                <label>Email</label>
+                                <input required="" maxlength="100" type="email" value="" name="emailAddress" class="form-input" id="email" placeholder="example@example.com">
+                                <span class="required-span"></span>
+                                <label for="company">Company</label>
+                                <input maxlength="200" type="text" value="" name="company" class="form-input" id="company" placeholder="Company">
+                                <div class="form-free-trial__row form-free-trial__row--button">
+                                    <input id="start-trial-submit" type="submit" value="Submit" class="button button--big">
+                                </div>
+
+                                <input type="hidden" name="oneMoreThing" class="oneMoreThing">
+
+                            </form>
+
+- span element has no unique attributes
+- label field has unique attributes
+- from label position we can go to following sibling by using "~" (no need to use more that one immediate siblings element by using + symbol)
+- here: more that one span element will be found
+
+
+Example1:		label[for='first-name'] ~ span (3 span elements will be found)
+Example2:		label[for='first-name'] ~ span:nth-of-type(1) (first span element will be found)
+Example3:		label[for='first-name'] ~ span:nth-of-type(2) (second span element will be found)
+Example4:		label[for='first-name'] ~ input (4 input elements will be found)
+
+-----------------------------------------------------------------------------------------------------------------------------

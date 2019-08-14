@@ -1,0 +1,19 @@
+************************* FIND FIRST CHILD AND LAST CHILD_ELEMENT ****************************************************************************
+**************************************************************************************************************************
+
+
+Syntax for first child:		parentElement childElement:first-child
+
+
+Example:		table tr:first-child
+
+-------------------------------------------------------------------------------------
+
+Syntax for last child:		parentElement childElement:last-child
+
+
+Example:		table tr:last-child>td:last-child
+
+
+-------------------------------------------------------------
+
