@@ -1,8 +1,8 @@
 - CSS - Cascading Style Sheets
 - CSS Selectors - used to select content which should be styled
 - CSS Selectors select HTML elements according to its id, class, type and attribute
-- CSS Selector is a combination of element attribute and attribute value which identifies the web element with a web page
-- The compposite of an element attribute and attribute value is known as Selector Pattern
+- CSS Selector is a combination of element attribute and attribute value which identifies the web element within a web page
+- The composite of an element attribute and attribute value is known as Selector Pattern
 
 
 

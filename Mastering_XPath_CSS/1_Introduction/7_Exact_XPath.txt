@@ -40,7 +40,7 @@ B.) Finding element with Attribute and Tag name
 Syntax: "//tagName[@attribute = 'attributeValue']
 
 Example: //input[@id='firstpassword']
-Example: //textarea[@ng-model='Adress']  (text area
+Example: //textarea[@ng-model='Adress']
 -------------------------------------------------------------
 
 C.) Finding element with Multiple Attributes
@@ -50,7 +50,7 @@ Syntax 2: "//tagName[@attribute1 = 'attributeValue1'and/or @attribute2 = 'attrib
 
 
 Example1 : //input[@id='secondpassword'] [@ng-model='CPassword']
-Example1:  //input[@id='secondpassword' and @ng-model='CPassword']
+Example2:  //input[@id='secondpassword' and @ng-model='CPassword']
 
 
 

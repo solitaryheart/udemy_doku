@@ -2,7 +2,7 @@
 **********************************************************************
 
 Operator: "|"
-Description: computes to node-sets
+Description: computes two node-sets
 Example: //book | //cd
 
 Operator: "="

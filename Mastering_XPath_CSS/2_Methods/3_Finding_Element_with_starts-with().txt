@@ -3,12 +3,12 @@
 
 http://demo.automationtesting.in/WebTable.html 
 
-Syntax 1: "//*[starts-with(text(),'partial text Text')]"
-Syntax 2: "//tagName[starts-with(text(),'partial text Text')]"
+Syntax 1: "//*[starts-with(text(),'partial text')]"
+Syntax 2: "//tagName[starts-with(text(),'partial text')]"
 Syntax 3: "//*[starts-with(@attribute,'partial text')]
 Syntax 4: "//tagName[starts-with(@attribute,'partial text')]
 
--> partial text should be startic, 
+-> partial text should be static, 
 -> usage: dynamic id's with constant value
 
 
@@ -22,7 +22,7 @@ http://demo.automationtesting.in/WebTable.html
 
 https://www.cs.uic.edu/~tj/WebTables/hscf_sample.html
 
-> how many namess  starts with "0098"
+> how many names  starts with "0098"
 
 //td[starts-with(text(),'0098')]
 

@@ -3,16 +3,16 @@
 
 http://demo.automationtesting.in/WebTable.html 
 
-Syntax 1: "//*[contains(text(),'partial text Text')]"
-Syntax 2: "//*[contains(.,'partial text Text')]"
+Syntax 1: "//*[contains(text(),'partial text')]"
+Syntax 2: "//*[contains(.,'partial text')]"
 
-Syntax 3: "//tagName[contains(text(),'partial text Text')]"
+Syntax 3: "//tagName[contains(text(),'partial text')]"
 Syntax 4: "//tagName[contains(.,'partial text Text')]"
 
 Syntax 5: "//*[contains(@attribute,'partial text')]
 Syntax 6: "//tagName[contains(@attribute,'partial text')]
 
--> partial text should be startic, 
+-> partial text should be static, 
 -> usage: dynamic id's with constant value
 
 

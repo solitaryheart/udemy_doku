@@ -3,7 +3,7 @@
 - handling elements with XPath index but index give more than one element, which are under different parents
   -> here: the index does not help
 
-- Group matches put all matches into a list and gives indexes to them
+- Group put all matches into a list and gives indexes to them
 - we have to use parentheses to make an XPath into group xpath after it index the path
 
 

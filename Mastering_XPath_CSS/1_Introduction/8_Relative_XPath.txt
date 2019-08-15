@@ -13,6 +13,6 @@ USAGE: IF NO UNIQUE ATTRUBUTES ARE AVAILABLE - GO FROM ONE KNOWN ELEMENT TO THE 
 
 --------------------------------------------------
 
-Scenaria Selecting "Firname" relative from an grad parent element
+Scenario Selecting "Firname" relative from an grand parent element
 
 //form[@id='basicBootstrapForm']/div[1]/div[1]/input

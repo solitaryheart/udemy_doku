@@ -4,7 +4,7 @@
 
 Syntax for direct child:		parentElement>childElement
 
-Note:					">" represents immediate child, " " represents all childs
+Note:					">" represents immediate child, " " represents all childs !!
 
 ------------------------------------------
 
@@ -12,7 +12,7 @@ HTML-Code containing 2 elements with same id -> id='first-name' -> we want to ex
 
 <div class="form-free-trial__row" id="first-name">
                                     <label for="first-name">First Name</label>
-                                    <input required="" maxlength="32" type="text" value="" name="firstName" class="form-input" id="first-name" placeholder="Enter your 				    first name">
+                                    <input required="" maxlength="32" type="text" value="" name="firstName" class="form-input" id="first-name" placeholder="Enter your 				    				first name">
                                     <span class="required-span"></span>
                                 </div>
 

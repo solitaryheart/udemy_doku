@@ -23,8 +23,8 @@ ITEMS
 RELATIONSHIP OF NODES
 
 a) parent - each element and attribute has one parent - except root
-b) children - elemnt bodes may have ZERO, ONE, or MORE children
-c) siblings - nodes habe the same parent (Geschwister)
+b) children - element bodes may have ZERO, ONE, or MORE children
+c) siblings - nodes have the same parent (Geschwister)
 d) ancestors - a nodes parent, parent's parent etc (Vorfahren)
 e) descendants - a node's children, children's children etc. (Nachkommen)
 

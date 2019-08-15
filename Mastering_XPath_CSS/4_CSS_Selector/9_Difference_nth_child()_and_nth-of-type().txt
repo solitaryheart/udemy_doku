@@ -7,8 +7,8 @@ NTH-OF-TYPE() -> seaeching only in children based on specific type (tag)
 ---------------------------------------------------------------------------------------------------------
 
 Syntax for nth-child():		parentElement childElement:nth-child(n)
-
-Note:				">" represents immediate child, " " represents all childs
+ 
+Note:				">" represents immediate child, " " represents all childs !!
 
 ------------------------------------------
 

@@ -1,11 +1,11 @@
 XPath can be used to find elements in HTML documents
-XPath is a awy of identifying elements on a web page -> finding address of an element on the web page
-XPath ist case sensitive
+XPath is a way of identifying elements on a web page -> finding address of an element on the web page
+XPath is case sensitive
 
 BENEFIT
 
 - helps to identify elements where attributes may change frequently (ex:id)
-- helps to identify elements may not contains any attributes
+- helps to identify elements may not contain any attributes
 - possible to find elements with respect to the known element
 - finding element with partially static attribute values
 - finding element wihtout unique attributes
@@ -23,14 +23,14 @@ GOOD XPATH SHOULD BE
 XPATH TYPES
 
 a.) absolute 
--> start with the root/context - brokes is one elements is added
+-> start with the root/context - brokes if one elements is added
 -> html/body/section/div/div/div/div[1]/div[1]/input
 
 
 b) relative
 -> start with any element we want
 -> will not start with the root node
--> start with double forward slash
+-> starts with double forward slash
 -> //*[@id='basicBootstrapForm']/div[1]/div[1]/input
 
 

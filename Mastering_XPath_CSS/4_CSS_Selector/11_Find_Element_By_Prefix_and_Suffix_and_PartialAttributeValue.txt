@@ -15,7 +15,7 @@ HTML-Code
 
 - id="first-name_991" -> suffix "_991" changes every time after page is refreshed
 - constant prefix = first-name_
-- dynamix suffix = _991
+- dynamic suffix = _991
 
 
 Example:		input[id^='first-name_']

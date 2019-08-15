@@ -4,7 +4,7 @@
 
 Syntax for descendant child:		parentElement childElement
 
-Note:					">" represents immediate child, " " represents all childs
+Note:					">" represents immediate child, " " represents all childs !!
 
 ------------------------------------------
 

@@ -26,7 +26,7 @@ HTML-Code
 
 Example1:		label[for='first-name'] + input	
 
-Example2:		label[for='first-name'] + input + span   (immediate siblinf after input)
+Example2:		label[for='first-name'] + input + span   (immediate sibling after input)
 
 --------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------

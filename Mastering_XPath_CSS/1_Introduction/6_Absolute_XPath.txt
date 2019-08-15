@@ -1,14 +1,14 @@
 **************ABSOLUTE XPATH ************************************************
 *****************************************************************************
 
--> start with the root/context - brokes is one elements is added
+-> start with the root/context - brokes if one elements is added
 -> html/body/section/div/div/div/div[1]/div[1]/input
 
 
 
 Demo -side: http://demo.automationtesting.in/Register.html
 
-USAGE: If no unique attribute are available -> start from one uniquele parent element 
+USAGE: If no unique attribute are available -> start from one unique parent element 
                                                and use absolute-xpath synatax !
 
 ---------------------------------------------------------------

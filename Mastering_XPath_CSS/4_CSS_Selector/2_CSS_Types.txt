@@ -13,14 +13,15 @@ B: EXACT CSS SELECTOR
 - chances of failing is very less
 - will find by taking an element's attributes like Id, Value, Class Name, Placeholder, Name
 
-example: input[placeholder='firstname']
-example: button[id='Login']
 
 Syntax
 
 - [attribute = 'attributeValue']
 - tagName[attribute = 'attributeValue']
 - tagName[attribute1 = 'attributeValue1'][attribute2 = 'attributeValue2'] etc..
+
+example: input[placeholder='firstname']
+example: button[id='Login']
 
 
 

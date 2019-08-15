@@ -49,7 +49,7 @@ EXPRESSION
 -> selects the first two books  that is child of the bookstore element
 
 "//title[@lang='en']"
--> select all the title elements with "lang" attribute" and value "en"
+-> selects all the title elements with "lang" attribute and value "en"
 
 
 "/bookstore/book[price > 35.00]":
@@ -62,13 +62,10 @@ EXPRESSION
 -> select all elements 
 
 "//book/title | //book/price":
--> select all title AND price elements of all book elements
+-> selects all title AND price elements of all book elements
 
 "//title | //price":
--> select all title AND price elements in this document
-
-"/bookstore/book//title | //price":
--> select all title elements of the book element of the bookstore element AND all price elements in the document
+-> selects all title AND price elements in this document
 
 
 
