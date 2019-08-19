@@ -1,0 +1,37 @@
+**************FETCH DYNAMIC DATA SOAPUI-PRO *********************************************************
+*****************************************************************************************************
+
+Project: StudentManagementSystem
+TestSuite: StudentInformation
+TestCase: E2EProcecs
+
+-----------------------------------------------------
+
+Scenario
+
+Add new Student
+Add Address
+Add Technology
+Fetch All Data
+------------------------------------------------------
+
+-> from response of Add new Student
+
+1.) in outline view - > select id
+2.) Transfer to "Add Properties Step"
+3.) Name "User DynamicDetails
+4.) A new PropertyTransfer step will be added
+
+
+-----------------------------
+New flow
+
+1.) AddNewStudent
+2.) PropertyTransfer
+3.) UserDynamicDetails
+4.) AddTechnicalSkills (Get Data -> UserDynamicDetails -> id)
+5.) AddAddress (Get Data -> UserDynamicDetails -> id)
+6.) FetchAll Details (Get Data -> UserDynamicDetails -> id)
+
+-----------------------------------------------------------------
+

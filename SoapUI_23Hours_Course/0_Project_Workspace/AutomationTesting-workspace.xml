@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-workspace name="AutomationTesting" cid="cc0810a2-7302-4932-b8ed-275f79d159e3" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:project name="StudentManagementSystem" lastOpened="2019-07-25T11:15:46.864+02:00">C:/udemy/udemy_doku/SoapUI_23Hours_Course/0_Project_Workspace/StudentManagementSystem-readyapi-project.xml</con:project>
-  <con:project name="Calculation_Project_SOAP" lastOpened="2019-07-25T11:15:24.632+02:00">C:/udemy/udemy_doku/SoapUI_23Hours_Course/0_Project_Workspace/Calculation-Project-SOAP-readyapi-project.xml</con:project>
-  <con:project name="SoapAutomation" lastOpened="2019-08-13T12:01:42.039+02:00">C:/udemy/udemy_doku/SoapUI_23Hours_Course/0_Project_Workspace/SoapAutomation-readyapi-project.xml</con:project>
+  <con:project name="StudentManagementSystem" lastOpened="2019-08-19T12:05:33.652+02:00">C:/udemy/udemy_doku/SoapUI_23Hours_Course/0_Project_Workspace/StudentManagementSystem-readyapi-project.xml</con:project>
+  <con:project name="Calculation_Project_SOAP" lastOpened="2019-08-19T12:04:19.956+02:00">C:/udemy/udemy_doku/SoapUI_23Hours_Course/0_Project_Workspace/Calculation-Project-SOAP-readyapi-project.xml</con:project>
+  <con:project name="SoapAutomation" lastOpened="2019-08-19T13:13:31.075+02:00">C:/udemy/udemy_doku/SoapUI_23Hours_Course/0_Project_Workspace/SoapAutomation-readyapi-project.xml</con:project>
   <con:recentItemCollection>
     <con:moduleId>ProjectsModule</con:moduleId>
-    <con:itemId>9cca828a-2688-4c1c-8650-b6fca5539645</con:itemId>
     <con:itemId>b0de8bc0-9258-4aa4-8306-914a384f042c</con:itemId>
-    <con:itemId>7fa5ce2c-9307-4b13-a3fb-cebaf7768aa8</con:itemId>
     <con:itemId>ce2b2bf0-0047-4c27-be37-b1d5879acbb5</con:itemId>
-    <con:itemId>1bfe3545-0290-428e-8a98-08b09d877f52</con:itemId>
+    <con:itemId>e88a58ad-e89f-4e82-896f-4c7e3c3f30f1</con:itemId>
+    <con:itemId>9cca828a-2688-4c1c-8650-b6fca5539645</con:itemId>
+    <con:itemId>997228e7-e82a-4047-bc57-b1f61b848748</con:itemId>
   </con:recentItemCollection>
   <con:recentItemCollection>
     <con:moduleId>SoapUiNGModule</con:moduleId>
-    <con:itemId>b8d300d2-c6cd-4e81-87e0-19c35d439a14</con:itemId>
-    <con:itemId>9cbef584-921f-48e5-a68f-48cc05cafebc</con:itemId>
-    <con:itemId>63706f19-93dd-46be-b5d9-48bb686a5735</con:itemId>
-    <con:itemId>899066d6-9051-49da-acbc-673009fc25a3</con:itemId>
-    <con:itemId>00aa92b8-77c7-4ac0-9cbe-909dcafa4908</con:itemId>
+    <con:itemId>ff1cb867-29bd-40c7-996a-1f2744090311</con:itemId>
+    <con:itemId>0f4a3b7c-472d-4b75-9f58-a79f96cfdbeb</con:itemId>
+    <con:itemId>7b58a29e-91ca-4e5e-87b4-eb543c69b318</con:itemId>
+    <con:itemId>6001432c-84e5-474a-87d4-3b996fd4e107</con:itemId>
+    <con:itemId>34efb8c6-54a7-491d-a73f-b91cb4a43d75</con:itemId>
   </con:recentItemCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>Projects</con:rootNodeLabel>
@@ -36,7 +36,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>6d205ee3-fe42-4737-8b23-51123c16ce39</con:id>
-      <con:expandState>false</con:expandState>
+      <con:expandState>true</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>df4b39c1-553a-45a9-bae7-a21d37095b4c</con:id>
@@ -56,7 +56,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>8c12697d-78c3-4f38-bf38-614b52309e0a</con:id>
-      <con:expandState>false</con:expandState>
+      <con:expandState>true</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>66d9d60a-225b-430a-b63a-68200a396686</con:id>
@@ -168,7 +168,7 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>477d5b25-81d2-4984-aaa4-d6c1c1ff8c91</con:id>
-      <con:expandState>false</con:expandState>
+      <con:expandState>true</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>b85c2f6f-cec5-4378-a819-21331aa0121a</con:id>
@@ -238,6 +238,14 @@
       <con:id>bda57123-39ff-4e54-99c7-88e356533fbe</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>c66c9059-7cb3-419e-aead-035e2f74921b</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>33d96d43-3f0d-4e0a-97c9-2129ac427acb</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
   </con:navigatorNodeCollection>
   <con:navigatorNodeCollection>
     <con:rootNodeLabel>SoapUI</con:rootNodeLabel>
@@ -295,10 +303,26 @@
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>2b8f218a-cecc-4491-932f-3c9c551be201</con:id>
-      <con:expandState>true</con:expandState>
+      <con:expandState>false</con:expandState>
     </con:expandNodeState>
     <con:expandNodeState>
       <con:id>00aa92b8-77c7-4ac0-9cbe-909dcafa4908</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>5b522e20-570d-4c69-97e4-8e222c85087d</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>fdcd62fb-0565-4e4b-9b2a-4d9fff64e755</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>6001432c-84e5-474a-87d4-3b996fd4e107</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>0f4a3b7c-472d-4b75-9f58-a79f96cfdbeb</con:id>
       <con:expandState>true</con:expandState>
     </con:expandNodeState>
   </con:navigatorNodeCollection>
